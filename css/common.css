@@ -49,6 +49,9 @@ header{ width: 100%; height: 100px; margin: 0 auto; position: fixed; z-index: 30
 .menu li.active .fourth{ color: rgb(102,249,255); }
 
 
+h3{ padding: 100px 0 30px; color: #fff; font-size: 50px; }
+
+
 /* main */
 #main{ display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100vh;}
 .main{align-items: center; }
@@ -114,12 +117,19 @@ table{ height: 250px; }
 #portfolio .textImg{ position: absolute; top: 300px; left: 0; right: 0; margin: 0 auto; z-index: 1000; pointer-events: none; }
 #portfolio .textImg img{ width: 200px; height: 200px; opacity: 0.7; }
 #portfolio .wrap{ display: flex; flex-wrap: wrap; max-width: 1400px; width: 100%; margin: 0 auto;}
-#portfolio .wrap a{ width: 33.33%; height: 400px; padding: 10px; transition: .3s; margin-bottom: 50px;}
+#portfolio .wrap a{ width: 33.33%; height: 400px; padding: 10px; transition: .3s; margin-bottom: 60px;}
 #portfolio .wrap a .img-wrap{ width: 100%; height: 100%; overflow: hidden;}
 #portfolio .wrap a .img-wrap img{ width: 100%; height: 100%; object-fit: cover; transform: scale(1); transition: .5s;}
 #portfolio .wrap a:hover .img-wrap img{ transform: scale(1.1); }
-h3{ padding: 100px 0 30px; color: #fff; font-size: 50px; }
+#portfolio .wrap a h4{ font-size: 18px; color: #999;}
+#portfolio .wrap a p{ position: relative; top: -15px;}
 
+
+/* contact */
+#contact .wrap{ margin-bottom: 100px; display: flex; justify-content: center; text-align: center;}
+#contact .wrap a{ padding: 0 30px;}
+#contact .wrap h4{ font-size: 18px; color: #fff;}
+#contact .wrap p{ color: #999;}
 /*===================== common =====================*/
 
 
@@ -183,5 +193,9 @@ h3{ padding: 100px 0 30px; color: #fff; font-size: 50px; }
 
     /* portfolio  */
     #portfolio .wrap a{ width: 50%; height: 40vw; padding: 10px; transition: .3s; margin-bottom: 50px;}
+
+    /* contact */
+    #contact .wrap{ flex-direction: column;}
+    #contact .wrap a{ padding-bottom: 30px;}
 }
 /*==================== mobile ======================*/
