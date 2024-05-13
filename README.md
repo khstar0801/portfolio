@@ -13,7 +13,7 @@
 
 # 🛠 기술 및 도구
 > ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript)
-![GitHub](https://img.shields.io/badge/Github-%23121011.svg?style=flat-square&logo=github&logoColor=white) ![adobephotoshop](https://img.shields.io/badge/adobephotoshop-35637C.svg?style=flat-square&logo=adobephotoshop&logoColor=white)
+![GitHub](https://img.shields.io/badge/Github-%23121011.svg?style=flat-square&logo=github&logoColor=white) ![AdobePhotoshop](https://img.shields.io/badge/adobephotoshop-35637C.svg?style=flat-square&logo=adobephotoshop&logoColor=white)
 
 <br />
 
