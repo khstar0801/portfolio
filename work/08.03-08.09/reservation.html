@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>라서리조트</title>
+        <script>
+            var pension_code = "<?=$pension_code?>";
+            var biz_no = '<?=$biz_no_ok; ?>';
+            var biz_name = '<?=$biz_name; ?>';
+            var deviceType = '<?=$deviceType; ?>';
+        </script>
+
+        <?=$naver_meta; ?>
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="" />
+        <link rel="shortcut icon" href="" />
+
+
+        <!-- css -->
+        <link rel="stylesheet" href="plugin/css/swiper.min.css" />
+        <link rel="stylesheet" href="plugin/css/animate.min.css" />
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/common.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css">
+        <link rel="stylesheet" href="assets/css/layout.css">
+
+       <!-- js -->
+        <script src="plugin/js/jquery-2.2.4.min.js"></script>
+        <script src="plugin/js/ScrollMagic.min.js"></script>
+        <script src="plugin/js/debug.addIndicators.min.js"></script>
+        <script src="plugin/js/TweenMax.min.js"></script>
+        <script src="plugin/js/animation.gsap.min.js"></script>
+        <script src="plugin/js/wow.min.js"></script>
+        <script src="https://kit.fontawesome.com/bd8686ee32.js" crpoRsorigin="anonymous"></script>
+        <script src="plugin/js/swiper.min.js"></script>
+        <script src="assets/js/layout.js"></script>
+        <script src="assets/js/common.js"></script>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+    </head>
+    <body>
+        <header>  
+            <div class="header-top">
+                <div class="wrap1400 flex-wrap">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <img src="assets/img/common/logo.png" alt="라서리조트" class="logo-normal">
+                            <img src="assets/img/common/logo-c.png" alt="라서리조트" class="logo-scroll">
+                        </a>
+                    </h1>
+                    <div class="right none-mo">
+                        <a href="tel:1566-2042" class="cf f16 med">1566-2042<i class="fas fa-phone-rotary"></i></a>
+                        <a href="" class="cf f16 plus med">menu +</a>
+                    </div>
+                    <div class="list none-mo">
+                        <a href="" class="point f16 med">실시간 예약</a>
+                        <a href="" class="point f16 med">공지사항</a>
+                        <a href="" class="point f16 med">이벤트</a>
+                        <a href="" class="point f16 med">FAQ</a>
+                    </div>
+                    <div class="panelbtn right none-pc" id="panelbtn">
+                        <a href="#panel">
+                            <span class="line01"></span>
+                            <span class="line02"></span>
+                            <span class="line03"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-btm">
+                <nav class="gnb none-mo">
+                    <div class="main">
+                        <div class="wrap1400 flex-wrap">
+                            <a href="about.html" class="mainnav f16 upp med cf">about</a>
+                            <a href="rooms.html" class="mainnav f16 upp med cf">room</a>
+                            <a href="facs.html" class="mainnav f16 upp med cf">facility</a>
+                            <a href="services.html" class="mainnav f16 upp med cf">service</a>
+                            <a href="travels.html" class="mainnav f16 upp med cf">travel</a>
+                            <a href="reservation.html" class="mainnav f16 upp med cf">reservation</a>
+                            <a href="community.html" class="mainnav f16 upp med cf">community</a>
+                        </div>
+                    </div> 
+                    <div class="sub">
+                        <div class="wrap1400">
+                            <ul class="subnav">
+                                <li><a class="f14 med point" href="about.html">펜션전경</a></li>
+                                <li><a class="f14 med point" href="about.html#section03">오시는길</a></li>
+                            </ul>
+                            <ul class="subnav">
+                                <li><a class="f14 med point" href="rooms.html">룸 미리보기</a></li>
+                                <?php foreach($getRooms as $k => $v) {
+                                    $int = $k + 1;
+                                ?>
+                                <li><a href="room.html?menutree_idx=<?=$v['menutree_idx']?>&gubun=<?=$k+1?>" class="f14 med point"><?=$v['room_name']?></a></li>
+                                <?php } ?>
+                            </ul>
+                            <ul class="subnav">
+                                <li><a class="f14 med point" href="services.html">미리보기</a></li>
+                                <?php
+                                foreach ($facilities as $k => $v) {
+                                $int = $k + 1;
+                                ?>
+                                <li><a class="f14 med point" href="fac.html?idx=<?=$v['idx']?>&gubun=<?=$int?>"><?=$v['title']?></a></li>
+                                <?php } ?>
+                            </ul>
+                            <ul class="subnav">
+                                <li><a class="f14 med point" href="services.html">미리보기</a></li>
+                                <?php
+                                foreach ($service as $k => $v) {
+                                $int = $k + 1;
+                                ?>
+                                <li><a class="f14 med point" href="service.html?idx=<?=$v['idx']?>&gubun=<?=$int?>"><?=$v['title']?></a></li>
+                                <?php } ?>
+                            </ul>
+                            <ul class="subnav">
+                                <li><a class="f14 med point" href="travels.html">미리보기</a></li>
+                                <?php
+                                foreach ($travel as $k => $v) {
+                                $int = $k + 1;
+                                ?>
+                                <li><a class="f14 med point" href="travel.html?idx=<?=$v['idx']?>&gubun=<?=$int?>"><?=$v['title']?></a></li>
+                                <?php } ?>
+                            </ul>
+                            <ul class="subnav">
+                                <li><a class="f14 med point" href="reservation.html">실시간예약</a></li>
+                                <li><a class="f14 med point" href="charge.html">요금가이드</a></li>
+                            </ul>
+                            <ul class="subnav">
+                                <li><a class="f14 med point" href="comm.html">공지사항</a></li>
+                                <li><a class="f14 med point" href="faq.html">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </nav>   
+            </div>
+        </header>
+        <div id="panel" class="none-pc"><!--panel-->
+            <div class="top">
+                <a class="close-btn" href="#panel-close"><i class="fa-thin fa-xmark point"></i></a>
+            </div>
+            <div class="top-con">
+                <img src="assets/img/common/logo-c.png" alt="">
+                <p class="f16 med point">라서리조트를 방문해주셔서 감사합니다.</p>
+                <a href="tel:1500-0000" class="panel-tel"><i class="fas fa-phone-rotary cf front"></i><p class="cf med">문의전화</p><span class="cf">1500-0000</span><p class="med fr cf">🡥</p></a>
+                <a href="reservation.html" class="panel-reser"><i class="fal fa-calendar-check point front"></i><p class="point med">실시간 예약</p><p class="med fr point">🡥</p></a>
+            </div>
+            <ul>
+                <li class="mnav-wrap">
+                    <p class="mnav med f16 upp point">rase resort</p>
+                    <p class="mnav med f16 upp point">caravan</p>
+                    <p class="mnav med f16 upp point">service<span class="fr">🡥</span></p>
+                    <p class="mnav med f16 upp point">Dining & Cafe</p>
+                    <p class="mnav med f16 upp point">Water leisure<span class="fr">🡥</span></p>
+                    <p class="mnav med f16 upp point">Facilities</p>
+                    <p class="mnav med f16 upp point">reservation</p>
+                    <p class="mnav med f16 upp point">community</p>
+                </li>
+                <li class="snav-wrap">
+                    <!-- rase resort -->
+                    <ul class="snav">
+                        <li class="med f14 point"><a href="about.html">소개말</a></li>
+                        <li class="med f14 point"><a href="traffic.html">배치도</a></li>
+                        <li class="med f14 point"><a href="traffic.html">오시는길</a></li>
+                        <li class="med f14 point"><a href="traffic.html">시설전경</a></li>
+                    </ul>
+                    <!-- caravan -->
+                    <ul class="snav float">
+                        <li class="med f14 point"><a href="about.html">A101</a></li>
+                        <li class="med f14 point"><a href="traffic.html">A102</a></li>
+                        <li class="med f14 point"><a href="traffic.html">A103</a></li>
+                        <li class="med f14 point"><a href="traffic.html">A104</a></li>
+                        <?php foreach($getRooms as $k => $v) {
+                            $int = $k + 1;
+                        ?>
+                        <li class="med f14 point"><a href="room.html?menutree_idx=<?=$v['menutree_idx']?>&gubun=<?=$k+1?>"><?=$v['room_name']?></a></li>
+                        <?php } ?>
+                    </ul>
+                    <!-- service -->
+                    <ul class="snav">
+                    </ul>
+                    <!-- Dining & Cafe -->
+                    <ul class="snav float">
+                        <li class="med f14 point"><a href="about.html">A101</a></li>
+                        <li class="med f14 point"><a href="traffic.html">A102</a></li>
+                        <li class="med f14 point"><a href="traffic.html">A103</a></li>
+                        <li class="med f14 point"><a href="traffic.html">A104</a></li>
+                        <?php foreach($getRooms as $k => $v) {
+                            $int = $k + 1;
+                        ?>
+                        <li class="med f14 point"><a href="room.html?menutree_idx=<?=$v['menutree_idx']?>&gubun=<?=$k+1?>"><?=$v['room_name']?></a></li>
+                        <?php } ?>
+                    </ul>
+                    <!-- Water leisure -->
+                    <ul class="snav">
+                    </ul>
+                    <!-- fac -->
+                    <ul class="snav">
+                        <?php
+                            foreach ($facilities as $k => $v) {
+                            $int = $k + 1;
+                        ?>
+                        <li class="med f14 point"><a href="fac.html?idx=<?=$v['idx']?>&gubun=<?=$int?>"><?=$v['title']?></a></li>
+                        <?php } ?>
+                    </ul>
+                    <!-- reservation -->
+                    <ul class="snav">
+                        <li class="med f14 point"><a href="reservation.html">실시간 예약</a></li>
+                        <li class="med f14 point"><a href="charge.html">예약 및 이용안내</a></li>
+                    </ul>
+                    <!-- community -->
+                    <ul class="snav">
+                        <li class="med f14 point"><a href="notice.html">공지사항</a></li>
+                        <li class="med f14 point"><a href="faq.html">자주찾는질문</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+        <link rel="stylesheet" href="pages/css/reservation.css">
+
+
+        <div id="sub-top" class="bgi" style="background-image: url(pages/img/subtop/reservation.jpg);"></div>
+        <div id="sub-tab" class="flex-wrap">
+            <a class="f20 med point upp " href="charge.html">예약 및 이용 안내</a>
+            <a class="f20 med point upp active" href="reservation.html">실시간 예약</a>
+        </div>
+
+        <section id="section01" class="reserv">
+            <div class="wrap1400">
+                <div class="content-wrap">
+                    <div class="reserv-calendar none-mo">
+                        <iframe width="100%" height="1700" id="inner-calendar" src="<?=$reser_url; ?>" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" topmargin="0"></iframe>
+                    </div>
+                    <div class="reserv-mo none-pc">
+                        <a href="<?=$reser_url; ?>" class="reserv-btn med f14 point">떠나요 예약 페이지로 이동 🡥</a>           
+                        <p class="reg f14 c5">모바일 환경에서는 라서 리조트의 예약 시스템 파트너인 <br>'떠나요'에서 실시간 예약 달력을 제공하고 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+<?php include "./_footer.html"; ?>

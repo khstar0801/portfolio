@@ -1,0 +1,40 @@
+#section01{ padding: 120px 0 80px;}
+#section01 .flex-wrap{ width: 100%; height: 100%; font-size: 0; justify-content: flex-start;}
+#section01 .flex-wrap a{ display: block; width: calc(25% - 12px); padding-bottom: 100px; margin-right: 16px;}
+#section01 .flex-wrap a:nth-child(4n){ margin-right: 0;}
+#section01 .flex-wrap a .bgi{ width: 100%; height: 338px; margin-bottom: 20px;}
+#section01 .flex-wrap a .text-wrap h3{ padding-bottom: 20px; }
+#section01 .flex-wrap a .text-wrap p.f14{ padding-bottom: 20px;}
+#section01 .flex-wrap a .text-wrap p.f22{ line-height: 32px;}
+#section01 .flex-wrap a .text-wrap p.f22 i{ font-size: 32px; line-height: 32px; padding-left: 10px; position: relative; top: 3px; }
+/* =================== 1440px =================== */
+@media (max-width: 1440px) {
+    #section01 .flex-wrap a .bgi{ height: 23.47vw; }
+}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    #section01{ padding: 0 0 60px;}
+    #section01 .wrap1400{ padding: 0;}
+    #section01 .flex-wrap a{ display: block; width: 100%; padding-bottom: 60px; margin-right: 0; overflow: hidden;}
+    #section01 .flex-wrap a:nth-child(4n){ margin-right: 0;}
+    #section01 .flex-wrap a:nth-child(2n) .bgi{ float: right;}
+    #section01 .flex-wrap a .bgi{ width: calc(100% - 15px); height: 44.80vw; }
+    #section01 .flex-wrap a .text-wrap{ padding: 0 15px;}
+    #section01 .flex-wrap a .text-wrap h3{ padding-bottom: 10px; }
+    #section01 .flex-wrap a .text-wrap p.f14{ padding-bottom: 20px;}
+    #section01 .flex-wrap a .text-wrap p.f22{ line-height: 26px;}
+    #section01 .flex-wrap a .text-wrap p.f22 i{ font-size: 26px; line-height: 26px; top: 3px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

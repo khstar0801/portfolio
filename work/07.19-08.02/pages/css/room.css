@@ -1,0 +1,70 @@
+#sub-top .text-wrap{ text-shadow: 10px 10px 10px rgba(194,241,255,.1);}
+
+/* section01 */
+#section01{ padding: 150px 0;}
+#section01 .top{ padding-bottom: 150px; text-align: center;}
+#section01 .top > h3{ padding-bottom: 10px;}
+#section01 .top > h4{ padding-bottom: 30px;}
+#section01 .top > p{ line-height: 32px; padding-bottom: 25px;}
+#section01 .icon-list{ border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; padding: 60px 0; display: flex; justify-content: center; align-items: center; margin-bottom: 60px;}
+#section01 .icon-list li{ position: relative; padding: 0 20px; }
+#section01 .icon-list li:after{ content: '|'; font-size: 20px; position: absolute; right: 0; top: 6px; color: #ddd;}
+#section01 .icon-list li:last-child:after{ content: '';}
+#section01 .icon-list i{ display: inline-block; padding-right: 10px;}
+#section01 .icon-list p{ display: inline-block;}
+#section01 .a-wrap{ display: flex; align-items: center; justify-content: center;}
+#section01 .a-wrap a{ margin: 0 15px;}
+#section01 .swiper-wrap{ width: 100%; padding-bottom: 40px; overflow: hidden; position: relative; margin-bottom: 150px;}
+#section01 .btm{ align-items: flex-start;}
+#section01 .btm h3{ padding-bottom: 30px;}
+#section01 .btm li{ line-height: 30px;}
+#section01 .btm .img-wrap{ width: 550px; height: 309px;}
+#section01 .btm .img-wrap img{ width: 100%; height: 100%; object-fit: cover;}
+@media screen and (max-width:1560px) {
+    #section01 .btm .img-wrap{ width: 35.26vw; height: 19.81vw;}
+}
+
+/* section02 */
+#section02{ padding: 150px 0; background-color: #f8f8f8;}
+#section02 .flex-wrap{ width: 100%; max-width: 1920px; left: 0; right: 0; margin: 0 auto;}
+#section02 .flex-wrap a{ display: block; width: calc(25% - 15px); /*height: 27.08vw; max-height: 520px;*/ height: 520px; position: relative; overflow: hidden;}
+#section02 .flex-wrap a .img{ position: absolute; width: 100%; height: 100%; transform-origin: center; top: 0; left: 0; background-size: cover; background-repeat: no-repeat; background-position: center; transition: .3s;}
+#section02 .flex-wrap a:hover .img{ transform: scale(1.1);}
+#section02 .flex-wrap a .text-wrap{ position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(34,34,34,.8); padding: 75px 30px; opacity: 0; transition: .3s;}
+#section02 .flex-wrap a .text-wrap h3{ padding-bottom: 40px;}
+#section02 .flex-wrap a .text-wrap p{ line-height: 30px; opacity: .7;}
+#section02 .flex-wrap a .text-wrap #btn-text{ position: absolute; bottom: 40px; left: 30px;}
+#section02 .flex-wrap a .text-wrap #btn-text p{ opacity: 1;}
+#section02 .flex-wrap a:hover .text-wrap{ opacity: 1;}
+
+/*-------------- Responsive ---------------*/
+/* Mobile */
+@media screen and (max-width:1024px) {
+    /* section01 */
+    #section01{ padding: 75px 0;}
+    #section01 .top{ padding-bottom: 75px; }
+    #section01 .top > h3{ padding-bottom: 15px;}
+    #section01 .top > h4{ padding-bottom: 25px;}
+    #section01 .top > p{ line-height: 20px; padding-bottom: 35px;}
+    #section01 .icon-list{ padding: 30px 0; flex-direction: column; margin-bottom: 40px;}
+    #section01 .icon-list li{ position: relative; width: 100%; padding: 10px 15px; text-align: left;}
+    #section01 .icon-list li:after{ content: '';}
+    #section01 .a-wrap a{ margin: 0 12px;}
+    #section01 .swiper-wrap{ padding-bottom: 30px; margin-bottom: 70px;}
+    #section01 .btm > div{ width: 100%}
+    #section01 .btm > div.mo-w50{ width: 50%; padding-bottom: 60px;}
+    #section01 .btm h3{ padding-bottom: 15px;}
+    #section01 .btm li{ line-height: 23px; }
+    #section01 .btm .chk{ padding-bottom: 45px;}
+    #section01 .btm .img-wrap{ width: 100%; height: 51.60vw;}
+    
+    /* section02 */
+    #section02{ padding: 75px 0 45px; }
+    #section02 .flex-wrap{padding: 0 15px;}
+    #section02 .flex-wrap a{ width: calc(50% - 5px); height: auto; }
+    #section02 .flex-wrap a .img{ position: relative; width: 100%; height: 50.00vw;}
+    #section02 .flex-wrap a:hover .img{ transform: scale(1);}
+    #section02 .flex-wrap a .text-wrap{ position: relative; background-color: transparent; padding: 10px 0 30px; opacity:1; }
+    #section02 .flex-wrap a .text-wrap h3{ padding-bottom: 0; color: #222;}
+    #section02 .flex-wrap a .text-wrap #btn-text{ display: none;}
+}

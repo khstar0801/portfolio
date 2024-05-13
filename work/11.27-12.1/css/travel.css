@@ -1,0 +1,47 @@
+
+/* section01 */
+#section01{ padding: 80px 0 180px; width: 100%;}
+#section01 .wrap1200 .travel-con{ width: calc(50% - 12px); position: relative; padding-bottom: 100px;}
+#section01 .wrap1200 > .flex-wrap > div:nth-child(2n){ top: 70px;}
+#section01 .wrap1200 .travel-con .img-wrap{ width: 100%; height: 388px; position: relative;}
+#section01 .wrap1200 .travel-con .text-wrap{ padding: 20px 10px 0; overflow: hidden;}
+#section01 .wrap1200 .travel-con .text-wrap h3{ padding-bottom: 10px;}
+#section01 .wrap1200 .travel-con .text-wrap h4{ padding-bottom: 10px;}
+#section01 .wrap1200 .travel-con .text-wrap p{ padding-bottom: 20px;}
+#section01 .wrap1200 .travel-con .text-wrap .content{ clear: both; word-break: keep-all;}
+#section01 .wrap1200 .travel-con .text-wrap .more-btn{ display: none; width: 100%; text-align: center;}
+#section01 .wrap1200 .travel-con .text-wrap .close-btn{ display: none;  width: 100%; text-align: center;}
+
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    #section01{ padding: 40px 0 60px; }
+    #section01 .wrap1200 .travel-con{ width: 100%; position: relative; padding-bottom: 60px;}
+    #section01 .wrap1200 > .flex-wrap > div:nth-child(2n){ top: unset;}
+    #section01 .wrap1200 .travel-con .img-wrap{ height: 44.27vw; }
+    #section01 .wrap1200 .travel-con .text-wrap{ padding: 48px 0 0; position: relative;}
+    #section01 .wrap1200 .travel-con .text-wrap h3{ padding-bottom: 10px;}
+    #section01 .wrap1200 .travel-con .text-wrap h4{ padding-bottom: 20px;}
+    #section01 .wrap1200 .travel-con .text-wrap p{ position: absolute; top: 20px; left: 0; float: unset;}
+    #section01 .wrap1200 .travel-con .text-wrap .content{ 
+        display:-webkit-box; 
+        word-wrap:break-word; 
+        -webkit-line-clamp:4; 
+        -webkit-box-orient:vertical; 
+        overflow:hidden; 
+        text-overflow:ellipsis;
+        height:88px;
+        margin-bottom: 20px;
+        }
+    #section01 .wrap1200 .travel-con .text-wrap .content.active{ 
+        display:-webkit-box; 
+        word-wrap:break-word; 
+        -webkit-line-clamp:unset; 
+        -webkit-box-orient:vertical; 
+        overflow:hidden; 
+        text-overflow:ellipsis;
+        height:auto;
+        margin-bottom: 20px;
+        }
+    #section01 .wrap1200 .travel-con .text-wrap .more-btn{ display: block; width: 100%; text-align: center;}
+    #section01 .wrap1200 .travel-con .text-wrap .close-btn{ display: block;}
+}

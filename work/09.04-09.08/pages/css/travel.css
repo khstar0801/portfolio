@@ -1,0 +1,35 @@
+.sub-pag .btm.flex-wrap .con:hover .img-wrap .img{ transform: scale(1); opacity: 1;}
+.sub-pag .btm.flex-wrap .con .tit{ display: flex; justify-content: space-between; align-items: center;}
+.sub-pag .btm.flex-wrap .con .tit p{ display: inline-block;}
+.sub-pag .btm.flex-wrap .con .tit p i{ display: inline-block; padding-right: 5px;}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    .sub-pag{ padding: 40px 0 0;}
+    .sub-pag .btm.flex-wrap{ justify-content: center;}
+    .sub-pag .btm.flex-wrap .con{ width: calc(100% - 30px); margin-bottom: 50px;}
+    .sub-pag .btm.flex-wrap .con .tit{ padding-bottom: 12px;}
+    .sub-pag .btm.flex-wrap .con .text-wrap{ padding: 0 10px;}
+    .sub-pag .btm.flex-wrap .con .text-wrap h3{ padding-bottom: 0;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

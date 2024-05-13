@@ -1,0 +1,23 @@
+#section01{ text-align: center;}
+.full-swiper{ height: 46.88vw;}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    .full-swiper{ height: calc(69.33vw + 16px);}
+}
+
+#section02{ padding: 60px 0 120px;}
+#section02 h3{ padding-bottom: 20px;}
+#section02 h4{ padding-bottom: 40px;}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    #section02{ padding: 40px 0 110px;}
+    #section02 h3{ padding-bottom: 10px;}
+    #section02 h4{ padding-bottom: 20px;}
+}
+
+
+.subpag-slide-section{ padding-top: 0; overflow: hidden;}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    .subpag-slide-section{ padding-bottom: 80px;}
+}

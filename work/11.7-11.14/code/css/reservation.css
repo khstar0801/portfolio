@@ -1,0 +1,45 @@
+/* header */
+header .header-area #logo-path{ fill: #222!important;}
+header #panelbtn a{ color: #222;}
+
+/* sub-top */
+#sub-top{ position: relative; background-color: #fff; height: 533px; padding-top: 128px;}
+#sub-top:after{ content: ''; width: 100%; height: 400px; background-color: #F8F5F1; position: absolute; top: 0; left: 0;}
+#sub-top .img-wrap{ width: 792px; height: 100%; position: absolute; left: 20px; z-index: 10;} 
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    #sub-top{ height: auto;}
+    #sub-top:after{ height: 73.60vw; }
+    #sub-top .img-wrap{ width: 100%; height: 78.67vw; position: relative; left: unset;}
+}
+
+
+#section01{ padding: 40px 0 80px;}
+#section01 .tit{ width: 792px; position: relative; }
+#section01 .tit h3{padding-bottom: 110px;}
+#section01 .tit .a-wrap{ position: absolute; right: 0; top: 14px; }
+#section01 .tit .a-wrap a{ display: inline-block; padding-left: 20px;}
+#section01 .tit .a-wrap a.active{ color: #AA806E; opacity: 1; font-weight: 800; text-decoration: underline; }
+#section01 .tit h4{ padding-bottom: 20px;}
+#section01 .tit p{ line-height: 22.4px;}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    #section01{ padding: 40px 0 80px;}
+    #section01 .tit{ width: 100%; position: relative; }
+    #section01 .tit h3{padding-bottom: 40px;}
+    #section01 .tit .a-wrap{ position: relative; right: 0; top: unset; text-align: right; padding-bottom: 60px; }
+}
+
+/* charge */
+#section01.charge .charge-tit{ width: 100%; padding-bottom: 17px; }
+#section01.charge .content{ padding-bottom: 40px; line-height: 22.4px;}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    #section01.charge .content-wrap{ text-align: left; padding: 0;}
+}
+
+/* comm */
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    #section01.comm iframe{ height: 500px;}
+}

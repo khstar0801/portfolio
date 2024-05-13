@@ -1,0 +1,49 @@
+/* header */
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    header{ background-color: #fff; border-bottom: unset;}
+    header .header-top .logo a img.logo-normal{ opacity: 0;}
+    header .header-top .logo a img.logo-scroll{ opacity: 1;}
+    header #panelbtn span{ background-color: #67533A;} 
+}
+
+
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    #section01{ margin-top: 60px; } 
+}
+
+
+#section02{ padding: 80px 0 110px; overflow: hidden; text-align: center;}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    #section02{ width: 100%; padding: 60px 15px 30px;}
+}
+
+#section03{ position: relative; padding: 120px 0 180px;}
+#section03 #map{ width: 100%; height: 600px; background-color: aliceblue; }
+#section03 .text-wrap{ overflow: hidden; padding-top: 65px; align-items: flex-start;}
+#section03 .text-wrap .left{ width: 30%;}
+#section03 .text-wrap .right{ width: 70%;}
+#section03 .text-wrap .right > div{ align-items: flex-start; }
+#section03 .text-wrap .right .top{ padding-bottom: 50px;}
+#section03 .text-wrap .right h4{ width: 20%;}
+#section03 .text-wrap .right p{ width: 80%; padding-top: 10px;}
+/* =================== 1440px =================== */
+@media (max-width: 1440px) {
+    #section03 #map{ width: 100%; height: 41.67vw;}
+}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    #section03{ padding: 60px 0 120px; }
+    #section03 .wrap1400{ padding: 0;}
+    #section03 #map{ width: 100%; height: 100vw;}
+    #section03 .flex-wrap{ flex-direction: column; }
+    #section03 .text-wrap{ padding-top: 45px; align-items: center; text-align: center;}
+    #section03 .text-wrap .left{ width: 100%; padding-bottom: 40px;}
+    #section03 .text-wrap .right{ width: 100%;}
+    #section03 .text-wrap .right > div{ align-items: center; }
+    #section03 .text-wrap .right .top{ padding-bottom: 35px;}
+    #section03 .text-wrap .right h4{ width: 100%;}
+    #section03 .text-wrap .right p{ width: 100%; padding-top: 10px;}
+}

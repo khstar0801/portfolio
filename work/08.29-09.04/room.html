@@ -1,0 +1,166 @@
+<?php include "./_header.html"; ?>
+<?php
+$menutree_idx = $_GET['menutree_idx'];
+$file_path = $img_path.'/room/'.$menutree_idx.'/';
+$file_count = file_count($file_path);
+$roomInfo_menu = $pension->roomInfo_menu($menutree_idx);
+
+$getDongName = $pension->getDongName($roomInfo_menu['dong_idx']);
+
+$adult_excess = ($roomInfo_menu['adult_excess']) ? number_format($roomInfo_menu['adult_excess']) : '없음';
+$child_excess = ($roomInfo_menu['child_excess']) ? number_format($roomInfo_menu['child_excess']) : '없음';
+$baby_excess = ($roomInfo_menu['baby_excess']) ? number_format($roomInfo_menu['baby_excess']) : '없음';
+$limit_man = str_replace('명', '', $roomInfo_menu['limit_man']);
+$max_man = str_replace('명', '', $roomInfo_menu['max_man']);
+
+$booking_id = ($roomInfo_menu['room_ddnayo_idx']) ? $roomInfo_menu['room_ddnayo_idx'] : $InfoPension['ddnayo_id'];
+
+$gubun = ($_GET['gubun']) ? $_GET['gubun']-1 : 0;
+
+$replace_str = preg_match('/.+\=(.*)/', $reser_url, $replace_data);
+$idx_grp = preg_split('/\_/', $replace_data[1]);
+?>
+
+
+<link rel="stylesheet" href="pages/css/room.css">
+
+
+<section id="section01">
+    <div class="full-swiper swiper-container">
+        <div class="swiper-wrapper">
+            <?php for($i=1; $i<=($file_count); $i++) { ?>
+            <div class="swiper-slide">
+                <div class="bgi" style="background-image: url(http://img.einet.kr/<?=$pension_code?>/room/<?= $menutree_idx ?>/<?=sprintf("%02d",$i)?>.jpg);"></div>
+            </div>
+            <?php }?>
+        </div>
+        <div class="swiper-button-next full-next full-btn white-btn"><i class="fa-light fa-chevron-right cf"></i></div>
+        <div class="swiper-button-prev full-prev full-btn white-btn"><i class="fa-light fa-chevron-left cf"></i></div>
+        <div class="swiper-pagination full-pag pro-white"></div>
+    </div>
+</section>
+
+<div id="room-tab">
+    <div class="wrap1400 flex-wrap">
+        <p class="cf f22 mf18 bold">Check-in 15:00 <span class="none-mo">& </span><br class="none-pc">Check-out 11:00</p>
+        <a href="reservation.html" class="book-btn cf upp f22 mf18 bold">Book now<i class="fas fa-caret-right fr cf"></i></a>
+    </div>
+</div>
+
+<section id="section02">
+    <div class="wrap1400">
+        <div class="top">
+            <h3 class="f36 mf28 upp bold"><?=$roomInfo_menu['room_name']?></h3>
+            <p class="f14 reg">[빌더 내 객실 상세 설명 부분을 노출합니다.] Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam </p>
+        </div>
+        <div class="flex-wrap">
+            <div class="left flex-wrap">
+                <div class="left col-2 m-col-1">
+                    <h4 class="f22 mf18 upp bold">Room Info & Amenity</h4>
+                    <ul>
+                        <li>
+                            <span class="f16 bold">기준인원</span>
+                            <p class="f14 reg">기준 <?= $limit_man; ?>인 / 최대 <?=$max_man; ?>인</p>
+                        </li>
+                        <li>
+                            <span class="f16 bold">넓이</span>
+                            <p class="f14 reg"><?= $roomInfo_menu['pyeong']; ?>평형 (약 <?=$roomInfo_menu['pyeong_m2'];?> m²)</p>
+                        </li>
+                        <li>
+                            <span class="f16 bold">객실유형</span>
+                            <p class="f14 reg"><?= $roomInfo_menu['room_class']; ?></p>
+                        </li>
+                        <li>
+                            <span class="f16 bold">객실타입</span>
+                            <p class="f14 reg"><?= $roomInfo_menu['room_type']; ?></p>
+                        </li>
+                        <li>
+                            <span class="f16 bold">구비시설</span>
+                            <p class="f14 reg"><?= $roomInfo_menu['facilities']; ?></p>
+                        </li>
+                        <li>
+                            <span class="f16 bold">특이사항</span>
+                            <p class="f14 reg"><?= $roomInfo_menu['room_remark']; ?></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right col-2 m-col-1">
+                    <h4 class="f22 mf18 upp bold">Fee Info</h4>
+                    <ul>
+                        <li>
+                            <span class="f16 bold">기간 안내</span>
+                            <p class="f14 reg">주중: 일요일 - 목요일 (금요일 요금 별도 표시)<br>
+                                주말: 토요일, 공휴일 전날</p>
+                        </li>
+                        <li>
+                            <span class="f16 bold">인원초과요금</span>
+                            <p class="f14 reg">1인 20,000원 (48개월 미만 무료)<br>
+                                침구세트 추가 20,000원<br><br>
+                                
+                                [빌더 내 기준인원 부가설명을 입력합니다.]</p>
+                        </li>
+                    </ul>
+                    <a href="special.html" class="special-btn upp f22 mf18 bold">Special Services <i class="fas fa-caret-right"></i></a>
+                </div>
+            </div>
+            <div class="bgi" style="background-image: url(pages/img/main/sample.jpg);"></div>
+        </div>
+    </div>
+</section>
+
+<section id="section03">
+    <a href="#calendar-open" class="cal-open">
+        <div class="wrap1400 flex-wrap">
+            <p class="upp bold f22 mf18">calendar</p>
+            <i class="fas fa-caret-down"></i>
+        </div>
+    </a>
+    <div class="calendar">
+        <div class="wrap1400">
+            <iframe src="/include/iframe/ddnayo_room_price.php?biz_code=<?=$biz_code ?>&booking_id=<?=$InfoPension['ddnayo_id'] ?>&room_no=<?=$roomInfo_menu['ddnayo_no'] ?>&room_name=<?=$roomInfo_menu['room_name'] ?>&limit_man=<?=$limit_man ?>&max_man=<?=$max_man ?>" width="100%" height="370" frameborder="0" marginwidth="0" marginheight="0" style="-ms-overflow-x: hidden; -ms-overflow-y: hidden;" scrolling="no" allowtransparency="true" topmargin="0"></iframe>
+        </div>
+    </div>
+</section>
+<script>
+    $(function(){
+        $('.calendar').slideUp(300);
+        $('.cal-open').click(function(){
+            $(this).toggleClass('active');
+            $('.calendar').slideToggle(300);
+        });
+    });
+</script>
+
+<section id="section04" class="subpag-slide-section">
+    <div class="wrap1400">
+        <div class="top flex-wrap">
+            <h3 class="upp f36 mf28 bold">Room Tour</h3>
+            <a href="" class="upp f22 mf18 bold">View All<i class="fas fa-caret-right"></i></a>
+        </div>
+        <div class="swiper-wrap">
+            <div class="subpag-swiper swiper-container">
+                <div class="swiper-wrapper">
+                    <?php foreach($getRooms as $k => $v) {
+                        $int = sprintf("%02d",$k + 1);
+                    ?>
+                    <a class="swiper-slide" href="/room.html?menutree_idx=<?=$v['menutree_idx']?>&gubun=<?=$k+1?>">
+                        <div class="bgi" style="background-image: url(pages/img/main/video01.jpg);"></div>
+                        <h3 class="upp f22 bold "><?=$v['room_name']?></h3>
+                        <p class="f14 reg none-mo"><?=$v['pyeong']?>평 (<?=$v['pyeong_m2']?> ㎡) 기준 <?=$v['limit_man']?> / 최대 <?=$v['max_man']?>명<br>
+                            <?=$v['room_class']?></p>
+                        <p class="f22 bold none-mo">Enter<i class="fas fa-caret-right"></i></p>
+                    </a>
+                    <?php }?>
+                </div>
+                <div class="swiper-pagination subpag-pag pro-red"></div>
+            </div>
+            <div class="swiper-button-next subpag-next subpag-btn red-btn"><i class="fas fa-caret-right fr"></i></div>
+            <div class="swiper-button-prev subpag-prev subpag-btn red-btn"><i class="fas fa-caret-left fr"></i></div>
+        </div>
+        
+    </div>
+</section>
+
+
+<?php include "./_footer.html"; ?>

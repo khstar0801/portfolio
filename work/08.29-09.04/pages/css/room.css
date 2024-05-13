@@ -1,0 +1,73 @@
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    #section01{ background-color: #EB0016;}
+}
+
+
+
+#room-tab{ background-color: #EB0016; height: 88px;}
+#room-tab .book-btn{ width: 240px; height: 48px; line-height: 46px; padding: 0 20px; border: 1px solid #fff; transition: .3s;}
+#room-tab .book-btn i{ line-height: 46px; font-size: 32px;}
+#room-tab .book-btn:hover{ background-color: #fff; color: #EB0016;}
+#room-tab .book-btn:hover i{ color: #EB0016;}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    #room-tab{ height: auto; padding: 40px 0;}
+    #room-tab .book-btn{ width: 100%; height: 36px; line-height: 34px; padding: 0 10px; margin-top: 25px; }
+    #room-tab .book-btn i{ line-height: 34px; font-size: 26px;}
+}
+
+
+#section02{ padding: 60px 0 80px;}
+#section02 .top{ width: 770px; padding-bottom: 60px;}
+#section02 .top h3{ padding-bottom: 60px; }
+#section02 .wrap1400 > .flex-wrap{ align-items: flex-start;}
+#section02 .wrap1400 > .flex-wrap > .left{ width: 770px; align-items: flex-start;}
+#section02 .wrap1400 > .flex-wrap > .left h4{ padding-bottom: 40px;}
+#section02 .wrap1400 > .flex-wrap > .left p{ padding: 10px 0 40px;}
+#section02 .wrap1400 > .flex-wrap > .left a i{ font-size: 32px; padding-left: 10px; position: relative; top: 4px;}
+#section02 .flex-wrap .bgi{ width: 456px; height: 695px; position: relative; top: -100px;}
+#section02 .wrap1400 > .flex-wrap > .left > .right ul{ padding-bottom: 20px; }
+#section02 .wrap1400 > .flex-wrap > .left > .left{ padding-right: 60px;}
+/* =================== 1280px =================== */
+@media (max-width: 1280px) {
+    #section02 .flex-wrap .bgi{ width: calc(100% - 770px); height: 54.72vw; }
+}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    #section02{ padding: 40px 0 60px;}
+    #section02 .top{ width: 100%; padding-bottom: 40px;}
+    #section02 .top h3{ padding-bottom: 40px; }
+    #section02 .wrap1400 > .flex-wrap{ align-items: flex-start;}
+    #section02 .wrap1400 > .flex-wrap > .left{ width: 100%; align-items: flex-start; order: 1;}
+    #section02 .wrap1400 > .flex-wrap > .right{ order: 2;}
+    #section02 .wrap1400 > .flex-wrap > .left p{ padding: 10px 0 20px;}
+    #section02 .wrap1400 > .flex-wrap > .left a i{ font-size: 26px; top: 3px;}
+    #section02 .flex-wrap .bgi{ width: 100%; height: 92.00vw; order: 0; margin-bottom: 40px; top: 0;}
+    #section02 .wrap1400 > .flex-wrap > .left > .right ul{ padding-bottom: 40px; }
+    #section02 .wrap1400 > .flex-wrap > .left > .left{ padding-right: 0; padding-bottom: 40px;}
+}
+
+
+#section03{ border-top: 1px solid #EB0016; border-bottom: 1px solid #EB0016; }
+#section03 a{ display: block; width: 100%; height: 48px;}
+#section03 a i{ font-size: 32px;}
+#section03 a.active i{ transform: rotate(180deg);}
+#section03 .calendar{ border-top: 1px solid #EB0016;}
+
+
+
+
+#section04{ overflow: hidden;}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    .subpag-slide-section .swiper-wrap h3{ font-size: 14px; font-weight: 400;}
+}
+
+
+
+
+
+
+
+

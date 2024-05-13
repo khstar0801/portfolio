@@ -1,0 +1,29 @@
+/* header */
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    header{ background-color: #fff; border-bottom: unset;}
+    header .header-top .logo a img.logo-normal{ opacity: 0;}
+    header .header-top .logo a img.logo-scroll{ opacity: 1;}
+    header #panelbtn span{ background-color: #67533A;} 
+}
+
+
+
+#section01{ padding-bottom: 180px; text-align: center;}
+#section01 .text-wrap{ padding-top: 85px;}
+#section01 #tit{ padding-bottom: 40px;}
+#section01 #tit h3{ padding-bottom: 0;}
+#section01 .con{ padding-bottom: 140px;}
+#section01 .a-wrap{ width: 100%; text-align: center;}
+#section01 .a-wrap a{ width: 692px; display: block; height: 40px; line-height: 38px; border: 1px solid #67533A; text-align: center; transition: .5s; left: 0; right: 0; margin: 0 auto;}
+#section01 .a-wrap a:first-child{ margin-bottom: 20px;}
+#section01 .a-wrap a:hover{ background-color: #67533A; color: #fff;}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    #section01{ margin-top: 60px; padding-bottom: 60px;} 
+    #section01 .text-wrap{ padding-top: 60px;}
+    #section01 .con{ padding-bottom: 20px;}
+    #section01 .a-wrap{ width: 100%; text-align: center;}
+    #section01 .a-wrap a{ width: 100%; display: block; height: 30px; line-height: 28px;}
+}
+

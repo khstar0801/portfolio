@@ -1,0 +1,92 @@
+<?php include "./_header.html"; ?>
+<?
+$file_path = $img_path.'/landscape/slides'.$idx;
+$file_count = file_count($file_path);
+?>
+
+
+
+        <link rel="stylesheet" href="css/about.css">
+
+        <section id="section01">
+            <div class="full-swiper swiper-container">
+                <div class="swiper-wrapper">
+                    <?php for($i=0; $i<$file_count; $i++) { ?>
+                    <div class="swiper-slide bgi" style="background-image: url(http://img.einet.kr/<?=$pension_code?>/landscape/slides/<?=sprintf("%02d",$i+1)?>.jpg)"></div>
+                    <?php } ?>
+                </div>
+                <div class="swiper-pagination full-pag"></div>
+                <div class="swiper-button-next full-next full-btn"><i class="fa-light fa-angle-right cf f28"></i></div>
+                <div class="swiper-button-prev full-prev full-btn"><i class="fa-light fa-angle-left cf f28"></i></div>
+                <div class="full-slogan">
+                    <h3 class="en f34 mf22 book cf t-shadow">Penthouse <span class="en f34 mf25 ita demi cf">Landscape.</span></h3>
+                    <h4 class="f15 mf14 re cf t-shadow">펜트하우스 전경</h4>
+                </div>
+            </div>
+        </section>
+
+        <section id="section02">
+            <div class="wrap1400">
+                <div class="tit">
+                    <h3 class="en f50 mf22 book c2">Welcome to <span class="en f50 mf25 ita demi c2">“Pool Villa Penthouse”</span></h3>
+                    <h4 class="f16 mf14 re c2">“당신이 꿈꾸는 최고의 힐링 공간을 제공합니다.”</h4>
+                    <p class="f14 mf12 re c9">숲 속 자연에서 나오는 피톤치드와 내 집 같은 편안함을 느낄 수 있는<br>
+                        <span class="color1">펜트하우스</span>로 오늘 밤 당신을 초대해봅니다.</p>
+                </div>
+                <div class="top flex-wrap">
+                    <div class="left col-2 m-col-1">
+                        <div class="bgi img01" style="background-image: url(img/about/02-01.jpg);"></div>
+                    </div>
+                    <div class="right col-2 m-col-1">
+                        <div class="bgi img02" style="background-image: url(img/about/02-02.jpg);"></div>
+                        <div class="bgi img03" style="background-image: url(img/about/02-03.jpg);"></div>
+                        <div class="img-wrap">
+                            <img src="img/common/logo_c.png" alt="">
+                        </div>
+                        <div class="bgi img04" style="background-image: url(img/about/02-04.jpg);"></div>
+                    </div>
+                </div>
+                <div class="bgi" style="background-image: url(img/about/02-05.jpg);"></div>
+            </div>
+        </section>
+
+        <img src="img/about/03.jpg" alt="" class="full-img">
+
+        <section id="section03">
+            <div class="wrap1400">
+                <div class="tit">
+                    <h3 class="en f50 mf25 book c2">Map & <span class="en f50 mf25 ita demi c2">Location</span></h3>
+                    <p class="en book f12 mf10 ca">Where romantic storytelling begins with you on a new trip,<br>
+                        You can feel the beauty of all seasons and you will be happy from the moment you hit your feet.</p>
+                </div>
+                <div id="map">
+                    <iframe src="http://pre.einet.kr/inner/map/rspn.html?biz_code=<?=$biz_code?>&lat=<?=$InfoPension['lat']?>&lng=<?=$InfoPension['lng']?>&biz_name=<?=$biz_name?>" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div class="addr">
+                    <p class="f14 mf12 re c2"><i class="fa-light fa-location-dot color1 f20 mf15"></i> 강원도 평창군 진부면 당아다리로 264-56</p>
+                    <p class="f14 mf12 re c2"><i class="fa-light fa-phone color1 f20 mf15"></i> 033-336-3488 / 010-5375-9207</p>
+                </div>
+                <div class="location">
+                    <div>
+                        <i class="fa-light fa-car color1 f20 mf15"></i>
+                        <p class="f14 mf12 re c2"><span class="f14 med c2">승용차로 오시는 길</span><br>
+                            네비게이션 주소: 강원 평창군 진부면 두일리 17(진부면 방아다리로 264-56)​<br><br>
+                            
+                            - 서울출발<br>
+                            경부 고속도로 → 신갈 IC/중부 고속도로 호법 IC → 영동 고속도로 진입 → 여주, 원주를 지나<br>
+                            → 진부 IC → 방아다리 약수터 쪽으로 진입​ ​ </p>
+                    </div>
+                    <div>
+                        <i class="fa-light fa-bus color1 f20 mf15"></i>
+                        <p class="f14 mf12 re c2"><span class="f14 med c2">대중교통으로 오시는 길</span><br>
+                            - 서울출발<br>
+                            동서울터미널에서 출발하시면 2시간 10분 소요되며, 진부터미널에서 도보로 5분 이내에<br>
+                            축협 하나로 마트가 있으니 그 곳에서 장을 보시고 택시를 이용해주세요.​​ </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <?php include "./_footer.html"; ?>
+

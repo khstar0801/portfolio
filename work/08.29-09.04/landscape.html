@@ -1,0 +1,123 @@
+<?php include "./_header.html"; ?>
+<?
+$file_path = $img_path.'/landscape/slides'.$idx;
+$file_count = file_count($file_path);
+?>
+
+
+<link rel="stylesheet" href="pages/css/landscape.css">
+
+<div id="sub-top">
+    <div class="img" style="background-image: url(pages/img/subtop/landscape.jpg);"></div>
+    <!-- <h3 class="cf f42 mf28 bold upp">landscape</h3> -->
+</div>
+
+<section id="section01">
+    <div class="wrap1400 flex-wrap">
+        <div class="left col-2 m-col-1">
+            <h3 class="f36 mf28 bold upp">Instant Hotel</h3>
+            <p class="reg f14">[빌더의 펜션소개문구를 불러옵니다.] Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et 
+                dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+        </div>
+        <div class="right col-2 m-col-1">
+            <h3 class="f36 mf28 bold upp">information</h3>
+            <div class="flex-wrap">
+                <div class="left col-2 m-col-1">
+                    <h4 class="f22 bold upp">Building 1</h4>
+                    <table>
+                        <tr>
+                            <th class="f22 bold upp">2F</th>
+                            <td>
+                                <div>
+                                    <p class="f14 bold">Late check-out swimming club</p>
+                                    <p class="f14 reg">레이트 체크아웃 스위밍 클럽 (실외수영장)</p>
+                                </div>
+                                <div>
+                                    <p class="f14 bold">Bottle Shop</p>
+                                    <p class="f14 reg">보틀샵</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="f22 bold upp">1F</th>
+                            <td>
+                                <div>
+                                    <p class="f14 bold">Nice to meat you x Four run burger</p>
+                                    <p class="f14 reg">나이스 투 미트 유 x 포 런 버거 레스토랑</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="right col-2 m-col-1">
+                    <h4 class="f22 bold upp">Building 2</h4>
+                    <table>
+                        <tr>
+                            <th class="f22 bold upp">2F</th>
+                            <td>
+                                <div>
+                                    <p class="f14 bold">Queens BLVD</p>
+                                    <p class="f14 reg">퀸즈 블러바드 (멕시칸 요리 전문점)</p>
+                                </div>
+                                <div>
+                                    <p class="f14 bold">N2RAGE Barbershop</p>
+                                    <p class="f14 reg">엔투라지 바버샵</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="f22 bold upp">1F</th>
+                            <td>
+                                <div>
+                                    <p class="f14 bold">No parking bakery cafe</p>
+                                    <p class="f14 reg">노 파킹 베이커리 카페</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="section02">
+    <div class="full-swiper swiper-container">
+        <div class="swiper-wrapper">
+            <?php for($i=0; $i<$file_count; $i++) { ?>
+            <div class="swiper-slide">
+                <div class="bgi" style="background-image: url(http://img.einet.kr/<?=$pension_code?>/landscape/slides/<?=sprintf("%02d",$i+1)?>.jpg);"></div>
+            </div>
+            <?php } ?>
+        </div>
+        <div class="swiper-button-next full-next full-btn white-btn"><i class="fa-light fa-chevron-right cf"></i></div>
+        <div class="swiper-button-prev full-prev full-btn white-btn"><i class="fa-light fa-chevron-left cf"></i></div>
+        <div class="swiper-pagination full-pag pro-red"></div>
+    </div>
+</section>
+
+<section id="section03">
+    <div class="wrap1400">
+        <h3 class="f36 mf28 bold upp">Location</h3>
+        <div id="map">
+            <iframe
+                src="http://pre.einet.kr/inner/map/rspn.html?biz_code=<?=$biz_code?>&lat=<?=$InfoPension['lat']?>&lng=<?=$InfoPension['lng']?>&biz_name=<?=$biz_name?>"
+                width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+        </div>
+        <div class="text-wrap flex-wrap">
+            <div class="left col-2 m-col-1">
+                <h4 class="f22 bold upp">adress</h4>
+                <p class="f14 reg"><?=$road_addr?><br>
+                    ※ 동산해변 도보 1분거리</p>
+            </div>
+            <div class="right col-2 m-col-1">
+                <h4 class="f22 bold upp">Contact us</h4>
+                <a class="f14 reg point" href="tel:010-9828-0640">010-9828-0640</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
+<?php include "./_footer.html"; ?> 

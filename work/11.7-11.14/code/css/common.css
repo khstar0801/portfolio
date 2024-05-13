@@ -1,0 +1,328 @@
+/* ==========================================================================
+    #RESET
+   ========================================================================== */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'SUIT', sans-serif;
+    -webkit-text-size-adjust: none;
+    
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul, li {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{border: none;} 
+address{font-style: normal;}
+fieldset{border: none;} 
+legend{position: absolute;left: -999em;} 
+input[type=button],
+input[type=submit],
+input[type=reset],
+input[type=image],
+button, a, select{cursor: pointer; outline: none;} 
+input{ outline: none;}
+
+label.away{position: absolute;left: -999em;} 
+/* ==========================================================================
+    #FONT
+   ========================================================================== */
+/* 
+    font-family: 'SUIT', sans-serif;
+*/
+.f12{ font-size: 12px;}
+.f14{ font-size: 14px;}
+.f16{ font-size: 16px;}
+.f18{ font-size: 18px;}
+.f20{ font-size: 20px;}
+.f24{ font-size: 24px;}
+.f32{ font-size: 32px;}
+.f48{ font-size: 48px;}
+
+.lig{ font-weight: 300;}
+.re{ font-weight: 400;}
+.med{ font-weight: 500;}
+.sb{ font-weight: 600;}
+.bold{ font-weight: 700;}
+.hv{ font-weight: 900;}
+
+.upp{
+    text-transform: uppercase;
+}
+.cap{
+    text-transform: capitalize;
+}
+.t-shadow{
+    text-shadow: 2px 0px 4px rgba(0,0,0,.2);
+}
+
+
+/* ==========================================================================
+    #COLOR
+========================================================================== */
+
+.color1{color: #AA806E;}
+.color2{color:#D2B6B1}
+.color3{ color: #F8F5F1;}
+.cf{color: #fff; }
+.c2{color: #222; }
+.c0{color: #000; }
+
+
+.op1{ opacity: .1;}
+.op2{ opacity: .2;}
+.op4{ opacity: .4;}
+.op6{ opacity: .6;}
+.op8{ opacity: .8;}
+
+::selection{ background-color: #AA806E; color: #fff;}
+
+
+/* ==========================================================================
+    #COL
+    ========================================================================== */
+.col-1{ width: 100%;}
+.col-2{ width: 50%;}
+.col-3{ width: 33.33%;}
+.col-4{ width: 25%;}
+.col-5{ width: 20%;}
+.col-7{ width: calc(100%/7);}
+
+
+/* ==========================================================================
+    #BTN
+    ========================================================================== */
+#btn01{ display: inline-block; width: 180px; height: 40px; line-height: 38px; text-align: center; font-size: 14px; transition: .3s; border: 1px solid #AA806E; color: #AA806E; margin: 0 12px;}
+#btn01.color{  border: 1px solid #AA806E; background-color: #AA806E; color: #fff;}
+#btn01:hover{ background-color: #AA806E; color: #fff;}
+#btn01.color:hover{ background-color: transparent; color: #AA806E; }
+
+
+/* ==========================================================================
+    #SCROLLBAR
+    ========================================================================== */
+body::-webkit-scrollbar { width: 7px; }
+body::-webkit-scrollbar-thumb{ height: 17%; background-color: #AA806E; border-radius: 2px; }
+body::-webkit-scrollbar-track{ background-color: #fff; }
+
+
+/* ==========================================================================
+    #FLOAT
+    ========================================================================== */
+.fl{ float: left;}
+.fr{float: right;}
+.clb{ clear: both; font-size: 0;}
+
+
+
+
+body{  font-family: 'SUIT', sans-serif; font-weight: 400; font-size: 16px; overflow-x: hidden; }
+.wrap1200{ width: 100%; max-width: 1240px; padding: 0 20px; height: 100%; position: relative; margin: 0 auto; box-sizing: border-box;}
+.bgi{ background-size: cover; background-position: center; background-repeat: no-repeat; }
+.v-middle{ width: 100%; height: 100%; display: table-cell; vertical-align: middle;}
+.img{ width: 100%; height: 100%; background-size: cover; background-position: center; background-repeat: no-repeat;  position: absolute; top: 0; left: 0; transition: .5s;}
+.none-mo{ display: inline-block!important;}
+.none-pc{ display: none!important;}
+.flex-wrap{ display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;}
+
+
+/* swiper */
+.swiper-button-prev, .swiper-button-next {outline: none !important; background-image: unset!important; width: 71px; height: 71px; border-radius: 50%; line-height: 71px; transition: .3s;}
+.swiper-button-prev{ left: 40px;}
+.swiper-button-next{ right: 40px;}
+.swiper-button-next:hover, .swiper-container-rtl .swiper-button-prev:hover,
+.swiper-button-prev:hover, .swiper-container-rtl .swiper-button-next:hover{  transition: .3s; }
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled{ opacity: .4;}
+.swiper-button-next:after, .swiper-button-prev:after{ position: absolute; top: -999em; }
+
+.swiper-pagination-bullet{ position: relative; width: 12px; height: 12px; background: transparent; border: 1px solid #fff; opacity: 1; margin: 6px!important; transition: .3s; box-shadow: 2px 0 4px rgba(0,0,0,.2); }
+.swiper-pagination-bullet-active{ background: rgba(255,255,255,1); opacity: 1; }
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom, .swiper-pagination-fraction{ bottom: 30px;}
+
+/* ==========================================================================
+    #FULL-SWIPER
+========================================================================== */
+.full-swiper{ height: 100%; position: relative; overflow: hidden;}
+.full-swiper .swiper-slide{ background-size: cover; background-repeat: no-repeat; background-position: center;}
+.full-btn{position: absolute; top: calc(50% - 25px); text-align: center; font-size: 18px;  }
+.full-swiper .control-wrap{ width: 384px; position: absolute; bottom: 40px; left: 0; right: 0; margin: 0 auto;}
+.full-swiper .autoplay-progress { position: relative; z-index: 10; width: 100%; height: 2px; background-color: rgba(255, 255, 255, 0.4);  margin-bottom: 10px; }
+.full-swiper .autoplay-progress svg {
+	--progress: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	width: 100%;
+	stroke-width: 1px;
+	stroke: #fff;
+	fill: none;
+	stroke-dashoffset: calc(100 * (1 - var(--progress)));
+	stroke-dasharray: 100;
+}
+.full-swiper .full-pag{ position: relative; left: 0; right: 0; margin: 0 auto; bottom: unset;}
+
+
+
+/* ==========================================================================
+    #ALL-SWIPER
+========================================================================== */
+.all-swiper{ width: 100%; overflow: hidden; position: relative;}
+.all-btn{position: relative; text-align: center; width: 71px; height: 8px; background-size: cover; background-position: center; background-repeat: no-repeat; border-radius: unset!important; }
+.all-btn-wrap{ position: absolute; bottom: 100px; width: 180px; height: 30px; display: flex; justify-content: space-between; align-items: center; left: 0; right: 0; margin: 0 auto;}
+.all-next, .all-prev{ left: unset; right: unset;}
+
+.all-next{ background-image: url(../img/common/next.png)!important;}
+.all-prev{ background-image: url(../img/common/prev.png)!important;}
+.all-next:hover{ background-image: url(../img/common/next-h.png)!important;}
+.all-prev:hover{ background-image: url(../img/common/prev-h.png)!important;}
+
+/* ==========================================================================
+    #ALL-FULL-SWIPER
+========================================================================== */
+.all-full-swiper{ height: 100%; position: relative; overflow: hidden;}
+.all-full-swiper .swiper-slide{ background-size: cover; background-repeat: no-repeat; background-position: center;}
+.all-full-btn{position: absolute; top: calc(50% - 25px); text-align: center;  }
+.all-full-text{ opacity: 1; transition: .3s; pointer-events: none;}
+.all-full-text.hide{ opacity: 0;}
+
+/* ==========================================================================
+    #SUB-TOP
+    ========================================================================== */
+#sub-top{ overflow: hidden; width: 100%; position: relative; background-color: #F8F5F1; width: 100%; padding-top: 128px; height: 848px; }
+
+/* ==========================================================================
+    #COMM-TAB
+    ========================================================================== */
+#comm-tab{ position: relative; width: 100%; display: flex; justify-content: center; margin-bottom: 70px; }
+#comm-tab a{ width: 50%; height: 75px; text-align: center; line-height: 75px; display: inline-block; font-size: 16px; transition: .3s; border-bottom: 1px solid #ddd; color: #999; }
+#comm-tab a:hover{ border-bottom: 1px solid #133e6e; color: #133e6e;} 
+#comm-tab a.active{ border-bottom: 1px solid #133e6e; color: #133e6e;}
+
+
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    /* ==========================================================================
+    **MOBILE**#FONT
+   ========================================================================== */
+    .mf12{ font-size: 12px;}
+    .mf16{ font-size: 16px;}
+    .mf20{ font-size: 20px;}
+    .mf32{ font-size: 32px;}
+
+
+    /* ==========================================================================
+    **MOBILE**#COL
+   ========================================================================== */
+    .m-col-1{ width: 100%;}
+    .m-col-2{ width: 50%;}
+    .m-col-3{ width: calc(100%/3);}
+
+
+
+    /* ==========================================================================
+    **MOBILE**#BTN
+    ========================================================================== */
+    #btn01{ height: 40px; line-height: 38px; width: 139px; font-size: 14px;}
+
+
+    body{ font-family: 'SUIT', sans-serif; overflow-x: hidden; position: relative;  }
+    body > section{ width: 100%; min-width: unset; height: auto; position: relative; overflow: hidden; box-sizing: border-box;}
+    .none-mo{ display: none!important;}
+    .none-pc{ display: inline-block!important;}
+    .wrap1200{ width: 100%; padding: 0 40px; position: relative; margin: 0 auto; box-sizing: border-box; }
+
+
+
+    /* swiper */
+    .swiper-button-prev, .swiper-button-next { width: 23px; height: 23px; line-height: 23px; font-size: 12px; }
+    .swiper-button-prev{ left: 20px;}
+    .swiper-button-next{ right: 20px;}
+
+    .swiper-pagination-bullet{width: 8px; height: 8px; margin: 0 4px!important; }
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom, .swiper-pagination-fraction{ bottom: 15px;}
+
+   /* ==========================================================================
+    #FULL-SWIPER
+    ========================================================================== */
+    .full-swiper{ height: 56.27vw; position: relative; overflow: hidden;}
+    .full-swiper .swiper-slide{ background-size: cover; background-repeat: no-repeat; background-position: center;}
+    .full-swiper .full-btn{ top: 50%; font-size: 12px;}
+    .full-swiper .control-wrap{ width: 191px; bottom: 10px; }
+    .full-swiper .autoplay-progress{ margin-bottom: 5px;}
+
+
+    /* ==========================================================================
+    #ALL-SWIPER
+    ========================================================================== */
+    .all-btn{width: 65px; height: 7px; background-size: contain;  }
+    .all-btn-wrap{ position: absolute; bottom: 60px; width: 150px; height: 10px;}
+    .all-swiper .swiper-button-prev, .all-swiper .swiper-button-next{ left: unset; right: unset;}
+
+    /* ==========================================================================
+    #ALL-FULL-SWIPER
+    ========================================================================== */
+    .all-full-swiper{ height: 100%; position: relative; overflow: hidden;}
+    .all-full-swiper .swiper-slide{ background-size: cover; background-repeat: no-repeat; background-position: center;}
+    .all-full-btn{ display: none; }
+    .all-full-text{ display: none;}
+
+
+    /* ==========================================================================
+    #SUB-TOP
+    ========================================================================== */
+    #sub-top{ height: auto; }
+
+
+    /* ==========================================================================
+    #COMM-TAB
+    ========================================================================== */
+    #comm-tab{ position: relative; width: 100%; display: flex; justify-content: center; margin-bottom: 35px; }
+    #comm-tab a{ height: 40px; line-height: 40px; font-size: 14px; }
+
+}

@@ -1,0 +1,565 @@
+<?php include './exe/_default.php'; ?>
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scele=1.0">
+        <script>
+            var pension_code = "<?=$pension_code?>";
+            var biz_no = '<?=$biz_no_ok; ?>';
+            var biz_name = '<?=$biz_name; ?>';
+            var deviceType = '<?=$deviceType; ?>';
+        </script>
+        <title>펜트하우스</title>
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="#" />
+
+        <!-- css -->
+        <link rel="stylesheet" href="css/swiper.min.css" />
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/layout.css">
+
+        <!-- adobe font -->
+        <link rel="stylesheet" href="https://use.typekit.net/jnp2dgn.css">
+
+        <!-- score-dream font -->
+        <link href="https://webfontworld.github.io/SCoreDream/SCoreDream.css" rel="stylesheet">
+
+        <!-- js -->
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/ScrollMagic.min.js"></script>
+        <script src="js/debug.addIndicators.min.js"></script>
+        <script src="js/TweenMax.min.js"></script>
+        <script src="js/animation.gsap.min.js"></script>
+        <script src="https://kit.fontawesome.com/bd8686ee32.js" crpoRsorigin="anonymous"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/layout.js"></script>
+        <script src="js/common.js"></script>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+
+
+        <!--   wow  -->
+        <link rel="stylesheet" href="css/animate.min.css">
+        <script src="js/wow.min.js"></script>
+
+    </head>
+    <body>
+        <div id="blackbg"></div>
+        <div class="panel"><!--패널-->
+            <div class="panel-top flex-wrap">
+                <a href="">
+                    <i class="fa-light fa-calendar-clock cf f20"></i>
+                    <p class="f12 cf re">예약하기</p>
+                </a>
+                <a href="">
+                    <i class="fa-light fa-phone cf f20"></i>
+                    <p class="f12 cf re">전화하기</p>
+                </a>
+                <a href="">
+                    <i class="fa-light fa-location-dot cf f20"></i>
+                    <p class="f12 cf re">오시는길</p>
+                </a>
+            </div>
+            <nav class="mNav">
+                <ul>
+                    <li class="mNav01">
+                        <a href="#landscape" class="topNav en book c2 upp f20">about <i class="fa-light fa-chevron-down c2 f14 fr"></i></a>
+                        <ul class="subNav">
+                            <li><a class="f12 re c2" href="about.html">소개</a></li>
+                            <li><a class="f12 re c2" href="about.html#map">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li class="mNav02">
+                        <a href="#rooms" class="topNav en book c2 upp f20">Rooms <i class="fa-light fa-chevron-down c2 f14 fr"></i></a>
+                        <ul class="subNav">
+                            <li><a class="f12 re c2" href="rooms.html">미리보기</a></li>
+                            <?php foreach($getRooms as $k => $v) {
+                                $int = $k + 1;
+                            ?>
+                            <li><a class="f12 re c2" href="room.html?menutree_idx=<?=$v['menutree_idx']?>&gubun=<?=$k+1?>"><?=$v['room_name']?></a></li>
+                            <?php } ?>
+                        </ul>
+                    </li>
+                    <li class="mNav04">
+                        <a href="#service" class="topNav en book c2 upp f20">Special <i class="fa-light fa-chevron-down c2 f14 fr"></i></a>
+                        <ul class="subNav">
+                            <li><a class="f12 re c2" href="special_all.html">스페셜 미리보기</a></li>
+                            <?php
+                                foreach ($service as $k => $v) {
+                                $int = $k + 1;
+                            ?>
+                            <li><a class="f12 re c2" href="special.html?idx=<?=$v['idx']?>&gubun=<?=$int?>"><?=$v['title']?></a></li>
+                            <?php } ?>
+                        </ul>
+                    </li>
+                    <li class="mNav05">
+                        <a href="#travel" class="topNav en book c2 upp f20">Travel <i class="fa-light fa-chevron-down c2 f14 fr"></i></a>
+                        <ul class="subNav">
+                            <li><a class="f12 re c2" href="travel_all.html">여행지 미리보기</a></li>
+                            <?php
+                                foreach ($travel as $k => $v) {
+                                $int = $k + 1;
+                            ?>
+                            <li><a class="f12 re c2" href="travel.html?idx=<?=$v['idx']?>&gubun=<?=$int?>"><?=$v['title']?></a></li>
+                            <?php } ?>
+                        </ul>
+                    </li>
+                    <li class="mNav06">
+                        <a href="#reservation" class="topNav en book c2 upp f20">Reservation <i class="fa-light fa-chevron-down c2 f14 fr"></i></a>
+                        <ul class="subNav">
+                            <li><a class="f12 re c2" href="reservation.html">실시간예약</a></li>
+                            <li><a class="f12 re c2" href="charge.html">예약가이드</a></li>
+                        </ul>
+                    </li>
+                    <li class="mNav07">
+                        <a href="#community" class="topNav en book c2 upp f20">Community <i class="fa-light fa-chevron-down c2 f14 fr"></i></a>
+                        <ul class="subNav">
+                            <li><a class="f12 re c2" href="comm.html">공지사항</a></li>
+                            <li><a class="f12 re c2" href="faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <header>
+            <h1 class="logo fl">
+                <a href="index.html" class="scroll-none"><img src="img/common/logo.png" alt="" class="logo-img"><img src="img/common/logo_c.png" alt="" class="logo-color"></a>
+            </h1>
+            <nav class="gnb-top none-mo">
+                <a href="about.html" class="mainnav en f15 cf t-shadow upp book">about</a>
+                <a href="rooms.html" class="mainnav en f15 cf t-shadow upp book">rooms</a>
+                <a href="special_all.html" class="mainnav en f15 cf t-shadow upp book">special</a>
+                <a href="travel.html" class="mainnav en f15 cf t-shadow upp book">travel</a>
+                <div class="gnb-btm">
+                    <div class="wrap1400">
+                        <ul>
+                            <li class="flex-wrap">
+                                <img src="img/sample.jpg" alt="">
+                                <ul class="subnav">
+                                    <li><a href="about.html" class="f13 c9 re">소개</a></li>
+                                    <li><a href="about.html#map" class="f13 c9 re">오시는길</a></li>
+                                </ul>
+                            </li>
+                            <li class="flex-wrap">
+                                <img src="img/sample.jpg" alt="">
+                                <ul class="subnav">
+                                    <li><a href="rooms.html" class="f13 c9 re">객실미리보기</a></li>
+                                    <?php foreach($getRooms as $k => $v) {
+                                        $int = $k + 1;
+                                    ?>
+                                    <li><a href="room.html?menutree_idx=<?=$v['menutree_idx']?>&gubun=<?=$k+1?>"  class="f13 c9 re"><?=$v['room_name']?></a></li>
+                                    <?php } ?>
+                                </ul>
+                            </li>
+                            <li class="flex-wrap">
+                                <img src="img/sample.jpg" alt="">
+                                <ul class="subnav">
+                                    <li><a href="special_all.html" class="f13 c9 re">스페셜미리보기</a></li>
+                                    <?php
+                                        foreach ($facilities as $k => $v) {
+                                        $int = $k + 1;
+                                    ?>
+                                    <li><a href="fac.html?idx=<?=$v['idx']?>&gubun=<?=$int?>"  class="f13 c9 re"><?=$v['title']?></a></li>
+                                    <?php } ?>
+                                </ul>
+                            </li>
+                            <li class="flex-wrap">
+                                <img src="img/sample.jpg" alt="">
+                                <ul class="subnav">
+                                    <li><a href="travel_all.html" class="f13 c9 re">여행지미리보기</a></li>
+                                    <?php
+                                        foreach ($travel as $k => $v) {
+                                        $int = $k + 1;
+                                    ?>
+                                    <li><a href="travel.html"  class="f13 c9 re"><?=$v['title']?></a></li>
+                                    <?php } ?>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="head-btn-wrap">
+                <a href="" class="comm-btn none-mo f13 cf t-shadow">COMMUNITY</a>
+                <a href="" class="reser-pag-btn none-mo f13 cf t-shadow">RESERVATION</a>
+                <a href="" class="insta-btn f13 cf t-shadow"><i class="fa-brands fa-instagram none-pc"></i>INSTAGRAM</a>
+                <a href="" class="reser-btn"><i class="fa-light fa-clock f18 cf"></i><p class="f13 cf">예약</p></a>
+            </div>
+            
+            <div class="panelbtn none-pc" id="panelbtn">
+                <a href="#panel">
+                    <span class="line01"></span>
+                    <span class="line02"></span>
+                    <span class="line03"></span>
+                </a>
+            </div>
+        </header>
+
+
+
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/main.js"></script>
+
+        <section id="section01">
+            <div class="full-swiper swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide bgi" style="background-image: url(img/main/01-01.jpg)"></div>
+                    <div class="swiper-slide bgi" style="background-image: url(img/sample.jpg)"></div>
+                </div>
+                <div class="swiper-pagination full-pag"></div>
+                <div class="swiper-button-next full-next full-btn"><i class="fa-light fa-angle-right cf f28"></i></div>
+                <div class="swiper-button-prev full-prev full-btn"><i class="fa-light fa-angle-left cf f28"></i></div>
+                <div class="full-slogan">
+                    <img src="img/common/slogan.png" alt="">
+                    <p class="f15 med cf none-mo">최고의 경치와 최고의 휴식공간 “풀빌라 펜트하우스</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section02">
+            <div class="wrap1400">
+                <div class="top flex-wrap">
+                    <div class="left">
+                        <div class="video-wrap">
+                            <div class="img" style="background-image: url(img/sample.jpg);"></div>
+                            <!-- <iframe id="ei-Sub-Vimeo" class="video ei-pics" src='https://player.vimeo.com/video/777253707?api=1&autoplay=1&loop=1&autopause=0&muted=1&quality=1080p&controls=1'allow=autoplay frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="text-wrap">
+                            <h3 class="en f34 mf20 book c2">In your busy daily life,<br>
+                                take a <span class="en f34 mf20 ita demi c2">break here.</span>
+                            </h3>
+                            <h4 class="re f15 mf12 c8">바쁜 일상 속의 당신, 이곳에서 쉬어가세요.</h4>
+                            <p class="en lig f12 mf10 ca">Where romantic storytelling begins with you on a new trip,<br>
+                                You can feel the beauty of all seasons and you will be happy from<br>
+                                the moment you hit your feet.</p>
+                            <a href="room.html" class="en f14 mf12 book c2" id="btn01">Room View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="btm flex-wrap">
+                    <div class="left">
+                        <div class="text-wrap">
+                            <h3 class="en f34 mf20 book c2">Feel the utmost satisfaction in the<br>
+                                penthouse that<br><br>
+                                <span class="en f34 mf20 ita demi c2">provides the best service.</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="video-wrap">
+                            <div class="img" style="background-image: url(img/main/02-02.jpg);"></div>
+                            <!-- <iframe id="ei-Sub-Vimeo" class="video ei-pics" src='https://player.vimeo.com/video/777253707?api=1&autoplay=1&loop=1&autopause=0&muted=1&quality=1080p&controls=1'allow=autoplay frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img-wrap">
+                <div class="img" style="background-image: url(img/main/02-03.jpg);"></div>
+            </div>
+            <h3 class="en f50 mf20 book c2">The best view and the best resting <br class="none-pc">place <span class="en f50 mf20 ita demi c2">“Pool Villa Penthouse”</span></h3>
+        </section>
+
+        <section id="section03">
+            <div class="img-wrap">
+                <div class="img active" style="background-image: url(img/main/03-01.jpg);"></div>
+                <div class="img" style="background-image: url(img/sample.jpg);"></div>
+                <div class="img" style="background-image: url(img/main/01-01.jpg);"></div>
+            </div>
+            <div class="text-wrap">
+                <p class="en hv f200 cf op2 active">37.5 Brunch cafe</p>
+                <p class="en hv f200 cf op2">Restaurant</p>
+                <p class="en hv f200 cf op2">Garden</p>
+            </div>
+            <div class="a-wrap">
+                <a href="" class="active">
+                    <h3 class="en f50 mf30 demi cf">37.5 Brunch cafe</h3>
+                    <p class="f15 mf14 re cf">37.5 브런치 카페</p>
+                </a>
+                <a href="">
+                    <h3 class="en f50 mf30 demi cf">Restaurant</h3>
+                    <p class="f15 mf14 re cf">펜트하우스 레스토랑 (준비중)</p>
+                </a>
+                <a href="">
+                    <h3 class="en f50 mf30 demi cf">Garden</h3>
+                    <p class="f15 mf14 re cf">정원</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="section04" class="bgi" style="background-image: url(img/main/04-bg.jpg);">
+            <div class="tit">
+                <h3 class="en f50 mf25 book cf">Brunch & <span class="en f50 mf25 ita demi cf">Dining</span></h3>
+                <h4 class="en f14 mf12 book cf">37.5 BRUNCH CAFE</h4>
+                <p class="f15 mf12 lig cf">37.5 브런치 카페 디테일까지 가다듬어 <br class="none-pc">럭셔리한 공간을 제공합니다.</p>
+            </div>
+            <div class="top flex-wrap">
+                <div class="bgi img01" style="background-image: url(img/main/04-01.jpg);"></div>
+                <div class="bgi img02" style="background-image: url(img/main/04-02.jpg);"></div>
+            </div>
+            <div class="btm flex-wrap">
+                <div class="bgi img03" style="background-image: url(img/main/04-03.jpg);"></div>
+                <div class="bgi img04" style="background-image: url(img/main/04-04.jpg);"></div>
+            </div>
+        </section>
+
+        <section id="section05">
+            <div class="wrap1400">
+                <div class="tit">
+                    <h3 class="en f50 mf25 book c2">We provide a <span class="en f50 mf25 ita demi c2">luxurious space</span></h3>
+                    <h4 class="en f14 mf12 book c2">Room’s Preview</h4>
+                    <p class="f15 mf12 lig c2">펜트하우스 객실을 소개합니다</p>
+                </div>
+                <div class="rooms-wrap">
+                    <div class="top">
+                        <div class="tab">
+                            <a href="#all-btn" class="f14 mf12 lig c9 all-btn active">전체보기</a>
+                            <a href="#pool-btn" class="f14 mf12 lig c9 pool-btn">풀빌라객실</a>
+                            <a href="#kids-btn" class="f14 mf12 lig c9 kids-btn">키즈객실</a>
+                        </div>
+                        <div class="btn-wrap">
+                            <div class="swiper-button-next rooms-next rooms-btn"><i class="fa-light fa-angle-right cf f28 mf12"></i></div>
+                            <div class="swiper-button-prev rooms-prev rooms-btn"><i class="fa-light fa-angle-left cf f28 mf12"></i></div>
+                        </div>
+                    </div>
+                    <div class="rooms-swiper swiper-container">
+                        <div class="swiper-wrapper">
+                            <a href="" class="swiper-slide pool-con">
+                                <div class="img-wrap">
+                                    <div class="img" style="background-image: url(img/sample.jpg)"></div>
+                                    <p class="en f13 mf12 book cf">Poolvilla 01</p>
+                                </div>
+                                <h3 class="f16 mf14 med c2">빌라하우스</h3>
+                                <h4 class="f12 lig c9">110평형 독채풀빌라, 유아풀, 제트스파, 수영장</h4>
+                                <p id="btn01" class="en book f14 c2">View More</p>
+                            </a>
+                            <a href="" class="swiper-slide pool-con">
+                                <div class="img-wrap">
+                                    <div class="img" style="background-image: url(img/sample.jpg)"></div>
+                                    <p class="en f13 mf12 book cf">Poolvilla 01</p>
+                                </div>
+                                <h3 class="f16 mf14 med c2">빌라하우스</h3>
+                                <h4 class="f12 lig c9">110평형 독채풀빌라, 유아풀, 제트스파, 수영장</h4>
+                                <p id="btn01" class="en book f14 c2">View More</p>
+                            </a>
+                            <a href="" class="swiper-slide pool-con">
+                                <div class="img-wrap">
+                                    <div class="img" style="background-image: url(img/sample.jpg)"></div>
+                                    <p class="en f13 mf12 book cf">Poolvilla 01</p>
+                                </div>
+                                <h3 class="f16 mf14 med c2">빌라하우스</h3>
+                                <h4 class="f12 lig c9">110평형 독채풀빌라, 유아풀, 제트스파, 수영장</h4>
+                                <p id="btn01" class="en book f14 c2">View More</p>
+                            </a>
+                            <a href="" class="swiper-slide pool-con">
+                                <div class="img-wrap">
+                                    <div class="img" style="background-image: url(img/sample.jpg)"></div>
+                                    <p class="en f13 mf12 book cf">Poolvilla 01</p>
+                                </div>
+                                <h3 class="f16 mf14 med c2">빌라하우스</h3>
+                                <h4 class="f12 lig c9">110평형 독채풀빌라, 유아풀, 제트스파, 수영장</h4>
+                                <p id="btn01" class="en book f14 c2">View More</p>
+                            </a>
+                            <a href="" class="swiper-slide kids-con">
+                                <div class="img-wrap">
+                                    <div class="img" style="background-image: url(img/sample.jpg)"></div>
+                                    <p class="en f13 mf12 book cf">Poolvilla 01</p>
+                                </div>
+                                <h3 class="f16 mf14 med c2">빌라하우스</h3>
+                                <h4 class="f12 lig c9">110평형 독채풀빌라, 유아풀, 제트스파, 수영장</h4>
+                                <p id="btn01" class="en book f14 c2">View More</p>
+                            </a>
+                            <a href="" class="swiper-slide kids-con">
+                                <div class="img-wrap">
+                                    <div class="img" style="background-image: url(img/sample.jpg)"></div>
+                                    <p class="en f13 mf12 book cf">Poolvilla 01</p>
+                                </div>
+                                <h3 class="f16 mf14 med c2">빌라하우스</h3>
+                                <h4 class="f12 lig c9">110평형 독채풀빌라, 유아풀, 제트스파, 수영장</h4>
+                                <p id="btn01" class="en book f14 c2">View More</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section06">
+            <div class="wrap1400">
+                <div class="top flex-wrap">
+                    <div class="left col-2 m-col-1">
+                        <div class="text-wrap">
+                            <h3 class="en f40 mf20 book c2">Room Detail</h3>
+                            <h4 class="en f14 mf12 book c9">Penthouse</h4>
+                            <p class="f15 mf12 re c2">럭셔리한 휴식공간</p>
+                        </div>
+                        <div class="bgi img01" style="background-image: url(img/main/06-04.jpg);"></div>
+                        <div class="video-wrap">
+                            <div class="img" style="background-image: url(img/main/06-05.jpg);"></div>
+                            <!-- <iframe id="ei-Sub-Vimeo" class="video ei-pics" src='https://player.vimeo.com/video/777253707?api=1&autoplay=1&loop=1&autopause=0&muted=1&quality=1080p&controls=1'allow=autoplay frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+                        </div>
+                    </div>
+                    <div class="right col-2 m-col-1">
+                        <div class="bgi img02" style="background-image: url(img/main/06-01.jpg);"></div>
+                        <div class="bgi img03" style="background-image: url(img/main/06-02.jpg);"></div>
+                        <div class="text-wrap">
+                            <h3 class="en f40 mf20 book c2">Room Detail</h3>
+                            <h4 class="en f14 mf12 book c9">Penthouse</h4>
+                            <p class="f15 mf12 re c2">럭셔리한 휴식공간</p>
+                        </div>
+                        <div class="bgi img04" style="background-image: url(img/main/06-03.jpg);"></div>
+                    </div>
+                </div>
+                <div class="bgi" style="background-image: url(img/main/06-06.jpg);"></div>
+            </div>
+        </section>
+
+        <section id="section07" class="bgi" style="background-image: url(img/main/07-bg.jpg);">
+            <div class="wrap1400">
+                <div class="tit">
+                    <h3 class="en f50 mf25 book cf t-shadow">The feeling of being <span class="en f50 mf25 ita demi cf">special</span></h3>
+                    <h4 class="en f14 mf12 book cf t-shadow">Special for you</h4>
+                    <p class="f15 mf12 lig cf t-shadow">펜트하우스 특별함을 선물합니다</p>
+                </div>
+                <div class="btn-wrap">
+                    <a href="" class="btn01">
+                        <div class="img-wrap">
+                            <img src="img/special/icon01.png" alt="" class="normal">
+                            <img src="img/special/icon01-c.png" alt="" class="hover">
+                        </div>
+                        <h3 class="f13 mf12 lig cf">100평 독채 풀빌라</h3>
+                        <p class="en f10 book upp cf op5 none-mo">unshared house</p>
+                        <img src="img/special/arrow.png" alt="">
+                    </a>
+                    <a href="" class="btn02">
+                        <div class="img-wrap">
+                            <img src="img/special/icon02.png" alt="" class="normal">
+                            <img src="img/special/icon02-c.png" alt="" class="hover">
+                        </div>
+                        <h3 class="f13 mf12 lig cf">실내 온수 수영장 & 제트스파</h3>
+                        <p class="en f10 book upp cf op5 none-mo">SWIMMING POOL & JET SPA</p>
+                        <img src="img/special/arrow.png" alt="">
+                    </a>
+                    <a href="" class="btn03">
+                        <div class="img-wrap">
+                            <img src="img/special/icon03.png" alt="" class="normal">
+                            <img src="img/special/icon03-c.png" alt="" class="hover">
+                        </div>
+                        <h3 class="f13 mf12 lig cf">바비큐 석식 풀코스</h3>
+                        <p class="en f10 book upp cf op5 none-mo">BBQ DINNER COURSE</p>
+                        <img src="img/special/arrow.png" alt="">
+                    </a>
+                    <a href="" class="btn04">
+                        <div class="img-wrap">
+                            <img src="img/special/icon04.png" alt="" class="normal">
+                            <img src="img/special/icon04-c.png" alt="" class="hover">
+                        </div>
+                        <h3 class="f13 mf12 lig cf">무료 브런치 서비스</h3>
+                        <p class="en f10 book upp cf op5 none-mo">FREE BRUNCH SERVICE</p>
+                        <img src="img/special/arrow.png" alt="">
+                    </a>
+                    <a href="" class="btn05">
+                        <div class="img-wrap">
+                            <img src="img/special/icon05.png" alt="" class="normal">
+                            <img src="img/special/icon05-c.png" alt="" class="hover">
+                        </div>
+                        <h3 class="f13 mf12 lig cf">37.5 브런치카페</h3>
+                        <p class="en f10 book upp cf op5 none-mo">37.5 brunch cafe</p>
+                        <img src="img/special/arrow.png" alt="">
+                    </a>
+                    <a href="" class="btn06">
+                        <div class="img-wrap">
+                            <img src="img/special/icon06.png" alt="" class="normal">
+                            <img src="img/special/icon06-c.png" alt="" class="hover">
+                        </div>
+                        <h3 class="f13 mf12 lig cf">야외 수영장</h3>
+                        <p class="en f10 book upp cf op5 none-mo">OUTDOOR POOL</p>
+                        <img src="img/special/arrow.png" alt="">
+                    </a>
+                    <a href="" class="btn07">
+                        <div class="img-wrap">
+                            <img src="img/special/icon07.png" alt="" class="normal">
+                            <img src="img/special/icon07-c.png" alt="" class="hover">
+                        </div>
+                        <h3 class="f13 mf12 lig cf">로맨틱 프로포즈 이벤트</h3>
+                        <p class="en f10 book upp cf op5 none-mo">romantic PROPOSE EVENT</p>
+                        <img src="img/special/arrow.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="section08">
+            <div class="videoWrap">
+                <div class="img" style="background-image: url(img/main/08.jpg);"></div>
+                <!-- <iframe id="fullVideo" src='https://player.vimeo.com/video/777253728?api=1&autoplay=1&loop=1&autopause=0&muted=1&quality=1080p&controls=1'allow=autoplay frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+            </div>
+        </section>
+
+        <footer>
+            <div class="f-top">
+                <div class="wrap1400 flex-wrap">
+                    <a href="about.html" class="en book f14 upp cf">about</a>
+                    <a href="rooms.html" class="en book f14 upp cf">rooms</a>
+                    <a href="special.html" class="en book f14 upp cf">special</a>
+                    <a href="travel.html" class="en book f14 upp cf">travel</a>
+                    <a href="reservation.html" class="en book f14 upp cf">reservation</a>
+                    <a href="community.html" class="en book f14 upp cf">community</a>
+                </div>
+            </div>
+            <div class="f-mid">
+                <div class="wrap1400 flex-wrap">
+                    <img src="img/common/logo.png" alt="">
+                    <div class="text-wrap">
+                        <ul class="pb30">
+                            <li class="pl0 m-after-x mpr0">연락처 : 000-000-0000 / 000-000-0000</li><br class="none-pc">
+                            <li class="mpl0 after-x">통신판매번호 : 000-0000-0000, 000-0000-0000</li>
+                        </ul>
+                        <ul class="pb10">
+                            <li class="pl0">푸른하늘펜션</li>
+                            <li>대표 : 조우현</li>
+                            <li class="m-after-x mpr0">사업자등록번호 : 000-0000-0000</li><br class="none-pc">
+                            <li class="mpl0 m-after-x">ADD : 주소</li><br class="none-pc">
+                            <li class="mpl0 after-x">ACC : 000-0000-0000 농협 홍길동</li>
+                        </ul>
+                        <ul class="pb10">
+                            <li class="pl0">푸른하늘펜션2</li>
+                            <li>대표 : 추미정</li>
+                            <li class="m-after-x mpr0">사업자등록번호 : 000-0000-0000</li><br class="none-pc">
+                            <li class="mpl0 m-after-x">ADD : 주소</li><br class="none-pc">
+                            <li class="after-x mpl0">ACC : 000-0000-0000 농협 홍길동</li>
+                        </ul>
+                        <ul class="pb10">
+                            <li class="pl0">주식회사 우린</li>
+                            <li>대표 : 조우현</li>
+                            <li class="m-after-x mpr0">사업자등록번호 : 000-0000-0000</li><br class="none-pc">
+                            <li class="mpl0 m-after-x">ADD : 주소</li><br class="none-pc">
+                            <li class="after-x mpl0">ACC : 000-0000-0000 농협 홍길동</li>
+                        </ul>
+                        <p>* 위 세 사업장은 "농어촌 정비법"에 의거 농어촌 민박 사업자로 지정신고 하였음</p>
+                    </div>
+                    <a href="reservation.html"><i class="fa-light fa-calendar-clock f18"></i></a>
+                </div>
+            </div>
+            <div class="f-btm">
+                <div class="wrap1400 flex-wrap">
+                    <ul>
+                        <li><a href="" class="f12 lig c9">통신판매업확인</a></li>
+                        <li><a href="" class="f12 lig c9">저작권</a></li>
+                        <li><a href="" class="f12 lig cf">개인정보처리방침</a></li>
+                        <li><a href="" class="f12 lig c9">이용약관</a></li><br class="none-pc">
+                        <li><a href="" class="f12 lig c9">관리자로그인</a></li>
+                        <li><a href="" class="f12 lig cap cf">Design by 아이넷</a></li>
+                    </ul>
+                    <p class="f12 lig cf op2">Copyright (C) 2023 PNET HOUSE all rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+

@@ -1,0 +1,74 @@
+<?php include "./_header.html"; ?>
+<?php
+$idx = ($_GET['idx']) ? $_GET['idx'] : $facilities[0]['idx'];
+
+$menuInfo = $pension->menuInfo($idx);
+$content = str_replace('<p>&nbsp;</p>', '', $menuInfo['content']);
+$file_path = $img_path.'/facilities/'.$idx.'/';
+$file_count = file_count($file_path);
+$etc_script = $menuInfo['etc_script'];
+$addr = $menuInfo['addr'];
+$gubun = ($_GET['gubun']) ? $_GET['gubun']-1 : 0;
+?>
+
+<link rel="stylesheet" href="pages/css/fac.css">
+
+<section id="section01">
+    <div class="full-swiper swiper-container">
+        <div class="swiper-wrapper">
+            <?php for($i=0; $i<$file_count; $i++) { ?>
+            <div class="swiper-slide">
+                <div class="bgi" style="background-image: url(http://img.einet.kr/<?=$pension_code?>/facilities/<?= $idx?>/<?=sprintf("%02d",$i+1)?>.jpg);"></div>
+            </div>
+            <?php } ?>
+        </div>
+        <div class="swiper-button-next full-next full-btn white-btn"><i class="fa-light fa-chevron-right cf"></i></div>
+        <div class="swiper-button-prev full-prev full-btn white-btn"><i class="fa-light fa-chevron-left cf"></i></div>
+        <div class="swiper-pagination full-pag pro-red"></div>
+    </div>
+</section>
+
+<section id="section02">
+    <div class="wrap1400">
+        <h3 class="f36 mf28 upp bold"><?=$menuInfo['eng_title']?></h3>
+        <h4 class="f22 mf18 bold"><?=$menuInfo['title']?></h4>
+        <div class="con f14 reg">
+            <?=$menuInfo['content']?>
+        </div>
+    </div>
+</section>
+
+<section id="section03" class="subpag-slide-section">
+    <div class="wrap1400">
+        <div class="top flex-wrap">
+            <h3 class="upp f36 mf28 bold">In instant</h3>
+            <a href="" class="upp f22 mf18 bold">View All<i class="fas fa-caret-right"></i></a>
+        </div>
+        <div class="swiper-wrap">
+            <div class="subpag-swiper swiper-container">
+                <div class="swiper-wrapper">
+                    <?php
+                        foreach ($facilities as $k => $v) {
+                        $int = sprintf($k + 1);
+                        $href = 'fac.html?idx='.$v['idx'].'&gubun='.$int;
+                        if($v['idx']==$_GET['idx']) $clsActive = "active-pag";
+                        else $clsActive = "";
+                    ?>
+                    <a class="swiper-slide" href="<?=$href?>">
+                        <div class="bgi" style="background-image: url(http://img.einet.kr/<?=$pension_code?>/facilities/<?=$v['idx']?>/01.jpg);"></div>
+                        <h3 class="upp f22 bold none-mo"><?=$v['eng_title']?></h3>
+                        <p class="f14 reg"><?=$v['title']?></p>
+                        <p class="f22 bold none-mo">Enter<i class="fas fa-caret-right"></i></p>
+                    </a>
+                    <?php } ?>
+                </div>
+                <div class="swiper-pagination subpag-pag pro-red"></div>
+            </div>
+            <div class="swiper-button-next subpag-next subpag-btn red-btn"><i class="fas fa-caret-right fr"></i></div>
+            <div class="swiper-button-prev subpag-prev subpag-btn red-btn"><i class="fas fa-caret-left fr"></i></div>
+        </div>
+        
+    </div>
+</section>
+
+<?php include "./_footer.html"; ?> 

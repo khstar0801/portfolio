@@ -1,0 +1,31 @@
+#section01{ width: 100%; height: 100%;}
+
+#section02{ padding: 100px 0 80px;}
+#section02 .text-wrap{ width: 550px;}
+#section02 #map{ width: 692px; height: 692px; background-color: antiquewhite;}
+#section02 .text-wrap .top{ padding-bottom: 40px;}
+#section02 .text-wrap .top img{ padding-bottom: 40px;}
+#section02 .text-wrap .btm h3{ padding: 20px 0; }
+#section02 .text-wrap .btm > div{ padding-bottom: 20px; justify-content: flex-start; align-items: flex-start;}
+#section02 .text-wrap .btm > div i{ width: 24px; display: inline-block; position: relative; top: 4px;}
+#section02 .text-wrap .btm > div p{ width: calc(100% - 24px); display: inline-block;}
+/* =================== 1292px =================== */
+@media (max-width: 1292px) {
+    #section02 #map{ width: 53.56vw; }
+    #section02 .text-wrap{ width: 42.57vw;}
+  }
+  /* =================== 1024px =================== */
+  @media (max-width: 1024px) {
+    #section02{ padding: 60px 0 0;}
+    #section02 .wrap1400{ padding: 0;}
+    #section02 #map{ width: 100%; height: 100vw; }
+    #section02 .text-wrap{ width: 100%; padding: 0 15px 40px;}
+  }
+
+
+
+
+
+
+
+

@@ -1,0 +1,76 @@
+/* header */
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+  header .header-area{ background-color: #F5F5F5;}
+  header .header-area h1 .st0{fill:#89AE89; opacity: 1;}
+  header .header-area h1 .st1{fill:#1A311D;}
+  header .header-area h1 .st2{fill:#FF665C;}
+  #panelbtn span{ background-color: #222;}
+}
+
+/* section01 */
+#section01{ width: 100%; height: 100vh; position: relative; }
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+  #section01{ margin-top: 68px; height: auto; }
+  #section01 a.open-view-all{  text-decoration: underline; padding-right: 40px; padding-top: 10px;}
+}
+
+/* section02 */
+#section02{ padding: 120px 0 180px; overflow: hidden; font-size: 0; }
+#section02 .wrap1200 > .flex-wrap{ align-items: flex-start; }
+#section02 .left{ width: 486px; }
+#section02 .right{ width: calc(100% - 486px); padding-left: 125px;}
+#section02 .left .img-wrap{ width: 100%; height: 687px;}
+#section02 .right .text-wrap{ text-align: left;}
+#section02 .right .text-wrap > h3{ padding-bottom: 20px;}
+#section02 .right .text-wrap > h4{ padding-bottom: 40px;}
+#section02 .right .text-wrap > p{ padding-bottom: 20px;}
+#section02 .right .text-wrap ul{ padding-bottom: 50px;}
+#section02 .right .text-wrap li{ padding-bottom: 10px;}
+#section02 .right .text-wrap li.pb20{ padding-bottom: 20px;}
+#section02 .right .text-wrap li.pb40{ padding-bottom: 40px;}
+#section02 .right .text-wrap i{ width: 30px; display: inline-block;}
+#section02 .right .text-wrap span{ display: inline-block; padding-right: 5px;}
+#section02 .right .text-wrap p{ display: inline-block;}
+#section02 .right .text-wrap p.pr{ padding-right: 20px;}
+#section02 .right .text-wrap li.display span{ display: block; width: 100%; padding-bottom: 10px; }
+#section02 .right .text-wrap li.display p{ display: block; width: 100%;}
+#section02 .a-wrap{ text-align: left;}
+#section02 .a-wrap a{ margin: 0;}
+#section02 .a-wrap a:first-child{ margin-right: 24px;}
+
+/* =================== 1240px =================== */
+@media (max-width: 1240px) {
+  #section02 .right{ padding-left: 10.08vw;}
+}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+  #section02{ padding: 20px 0 120px; }
+  #section02 .wrap1200 > .flex-wrap{ padding-top: 50px;}
+  #section02 .left{ display: none;}
+  #section02 .right{ width: 100%; padding-left: 0;}
+  #section02 .right .text-wrap > h3{ padding-bottom: 10px;}
+  #section02 .right .text-wrap ul{ padding-bottom: 20px;}
+  #section02 .right .text-wrap li{ padding-bottom: 20px;}
+  #section02 .right .text-wrap li.pb20{ padding-bottom: 10px;}
+  #section02 .right .text-wrap li.pb40{ padding-bottom: 40px;}
+  #section02 .right .text-wrap i{ width: 25px; display: inline-block;}
+  #section02 .right .text-wrap p.pr{ padding-right: 10px;}
+  #section02 .right .text-wrap li.display span{ display: block; width: 100%; padding-bottom: 10px; }
+  #section02 .right .text-wrap li.display p{ display: block; width: 100%;}
+  #section02 .a-wrap{ text-align: left;}
+  #section02 .a-wrap a{ margin: 0; width: calc(50% - 8px);}
+  #section02 .a-wrap a:first-child{ margin-right: 16px;}
+}
+
+/* ==========================================================================
+#IMG-VIEW-ALL
+========================================================================== */
+#img-view-all{ position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow-y: auto; background-color: #F5F5F5; padding: 40px 0 0; z-index: 2000; text-align: center; font-size: 0; display: none;}
+#img-view-all.active{ display: block;}
+#img-view-all .view-all-logo{ display: inline-block; width: 126px; object-fit: cover; padding-bottom: 40px;}
+#img-view-all h3{ padding-bottom: 10px;}
+#img-view-all p{ padding-bottom: 40px;}
+#img-view-all img{ width: 100%; object-fit: cover; margin-bottom: 10px;}
+#img-view-all .close-view-all{ position: fixed; width: 139px; bottom: 30px; left: 0; right: 0; margin: 0 auto; z-index: 2001;}

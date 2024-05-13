@@ -1,0 +1,29 @@
+<?php include "./_header.html"; ?>
+
+<link rel="stylesheet" href="pages/css/comm.css">
+
+<div id="sub-top">
+    <div class="img" style="background-image: url(pages/img/subtop/community.jpg);"></div>
+    <h3 class="cf f42 mf28 bold upp none-mo">community</h3>
+</div>
+
+<div id="sub-tab">
+    <div class="wrap1400 flex-wrap">
+        <a class="upp cf f22 bold" href="instant_now.html">Instant now</a>
+        <a class="upp cf f22 bold active" href="notice.html">Notice</a>
+        <a class="upp cf f22 bold" href="faq.html">Faq</a>
+    </div>
+</div>
+
+<section id="section01" class="notice comm">
+    <div class="wrap1400">
+        <h3 class="f36 mf28 bold upp">Notice</h3>
+        <iframe id="inner" onload="iframeLoadFn(this)"
+                src="http://respons.einet.co.kr/include/iframe/board/list.html?biz_code=P202305015&board_type=NOTICE&board_id=26838"
+                width="100%" height="1000px" marginwidth="0" marginheight="0" topmargin="0" frameborder="0"
+                allowTransparency="true" scrolling="auto">
+        </iframe>
+    </div>
+</section>
+
+<?php include "./_footer.html"; ?>

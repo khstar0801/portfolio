@@ -1,0 +1,53 @@
+/* header */
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    header{ background-color: #fff; border-bottom: unset;}
+    header .header-top .logo a img.logo-normal{ opacity: 0;}
+    header .header-top .logo a img.logo-scroll{ opacity: 1;}
+    header #panelbtn span{ background-color: #67533A;} 
+}
+
+
+/* reserv */
+#section01.reserv{ padding: 100px 0 120px;}
+#section01 .reserv-calendar { width: 100%;}
+#section01 .reserv-mo { width: 100%; text-align: center; margin-top: 20px; }
+#section01 .icon-cal {display: inline-block; width:68px; height: 68px; border-radius: 50%; background: #67533A; color: #fff; font-size: 30px; line-height: 64px;}
+#section01 .icon-cal i{ position: relative; top: 1px;}
+#section01 .reserv-mo p {  padding-bottom: 100px; }
+#section01 .reserv-btn { display: block; width: 100%; height: 40px; line-height: 38px; border: 1px solid #67533A; margin-bottom: 40px;}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    #section01.reserv{ padding: 80px 0 120px;}
+}
+
+/* charge */
+#section01.charge{ padding: 40px 0 120px;}
+#section01.charge .charge-tit{ width: 100%; padding-bottom: 40px; padding-top: 60px; }
+#section01.charge .charge-tit p{ display: inline-block;}
+#section01.charge .content{ width: 100%; padding-bottom: 60px; border-bottom: 1px solid #67533A;}
+#section01.charge .wrap:last-child .content{ border-bottom: unset;}
+#section01.charge .table-wrap{ text-align: left; position: relative;  padding-bottom: 120px; border-bottom: 1px solid #67533A;}
+#section01.charge .table-wrap .charge-tit{ border: 0;}
+#section01.charge table {width: 100%;margin: 0 auto;text-align: center;border-bottom: 1px solid #222; }
+#section01.charge table tr { border-bottom: 1px solid #222;}
+#section01.charge table th { line-height: 50px; font-size: 14px;color: #222; font-weight: 400; width:calc(100%/11); }
+#section01.charge table td {line-height: 50px; font-size: 14px;color: #222; font-weight: 400; width:calc(100%/11); }
+
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    #section01.charge{ padding: 20px 0 120px;}
+    #section01.charge .charge-tit{ padding-bottom: 30px; padding-top: 50px;}
+    #section01.charge table{width: 1025px;}
+    .refund {overflow-x: scroll;overflow-y: hidden;}
+    .refund::-webkit-scrollbar { width: 5px; height: 5px; }
+    .refund::-webkit-scrollbar-thumb{ height: 17%; background-color: #67533A; border-radius: 2px; }
+    .refund::-webkit-scrollbar-track{ background-color: #fff; }    
+}
+
+/* comm */
+#section01.comm{ padding: 0 100px 0;}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    #section01.comm .content-wrap{ padding: 0 20px 0;}
+}

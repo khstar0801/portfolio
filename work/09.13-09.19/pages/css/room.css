@@ -1,0 +1,51 @@
+/* header */
+header{ z-index: 1000; }
+header .header .top{ background-color: rgba(255,255,255); border-bottom: 1px solid #FAFAF8; }
+header .header .top > a{color: #51504B;}
+header .header .top > a:after{ background-color: #51504B;}
+header .header .logo img.scroll{ opacity: 1;}
+header .header .logo img.normal{ opacity: 0;}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+  header .header .top{ border-bottom: 1px solid #DDDDDB; }
+}
+
+
+#section01{ width: 100%; }
+#section01 .all-wrap{ width: 100%; height: 100vh!important; }
+#section01 .left{ width: 472px; height: 100%; position: relative; padding-top: 130px; padding-left: 15px; padding-right: 118px;}
+#section01 .left .tit{ padding-bottom: 40px; margin-bottom: 40px; border-bottom: 1px solid rgba(81,80,75,0.1);}
+#section01 .left .tit h3{ padding-bottom: 40px;}
+#section01 .left h5{ padding-bottom: 20px;}
+#section01 .left ul{ padding-bottom: 20px;}
+#section01 .left li{ padding-bottom: 20px;}
+#section01 .left li span{ display: inline-block; width: 86px; vertical-align: top;}
+#section01 .left li p{ display: inline-block; width: calc(100% - 90px); vertical-align: top;}
+#section01 .left .con{ padding-bottom: 40px; border-bottom: 1px solid rgba(81,80,75,0.1);}
+#section01 .a-wrap{ text-align: right; padding-top: 20px;}
+#section01 .a-wrap a{ display: block; padding-bottom: 10px;}
+#section01 .a-wrap p{ display: inline-block;}
+#section01 .a-wrap .circle-wrap{ width: 20px; height: 12px; position: relative; display: inline-block; top: 2px;}
+#section01 .a-wrap .circle-wrap .line{ width: 14px; height: 1px; background-color: #51504B; position: absolute; top: 5px; left: 0; transition: .3s;}
+#section01 .a-wrap .circle-wrap .circle{ width: 12px; height: 12px; border-radius: 50%; border: 1px solid #51504B; position: absolute; right: 0; top: 0;}
+#section01 .a-wrap a:hover .circle-wrap .line{ left: 3px;}
+#section01 .right{ width: calc(100% - 472px); position: absolute; top: 0; right: 0; margin-top: 65px;}
+#section01 .right::-webkit-scrollbar{ display: none;}
+#section01 .right img{ width: 100%; object-fit: cover; margin-bottom: 20px;}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    #section01{ width: 100%; height: auto; padding: 100px 0 80px;}
+    #section01 .wrap1400{ padding: 0;}
+    #section01 .all-wrap{ height: auto!important; justify-content: flex-end;}
+    #section01 .left{ display: block; width: 100%; padding-left: 15px; padding-right: 15px; text-align: center; padding-top: 50px;}
+    #section01 .left .con{ text-align: left; border-bottom: unset;}
+    #section01 .left h5{ padding-bottom: 20px;}
+    #section01 .left ul{ padding-bottom: 20px;}
+    #section01 .left li{ padding-bottom: 15px;}
+    #section01 .left li span{ display: block; width: 100%; }
+    #section01 .left li p{ display: block; width: 100%;}
+    #section01 .left .a-wrap{ display: none;}
+    #section01 .right{ width: 100%; position: relative; margin-top: 0;}
+    #section01 .right img{ width: 100%; object-fit: cover; margin-bottom: 10px;}
+    #section01 .a-wrap{ text-align: right; padding-top: 20px; padding-right: 15px;}
+}

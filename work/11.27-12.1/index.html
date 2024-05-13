@@ -1,0 +1,845 @@
+<!-- <?php include "./_header.html"; ?>
+<?
+$file_path = $img_path.'/home/slides'.$idx;
+$file_count = file_count($file_path);
+?> -->
+
+<?php include './exe/_default.php'; ?>
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scele=1.0">
+        <script>
+            var pension_code = "<?=$pension_code?>";
+            var biz_no = '<?=$biz_no_ok; ?>';
+            var biz_name = '<?=$biz_name; ?>';
+            var deviceType = '<?=$deviceType; ?>';
+        </script>
+        <?=$naver_meta; ?>
+        <title>더 숨 포레스트</title>
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="#" />
+
+        <!-- css -->
+        <link rel="stylesheet" href="css/swiper.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.22/dist/fancybox/fancybox.min.css">
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/layout.css">
+
+        <!-- font spoqa-han-sans -->
+        <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+        <!-- adobe bicyclette -->
+        <link rel="stylesheet" href="https://use.typekit.net/yjz8ikb.css">
+
+        <!-- js -->
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/ScrollMagic.min.js"></script>
+        <script src="js/debug.addIndicators.min.js"></script>
+        <script src="js/TweenMax.min.js"></script>
+        <script src="js/animation.gsap.min.js"></script>
+        <script src="https://kit.fontawesome.com/bd8686ee32.js" crpoRsorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.22/dist/fancybox/fancybox.umd.min.js" crossorigin="anonymous"></script>
+        <script src="js/layout.js"></script>
+        <script src="js/common.js"></script>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+
+
+        <!--   wow  -->
+        <link rel="stylesheet" href="css/animate.min.css">
+        <script src="js/wow.min.js"></script>
+
+    </head>
+    <body>
+        <div class="panel"><!--패널-->
+            <div class="img-wrap">
+                <div class="img active" style="background-image: url(img/common/bg.jpg);"></div>
+                <div class="img" style="background-image: url(img/common/sample1.jpg);"></div>
+                <div class="img" style="background-image: url(img/common/sample2.jpg);"></div>
+                <div class="img" style="background-image: url(img/common/sample3.jpg);"></div>
+            </div>
+            <div class="nav-wrap">
+                <div class="nav-con">
+                    <div class="top">
+                        <div id="logo">
+                            <a href="index.html" >
+                                <svg version="1.1" id="layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                    y="0px" viewBox="0 0 64.3 12.2" style="enable-background:new 0 0 64.3 12.2;" xml:space="preserve">
+                                <style type="text/css">
+                                    .st0{fill:#89AE89;}
+                                    .st1{fill:#1A311D;}
+                                    .st2{fill:#FF665C;}
+                                </style>
+                                <g>
+                                    <path class="st0" d="M4.7,11.5c1-5.3,5-9.8,10.6-11.2c1.5-0.4,3-0.5,4.5-0.3c-1,5.3-5,9.8-10.6,11.2C7.7,11.6,6.2,11.7,4.7,11.5"/>
+                                    <path class="st1" d="M0.2,6.7C0.1,6.7,0,6.6,0,6.6V5.1C0,5,0.1,4.9,0.2,4.9h6.9c0.1,0,0.2,0.1,0.2,0.2v1.5c0,0.1-0.1,0.2-0.2,0.2
+                                        H4.7V12c0,0.1-0.1,0.1-0.1,0.1H2.7c-0.1,0-0.1-0.1-0.1-0.1V6.7H0.2z M9.9,7.5L9.9,7.5c0.4-0.3,0.9-0.5,1.5-0.5c1.3,0,2,0.8,2,2v2.8
+                                        c0,0.1-0.1,0.2-0.2,0.2h-1.6c-0.1,0-0.2-0.1-0.2-0.2V9.3c0-0.3-0.3-0.6-0.6-0.6C10.4,8.7,10,9,9.9,9.3v2.6c0,0.1-0.1,0.2-0.2,0.2H8
+                                        c-0.1,0-0.2-0.1-0.2-0.2V4.4C7.8,4.3,8,4.2,8,4.2h1.6c0.1,0,0.2,0.1,0.2,0.2V7.5z M16.1,10.1c0.1,0.4,0.5,0.6,1.2,0.6
+                                        c0.6,0,1.2-0.2,1.5-0.3c0.1,0,0.2-0.1,0.3-0.1c0.2,0,0.3,0.1,0.3,0.2l0.2,0.6c0,0.1,0.1,0.2,0.1,0.3c0,0.1,0,0.2-0.2,0.3
+                                        c-0.5,0.3-1.3,0.5-2.1,0.5c-1.9,0-3.2-1-3.2-2.6c0-1.4,1.2-2.6,3-2.6c1.8,0,2.8,1,2.8,2.3c0,0.4-0.1,0.8-0.1,0.8H16.1z M16.1,9.1
+                                        h1.7c0-0.4-0.3-0.6-0.8-0.6C16.6,8.4,16.2,8.7,16.1,9.1z"/>
+                                    <path class="st2" d="M22.9,12.2V8.2h2.6V7.6h-3.7V5.9H31v1.7h-3.7v0.6h2.6v4.1H22.9z M29.7,5.8L26.4,4l-3.3,1.8l-0.8-1.5l3.2-1.8
+                                        V1.3h1.8v1.2l3.2,1.8L29.7,5.8z M28.2,9.9h-3.5v0.6h3.5V9.9z"/>
+                                    <path class="st1" d="M34.4,12.1c-0.1,0-0.1-0.1-0.1-0.1V5.1c0-0.1,0.1-0.1,0.1-0.1h4.8c0.1,0,0.1,0.1,0.1,0.2v1.5
+                                        c0,0.1-0.1,0.2-0.1,0.2h-3V8h2.8C39,8,39,8.1,39,8.2v1.4c0,0.1-0.1,0.2-0.1,0.2h-2.8V12c0,0.1-0.1,0.1-0.1,0.1H34.4z M44.6,9.6
+                                        c0,1.7-1.2,2.6-2.5,2.6s-2.5-0.9-2.5-2.6c0-1.7,1.2-2.6,2.5-2.6S44.6,8,44.6,9.6z M42.1,8.7c-0.5,0-0.8,0.4-0.8,0.9
+                                        c0,0.5,0.3,0.9,0.8,0.9s0.8-0.4,0.8-0.9C42.9,9.1,42.5,8.7,42.1,8.7z M47,9.3v2.6c0,0.1-0.1,0.2-0.2,0.2h-1.4
+                                        c-0.1,0-0.2-0.1-0.2-0.2V7.4c0-0.1,0.1-0.2,0.2-0.2h1.2c0.1,0,0.1,0.1,0.2,0.2l0.1,0.5h0c0.3-0.6,0.8-0.8,1.3-0.8
+                                        c0.8,0,1.3,0.5,1.3,1.6v0.8c0,0.1-0.1,0.2-0.2,0.2H48c-0.1,0-0.2-0.1-0.2-0.2V9.1c0-0.2-0.1-0.4-0.3-0.4C47.3,8.7,47,9,47,9.3z
+                                        M51.8,10.1c0.1,0.4,0.4,0.6,1,0.6c0.5,0,1-0.2,1.3-0.3c0.1,0,0.2-0.1,0.3-0.1c0.1,0,0.2,0.1,0.2,0.2l0.1,0.6
+                                        c0,0.1,0.1,0.2,0.1,0.3c0,0.1,0,0.2-0.2,0.3c-0.4,0.3-1.1,0.5-1.8,0.5c-1.6,0-2.7-1-2.7-2.6c0-1.4,1-2.6,2.5-2.6
+                                        c1.6,0,2.4,1,2.4,2.3c0,0.4-0.1,0.8-0.1,0.8H51.8z M51.8,9.1h1.5c0-0.4-0.2-0.6-0.7-0.6C52.2,8.4,51.9,8.7,51.8,9.1z M57.1,10.5
+                                        c0.1,0,0.2,0,0.2,0.1c0.1,0.2,0.2,0.3,0.6,0.3c0.4,0,0.5-0.2,0.5-0.3c0-0.2-0.1-0.3-0.5-0.3l-0.9-0.1c-1-0.1-1.5-0.6-1.5-1.4
+                                        c0-0.9,0.8-1.8,2.2-1.8c1.4,0,2.1,0.7,2.1,1.4c0,0.1-0.1,0.2-0.2,0.2h-1.3c-0.1,0-0.2,0-0.2-0.1c-0.1-0.1-0.2-0.2-0.4-0.2
+                                        c-0.3,0-0.5,0.1-0.5,0.3c0,0.1,0.1,0.2,0.3,0.2l1,0.1c1.1,0.1,1.5,0.7,1.5,1.4c0,0.9-0.7,1.8-2.3,1.8c-1.5,0-2.3-0.7-2.3-1.5
+                                        c0-0.1,0.1-0.3,0.2-0.3H57.1z M60.7,8.9c-0.1,0-0.1-0.1-0.1-0.2V7.4c0-0.1,0.1-0.2,0.1-0.2h0.4V6.1c0-0.1,0.1-0.2,0.2-0.2h1.4
+                                        c0.1,0,0.2,0.1,0.2,0.2v1.1H64c0.1,0,0.1,0.1,0.1,0.2v1.3c0,0.1-0.1,0.2-0.1,0.2h-1.2v1.1c0,0.4,0.2,0.6,0.5,0.6
+                                        c0.2,0,0.4-0.1,0.5-0.2c0.1-0.1,0.3,0,0.3,0.1l0.2,0.9c0,0.1,0,0.2,0,0.2c0,0.1,0,0.2-0.1,0.2c-0.2,0.2-0.7,0.4-1.3,0.4
+                                        c-1.1,0-1.8-0.7-1.8-2V8.9H60.7z"/>
+                                </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <nav class="mNav mid">
+                        <ul>
+                            <li class="mNav01">
+                                <a href="#about" class="topNav en f24 re c2">about<i class="fa-regular fa-chevron-down"></i></a>
+                                <ul class="subNav">
+                                    <li><a href="about.html">소개</a></li>
+                                    <li><a href="about.html#map">오시는길</a></li>
+                                </ul>
+                            </li>
+                            <li class="mNav02">
+                                <a href="#rooms" class="topNav en f24 re c2">Rooms<i class="fa-regular fa-chevron-down"></i></a>
+                                <ul class="subNav">
+                                    <li><a href="rooms.html">미리보기</a></li>
+                                    <!-- <?php foreach($getRooms as $k => $v) {
+                                        $int = $k + 1;
+                                    ?>
+                                    <li><a href="room.html?menutree_idx=<?=$v['menutree_idx']?>&gubun=<?=$k+1?>"><?=$v['room_name']?></a></li>
+                                    <?php } ?> -->
+                                    <li><a href="room.html">객실명</a></li>
+                                </ul>
+                            </li>
+                            <li class="mNav03">
+                                <a href="#facilities" class="topNav en f24 re c2">Facilities<i class="fa-regular fa-chevron-down"></i></a>
+                                <ul class="subNav">
+                                    <!-- <?php
+                                        foreach ($facilities as $k => $v) {
+                                        $int = $k + 1;
+                                    ?>
+                                    <li><a href="fac.html?idx=<?=$v['idx']?>&gubun=<?=$int?>"><?=$v['title']?></a></li>
+                                    <?php } ?> -->
+                                    <li><a href="fac.html">부대시설명</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="mNav04">
+                                <a href="service.html" class="topNav en f24 re c2">Services<i class="fa-regular fa-chevron-down"></i></a>
+                            </li>
+                            <li class="mNav05">
+                                <a href="travel.html" class="topNav en f24 re c2">Nearby travel<i class="fa-regular fa-chevron-down"></i></a>
+                            </li>
+                            <li class="mNav06">
+                                <a href="#community" class="topNav en f24 re c2">Community<i class="fa-regular fa-chevron-down"></i></a>
+                                <ul class="subNav">
+                                    <li><a href="comm.html">공지사항</a></li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                </ul>
+                            </li>
+                            <li class="mNav07">
+                                <a href="reservation.html" class="topNav en f24 re c2">Reservation<i class="fa-regular fa-chevron-down"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="btm">
+                        <a href="tel:000-0000-0000" class="upp f14 lig">tel. 000-0000-0000</a>
+                        <p class="f14 lig">경상남도 창원시 마산합포구 구산면 해양관광로 2010</p>
+                        <p class="f14 lig">©Thesumforest camping 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blackbg"></div>
+        <header>
+            <div class="header-area">
+                <h1 class="logo">
+                    <a href="index.html" >
+                        <svg version="1.1" id="layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                            y="0px" viewBox="0 0 64.3 12.2" style="enable-background:new 0 0 64.3 12.2;" xml:space="preserve">
+                        <style type="text/css">
+                            .st0{fill:#89AE89;}
+                            .st1{fill:#1A311D;}
+                            .st2{fill:#FF665C;}
+                        </style>
+                        <g>
+                            <path class="st0" d="M4.7,11.5c1-5.3,5-9.8,10.6-11.2c1.5-0.4,3-0.5,4.5-0.3c-1,5.3-5,9.8-10.6,11.2C7.7,11.6,6.2,11.7,4.7,11.5"/>
+                            <path class="st1" d="M0.2,6.7C0.1,6.7,0,6.6,0,6.6V5.1C0,5,0.1,4.9,0.2,4.9h6.9c0.1,0,0.2,0.1,0.2,0.2v1.5c0,0.1-0.1,0.2-0.2,0.2
+                                H4.7V12c0,0.1-0.1,0.1-0.1,0.1H2.7c-0.1,0-0.1-0.1-0.1-0.1V6.7H0.2z M9.9,7.5L9.9,7.5c0.4-0.3,0.9-0.5,1.5-0.5c1.3,0,2,0.8,2,2v2.8
+                                c0,0.1-0.1,0.2-0.2,0.2h-1.6c-0.1,0-0.2-0.1-0.2-0.2V9.3c0-0.3-0.3-0.6-0.6-0.6C10.4,8.7,10,9,9.9,9.3v2.6c0,0.1-0.1,0.2-0.2,0.2H8
+                                c-0.1,0-0.2-0.1-0.2-0.2V4.4C7.8,4.3,8,4.2,8,4.2h1.6c0.1,0,0.2,0.1,0.2,0.2V7.5z M16.1,10.1c0.1,0.4,0.5,0.6,1.2,0.6
+                                c0.6,0,1.2-0.2,1.5-0.3c0.1,0,0.2-0.1,0.3-0.1c0.2,0,0.3,0.1,0.3,0.2l0.2,0.6c0,0.1,0.1,0.2,0.1,0.3c0,0.1,0,0.2-0.2,0.3
+                                c-0.5,0.3-1.3,0.5-2.1,0.5c-1.9,0-3.2-1-3.2-2.6c0-1.4,1.2-2.6,3-2.6c1.8,0,2.8,1,2.8,2.3c0,0.4-0.1,0.8-0.1,0.8H16.1z M16.1,9.1
+                                h1.7c0-0.4-0.3-0.6-0.8-0.6C16.6,8.4,16.2,8.7,16.1,9.1z"/>
+                            <path class="st2" d="M22.9,12.2V8.2h2.6V7.6h-3.7V5.9H31v1.7h-3.7v0.6h2.6v4.1H22.9z M29.7,5.8L26.4,4l-3.3,1.8l-0.8-1.5l3.2-1.8
+                                V1.3h1.8v1.2l3.2,1.8L29.7,5.8z M28.2,9.9h-3.5v0.6h3.5V9.9z"/>
+                            <path class="st1" d="M34.4,12.1c-0.1,0-0.1-0.1-0.1-0.1V5.1c0-0.1,0.1-0.1,0.1-0.1h4.8c0.1,0,0.1,0.1,0.1,0.2v1.5
+                                c0,0.1-0.1,0.2-0.1,0.2h-3V8h2.8C39,8,39,8.1,39,8.2v1.4c0,0.1-0.1,0.2-0.1,0.2h-2.8V12c0,0.1-0.1,0.1-0.1,0.1H34.4z M44.6,9.6
+                                c0,1.7-1.2,2.6-2.5,2.6s-2.5-0.9-2.5-2.6c0-1.7,1.2-2.6,2.5-2.6S44.6,8,44.6,9.6z M42.1,8.7c-0.5,0-0.8,0.4-0.8,0.9
+                                c0,0.5,0.3,0.9,0.8,0.9s0.8-0.4,0.8-0.9C42.9,9.1,42.5,8.7,42.1,8.7z M47,9.3v2.6c0,0.1-0.1,0.2-0.2,0.2h-1.4
+                                c-0.1,0-0.2-0.1-0.2-0.2V7.4c0-0.1,0.1-0.2,0.2-0.2h1.2c0.1,0,0.1,0.1,0.2,0.2l0.1,0.5h0c0.3-0.6,0.8-0.8,1.3-0.8
+                                c0.8,0,1.3,0.5,1.3,1.6v0.8c0,0.1-0.1,0.2-0.2,0.2H48c-0.1,0-0.2-0.1-0.2-0.2V9.1c0-0.2-0.1-0.4-0.3-0.4C47.3,8.7,47,9,47,9.3z
+                                M51.8,10.1c0.1,0.4,0.4,0.6,1,0.6c0.5,0,1-0.2,1.3-0.3c0.1,0,0.2-0.1,0.3-0.1c0.1,0,0.2,0.1,0.2,0.2l0.1,0.6
+                                c0,0.1,0.1,0.2,0.1,0.3c0,0.1,0,0.2-0.2,0.3c-0.4,0.3-1.1,0.5-1.8,0.5c-1.6,0-2.7-1-2.7-2.6c0-1.4,1-2.6,2.5-2.6
+                                c1.6,0,2.4,1,2.4,2.3c0,0.4-0.1,0.8-0.1,0.8H51.8z M51.8,9.1h1.5c0-0.4-0.2-0.6-0.7-0.6C52.2,8.4,51.9,8.7,51.8,9.1z M57.1,10.5
+                                c0.1,0,0.2,0,0.2,0.1c0.1,0.2,0.2,0.3,0.6,0.3c0.4,0,0.5-0.2,0.5-0.3c0-0.2-0.1-0.3-0.5-0.3l-0.9-0.1c-1-0.1-1.5-0.6-1.5-1.4
+                                c0-0.9,0.8-1.8,2.2-1.8c1.4,0,2.1,0.7,2.1,1.4c0,0.1-0.1,0.2-0.2,0.2h-1.3c-0.1,0-0.2,0-0.2-0.1c-0.1-0.1-0.2-0.2-0.4-0.2
+                                c-0.3,0-0.5,0.1-0.5,0.3c0,0.1,0.1,0.2,0.3,0.2l1,0.1c1.1,0.1,1.5,0.7,1.5,1.4c0,0.9-0.7,1.8-2.3,1.8c-1.5,0-2.3-0.7-2.3-1.5
+                                c0-0.1,0.1-0.3,0.2-0.3H57.1z M60.7,8.9c-0.1,0-0.1-0.1-0.1-0.2V7.4c0-0.1,0.1-0.2,0.1-0.2h0.4V6.1c0-0.1,0.1-0.2,0.2-0.2h1.4
+                                c0.1,0,0.2,0.1,0.2,0.2v1.1H64c0.1,0,0.1,0.1,0.1,0.2v1.3c0,0.1-0.1,0.2-0.1,0.2h-1.2v1.1c0,0.4,0.2,0.6,0.5,0.6
+                                c0.2,0,0.4-0.1,0.5-0.2c0.1-0.1,0.3,0,0.3,0.1l0.2,0.9c0,0.1,0,0.2,0,0.2c0,0.1,0,0.2-0.1,0.2c-0.2,0.2-0.7,0.4-1.3,0.4
+                                c-1.1,0-1.8-0.7-1.8-2V8.9H60.7z"/>
+                        </g>
+                        </svg>
+                    </a>
+                </h1>
+                
+            </div>
+        </header>
+        <div class="panelbtn" id="panelbtn">
+            <a href="#panel">
+                <span class="line01"></span>
+                <span class="line02"></span>
+            </a>
+        </div>
+
+<link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <script src="js/main.js"></script>
+        <script src="js/jquery.magnific-popup.js"></script>
+
+
+        <section id="section01">
+            <div class="img" style="background-image: url(img/main/video01.jpg);"></div>
+            <!-- <div class="videoWrap iframe">
+                <iframe id="ei-Top-Vimeo"  class="video ei-pics" src='https://player.vimeo.com/video/777253707?api=1&autoplay=1&loop=1&autopause=0&muted=1&quality=1080p&controls=1'allow=autoplay frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div> -->
+            <div class="fullSlogan">
+                <h3 class="en upp f42 mf32 bold cf">Take a <br class="none-pc">BreakTime<br>
+                    in The SUM <br class="none-pc">Forest</h3>
+                <p class="f16 cf re">천혜의 숲과 바다가 살아숨쉬는 캠핑장, <br class="none-pc">더 숨 포레스트</p>
+            </div>
+            <!-- <ul class="control">
+                <li class="play-pause">
+                    <a href="#play" class="play" ><i class="fa fa-play"></i></a>
+                    <a href="#pause" class="pause" ><i class="fas fa-pause"></i></a>
+                </li>
+                <li class="mute-onoff">
+                    <a href="#muteon" class="muteon" ><i class="fas fa-volume-off"></i></a>
+                    <a href="#muteoff" class="muteoff"><i class="fas fa-volume-mute"></i></a>
+                    
+                </li>
+                <li>
+                    <a href="#full" class="full" onclick="openFullscreen();"><i class="fas fa-expand-arrows-alt"></i></a>
+                </li>
+            </ul> -->
+            <a href="#scroll" class="scroll-down none-mo" onclick="$('html,body').stop().animate({scrollTop:$(window).height()}, {duration:500})"><img src="img/common/scroll.png" alt=""></a>
+        </section>
+        <!-- <script>
+            videoRatioCalculator('ei-Top-Vimeo');
+            window.addEventListener('resize', () => videoRatioCalculator('ei-Top-Vimeo'));
+            function videoRatioCalculator(frame) {
+                const innerFrame = document.getElementById(frame);
+                innerFrame.style.height = (innerFrame.clientWidth / 16 * 9) + 'px';
+                innerFrame.style.width = (innerFrame.clientHeight / 9 * 16) + 'px';
+            }
+            var iframe = document.querySelector('#ei-Top-Vimeo');
+            var basic = new Vimeo.Player(iframe);
+            $('.play').click(function(){
+                basic.play();
+            });
+            $('.pause').click(function(){
+                basic.pause();
+            });
+            $('.muteon').click(function(){
+                basic.setVolume(0);
+            });
+            $('.muteoff').click(function(){
+                basic.setVolume(1);
+            });
+            var elem = document.getElementById("ei-Top-Vimeo");
+            function openFullscreen() {
+                if (elem.requestFullscreen) {
+                    elem.requestFullscreen();
+                } else if (elem.mozRequestFullScreen) {
+                    elem.mozRequestFullScreen();
+                } else if (elem.webkitRequestFullscreen) {
+                    elem.webkitRequestFullscreen();
+                } else if (elem.msRequestFullscreen) {
+                    elem.msRequestFullscreen();
+                }
+            }
+            $(function(){
+                $('.play-pause .play').addClass('hide');
+                $('.play-pause .pause').click(function(){
+                    $(this).addClass('hide');
+                    $('.play-pause .play').removeClass('hide');
+                });
+                $('.play-pause .play').click(function(){
+                    $(this).addClass('hide');
+                    $('.play-pause .pause').removeClass('hide');
+                });
+                $('.mute-onoff .muteon').addClass('hide');
+                $('.mute-onoff .muteoff').click(function(){
+                    $(this).addClass('hide');
+                    $('.mute-onoff .muteon').removeClass('hide');
+                });
+                $('.mute-onoff .muteon').click(function(){
+                    $(this).addClass('hide');
+                    $('.mute-onoff .muteoff').removeClass('hide');
+                });
+            });
+        </script> -->
+
+        <section id="section02">
+            <div class="wrap1200 flex-wrap">
+                <div class="left">
+                    <h3 class="en upp f42 mf32 bold c2">The sum forest<br>
+                        camping<br>
+                        in nature</h3>
+                    <h4 class="f16 re c2">천혜의 숲과 바다가 살아숨쉬는 캠핑장, 더 숨 포레스트</h4>
+                    <p class="f14 lig c2">울창한 숲, 쇠섬을 마주한 <br class="none-pc">푸른 바다와 함께하는 공간.<br>
+                        더 숨 포레스트에 오신 것을 환영합니다.</p>
+                    <a href="about.html" class="more-btn f12 re c2">더보기</a>
+                </div>
+                <div class="right">
+                    <div class="video-wrap">
+                        <div class="img" style="background-image: url(img/main/02-01.jpg);"></div>
+                        <!-- <iframe id="ei-Sub-Vimeo" class="video ei-pics" src='https://player.vimeo.com/video/777253707?api=1&autoplay=1&loop=1&autopause=0&muted=1&quality=1080p&controls=1'allow=autoplay frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section03">
+            <div class="wrap1200">
+                <div class="flex-wrap">
+                    <div class="left">
+                        <div class="swiper room-swiper">
+                            <div class="swiper-wrapper">
+                                <!-- <?php foreach($getRooms as $k => $v) {
+                                    $int = $k + 1;
+                                ?>
+                                <div class="swiper-slide bgi" style="background-image: url('http://img.einet.kr/<?=$pension_code?>/room/<?=$v['menutree_idx']?>/01.jpg')"></div>
+                                <?php }?> -->
+                                <div class="swiper-slide bgi" style="background-image: url('img/sample01.jpg')"></div>
+                                <div class="swiper-slide bgi" style="background-image: url('img/sample02.jpg')"></div>
+                            </div>
+                        </div>
+                        <div class="btn-wrap">
+                            <div class="swiper-button-next swiper-button"><i class="fa-light fa-arrow-right-long room-btn swiper-arrow arrow-next room-next"></i></div>
+                            <div class="swiper-button-prev swiper-button"><i class="fa-light fa-arrow-left-long room-btn swiper-arrow arrow-prev room-prev"></i></div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="text">
+                            <i class="fa-regular fa-tents f32 mf20 c2"></i>
+                            <!-- <?php foreach($getRooms as $k => $v) {
+                                $int = sprintf("%02d",$k + 1);
+                            ?>
+                            <div>
+                                <span class="en bold f18 c2">room <?=$int?></span>
+                                <h3 class="en f42 mf32 bold upp c2"><?=$v['room_eng_title']?></h3>
+                                <h4 class="f16 re c2"><?=$v['room_name']?></h4>
+                                <p class="f14 re c2"><i class="fa-regular fa-circle-info f14 c2"></i>기준인원 <?=$v['limit_man']?> / <?=$v['max_man']?> , <?=$v['pyeong']?> 평형 ( <?=$v['pyeong_m2']?>m² )</p>
+                                <div class="con f14 lig c2">
+                                    <?=$v['room_class']?>
+                                    ※ 인원추가요금 : 성인 15,000원(중학생 이상),
+                                    아동 10,000원(초등학생 이하)
+                                    영유아 무료(12개월 미만)
+                                </div>
+                                <a href="/room.html?menutree_idx=<?=$v['menutree_idx']?>&gubun=<?=$k+1?>" class="more-btn f12 c2 re">더보기</a>
+                            </div>
+                            <?php }?> -->
+                            <div>
+                                <span class="en bold f18 c2">room 01</span>
+                                <h3 class="en f42 mf32 bold upp c2">객실영문명</h3>
+                                <h4 class="f16 re c2">객실명</h4>
+                                <p class="f14 re c2"><i class="fa-regular fa-circle-info f14 c2"></i>기준인원 00 / 00 , 00 평형 ( 00m² )</p>
+                                <div class="con f14 lig c2">
+                                    룸정보
+                                    ※ 인원추가요금 : 성인 15,000원(중학생 이상),
+                                    아동 10,000원(초등학생 이하)
+                                    영유아 무료(12개월 미만)
+                                </div>
+                                <a href="room.html" class="more-btn f12 c2 re">더보기</a>
+                            </div>
+                            <div>
+                                <span class="en bold f18 c2">room 02</span>
+                                <h3 class="en f42 mf32 bold upp c2">객실영문명</h3>
+                                <h4 class="f16 re c2">객실명</h4>
+                                <p class="f14 re c2"><i class="fa-regular fa-circle-info f14 c2"></i>기준인원 00 / 00 , 00 평형 ( 00m² )</p>
+                                <div class="con f14 lig c2">
+                                    룸정보
+                                    ※ 인원추가요금 : 성인 15,000원(중학생 이상),
+                                    아동 10,000원(초등학생 이하)
+                                    영유아 무료(12개월 미만)
+                                </div>
+                                <a href="room.html" class="more-btn f12 c2 re">더보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-wrap">
+                        <div class="swiper-button-next swiper-button"><i class="fa-light fa-arrow-right-long room-btn swiper-arrow arrow-next room-next"></i></div>
+                        <div class="swiper-button-prev swiper-button"><i class="fa-light fa-arrow-left-long room-btn swiper-arrow arrow-prev room-prev"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section04">
+            <div class="wrap1200">
+                <h3 class="en f42 mf32 bold c2 upp">special services</h3>
+                <div class="swiper service-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- <?php
+                            foreach ($service as $k => $v) {
+                            $int = $k + 1;
+                            $href = 'service.html?idx='.$v['idx'].'&gubun='.$int;
+                        ?>
+                        <a class="swiper-slide" href="<?=$href?>">
+                            <div class="img" style="background-image: url(http://img.einet.kr/<?=$pension_code?>/service/<?=$v['idx']?>/01.jpg);"></div>
+                            <i class="fa-regular fa-store f32 mf24 c2"></i>
+                            <h3 class="en f20 mf16 bold c2 upp"><?=$v['eng_label']?></h3>
+                            <p class="f14 re c2 op6"><?=$v['title']?></p>
+                        </a>
+                        <?php } ?> -->
+                        <a class="swiper-slide" href="service.html">
+                            <div class="img" style="background-image: url(img/sample01.jpg);"></div>
+                            <i class="fa-regular fa-store f32 mf24 c2"></i>
+                            <h3 class="en f20 mf16 bold c2 upp">서비스영문명</h3>
+                            <p class="f14 re c2 op6">서비스명</p>
+                        </a>
+                        <a class="swiper-slide" href="service.html">
+                            <div class="img" style="background-image: url(img/sample01.jpg);"></div>
+                            <i class="fa-regular fa-store f32 mf24 c2"></i>
+                            <h3 class="en f20 mf16 bold c2 upp">서비스영문명</h3>
+                            <p class="f14 re c2 op6">서비스명</p>
+                        </a>
+                        <a class="swiper-slide" href="service.html">
+                            <div class="img" style="background-image: url(img/sample01.jpg);"></div>
+                            <i class="fa-regular fa-store f32 mf24 c2"></i>
+                            <h3 class="en f20 mf16 bold c2 upp">서비스영문명</h3>
+                            <p class="f14 re c2 op6">서비스명</p>
+                        </a>
+                        <a class="swiper-slide" href="service.html">
+                            <div class="img" style="background-image: url(img/sample01.jpg);"></div>
+                            <i class="fa-regular fa-store f32 mf24 c2"></i>
+                            <h3 class="en f20 mf16 bold c2 upp">서비스영문명</h3>
+                            <p class="f14 re c2 op6">서비스명</p>
+                        </a>
+                        <a class="swiper-slide" href="service.html">
+                            <div class="img" style="background-image: url(img/sample01.jpg);"></div>
+                            <i class="fa-regular fa-store f32 mf24 c2"></i>
+                            <h3 class="en f20 mf16 bold c2 upp">서비스영문명</h3>
+                            <p class="f14 re c2 op6">서비스명</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="btn-wrap">
+                    <div class="swiper-button-next swiper-button"><i class="fa-light fa-arrow-right-long service-btn swiper-arrow arrow-next service-next"></i></div>
+                    <div class="swiper-button-prev swiper-button"><i class="fa-light fa-arrow-left-long service-btn swiper-arrow arrow-prev service-prev"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section05">
+            <div class="wrap1200">
+                <div class="text-wrap">
+                    <h3 class="en f42 mf32 bold c2 upp">gallery</h3>
+                    <p class="f14 lig c2">더 숨 포레스트는 뒤로는 녹음이 빼곡히 <br>
+                        자리한 울창한 숲, 앞으로는 푸른  바다가 있는<br>
+                        아름다운 배산임수 자연 속에 있습니다.</p>
+                </div>
+                <div class="top flex-wrap">
+                    <div class="left">
+                        <a href="img/main/05-01.jpg" class="img-wrap with-caption image-link img01">
+                            <div class="img"  style="background-image: url(img/main/05-01.jpg);"></div>
+                        </a>
+                    </div>
+                    <div class="right">
+                        <div class="text-wrap">
+                            <h3 class="en f42 mf32 bold c2 upp">gallery</h3>
+                            <p class="f14 lig c2">더 숨 포레스트는 뒤로는 녹음이 빼곡히 <br>
+                                자리한 울창한 숲, 앞으로는 푸른  바다가 있는<br>
+                                아름다운 배산임수 자연 속에 있습니다.</p>
+                        </div>
+                        <a href="img/main/05-02.jpg" class="img-wrap with-caption image-link img02">
+                            <div class="img"  style="background-image: url(img/main/05-02.jpg);"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="mid">
+                    <a href="img/main/05-03.jpg" class="img-wrap with-caption image-link img01">
+                        <div class="img"  style="background-image: url(img/main/05-03.jpg);"></div>
+                    </a>
+                </div>
+                <div class="btm flex-wrap">
+                    <div class="left">
+                        <a href="img/main/05-04.jpg" class="img-wrap with-caption image-link img01">
+                            <div class="img"  style="background-image: url(img/main/05-04.jpg);"></div>
+                        </a>
+                    </div>
+                    <div class="right">
+                        <a href="img/main/05-05.jpg" class="img-wrap with-caption image-link img01">
+                            <div class="img"  style="background-image: url(img/main/05-05.jpg);"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            let zoomScale = 1;
+            $('.with-caption').magnificPopup({
+                type: 'image',
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                image: {
+                    verticalFit: false,
+                    titleSrc: function(item) {
+                        var caption = item.el.attr('title');
+                        return caption + '1234567';
+                    }
+                },
+                gallery: {
+                    enabled: true
+                },
+                callbacks: {
+                    open: function() {
+                        zoomScale = 1;
+                        this.wrap.on('click.pinhandler', '.pin-it', function(e) {
+                            window.open(e.currentTarget.href, "intent",
+                                "scrollbars=yes,resizable=yes,toolbar=no,location=yes,width=550,height=420,left=" +
+                                (window.screen ? Math.round(screen.width / 2 - 275) : 50) + ",top=" + 100);
+                            return false;
+                        });
+                    },
+                    beforeClose: function() {
+                        this.wrap.off('click.pinhandler');
+                    }
+                }
+            });
+            var doc = document.documentElement;
+            
+            function openFullScreenMode() {
+                const doc = document.documentElement;
+            
+                const isInFullScreen = (
+                    document.fullscreenElement ||
+                    document.webkitFullscreenElement ||
+                    document.mozFullScreenElement ||
+                    document.msFullscreenElement
+                );
+            
+                if (!isInFullScreen) {
+                    if (doc.requestFullscreen)
+                        doc.requestFullscreen();
+                    else if (doc.webkitRequestFullscreen)
+                        doc.webkitRequestFullscreen();
+                    else if (doc.mozRequestFullScreen)
+                        doc.mozRequestFullScreen();
+                    else if (doc.msRequestFullscreen)
+                        doc.msRequestFullscreen();
+                } else {
+                    if (document.exitFullscreen)
+                        document.exitFullscreen();
+                    else if (document.webkitExitFullscreen)
+                        document.webkitExitFullscreen();
+                    else if (document.mozCancelFullScreen)
+                        document.mozCancelFullScreen();
+                    else if (document.msExitFullscreen)
+                        document.msExitFullscreen();
+                }
+            }
+            
+            function zoomIn() {
+                const $img = $(".mfp-figure img.mfp-img");
+                if (zoomScale <= 2) {
+                    zoomScale += 0.1;
+                    $img.css('transform', 'scale(' + zoomScale + ')');
+                }
+            }
+            
+            function zoomOut() {
+                const $img = $(".mfp-figure img.mfp-img");
+                if (zoomScale >= 0.5) {
+                    zoomScale -= 0.1;
+                    $img.css('transform', 'scale(' + zoomScale + ')');
+                }
+            }
+            </script>
+
+        <section id="section06" >
+            <div class="wrap1200">
+                <div class="flex-wrap">
+                    <div class="left">
+                        <div class="text">
+                            <i class="fa-regular fa-leaf c2 f32 mf20"></i>
+                            <!-- <?php
+                                foreach ($facilities as $k => $v) {
+                                $int = $k + 1;
+                                $href = 'fac.html?idx='.$v['idx'].'&gubun='.$int;
+                            ?>
+                            <div>
+                                <span class="en f18 bold c2">facilities 0<?=$int?></span>
+                                <h3 class="en f42 mf32 bold upp c2"><?=$v['eng_label']?></h3>
+                                <h4 class="f16 re c2"><?=$v['title']?></h4>
+                                <a href="<?=$href?>" class="more-btn f12 c2 re">더보기</a>
+                            </div>
+                            <?php } ?> -->
+                            <div>
+                                <span class="en f18 bold c2">facilities 01</span>
+                                <h3 class="en f42 mf32 bold upp c2">부대시설영문명</h3>
+                                <h4 class="f16 re c2">부대시설명</h4>
+                                <a href="fac.html" class="more-btn f12 c2 re">더보기</a>
+                            </div>
+                            <div>
+                                <span class="en f18 bold c2">facilities 02</span>
+                                <h3 class="en f42 mf32 bold upp c2">부대시설영문명</h3>
+                                <h4 class="f16 re c2">부대시설명</h4>
+                                <a href="fac.html" class="more-btn f12 c2 re">더보기</a>
+                            </div>
+                            <div>
+                                <span class="en f18 bold c2">facilities 03</span>
+                                <h3 class="en f42 mf32 bold upp c2">부대시설영문명</h3>
+                                <h4 class="f16 re c2">부대시설명</h4>
+                                <a href="fac.html" class="more-btn f12 c2 re">더보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="swiper-wrap">
+                            <div class="swiper fac-swiper">
+                                <div class="swiper-wrapper">
+                                    <!-- <?php
+                                        foreach ($facilities as $k => $v) {
+                                        $int = $k + 1;
+                                        $href = 'fac.html?idx='.$v['idx'].'&gubun='.$int;
+                                    ?>
+                                    <div class="swiper-slide bgi" style="background-image: url('http://img.einet.kr/<?=$pension_code?>/facilities/<?=$v['idx']?>/01.jpg')"></div>
+                                    <?php } ?> -->
+                                    <div class="swiper-slide bgi" style="background-image: url('img/sample01.jpg')"></div>
+                                    <div class="swiper-slide bgi" style="background-image: url('img/sample02.jpg')"></div>
+                                    <div class="swiper-slide bgi" style="background-image: url('img/sample03.jpg')"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-wrap">
+                        <div class="swiper-button-next swiper-button"><i class="fa-light fa-arrow-right-long fac-btn swiper-arrow arrow-next fac-next"></i></div>
+                        <div class="swiper-button-prev swiper-button"><i class="fa-light fa-arrow-left-long fac-btn swiper-arrow arrow-prev fac-prev"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section07">
+            <div class="wrap1200">
+                <div class="flex-wrap">
+                    <div class="left">
+                        <div class="swiper travel-swiper">
+                            <div class="swiper-wrapper">
+                                <!-- <?php
+                                    foreach ($travel as $k => $v) {
+                                    $int = $k + 1;
+                                    $href = 'travel.html';
+                                ?>
+                                <div class="swiper-slide bgi" style="background-image: url('http://img.einet.kr/<?=$pension_code?>/travel/<?=$v['idx']?>/01.jpg')"></div>
+                                <?php } ?> -->
+                                <div class="swiper-slide bgi" style="background-image: url('img/sample01.jpg')"></div>
+                                <div class="swiper-slide bgi" style="background-image: url('img/sample02.jpg')"></div>
+                                <div class="swiper-slide bgi" style="background-image: url('img/sample03.jpg')"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="text">
+                            <i class="fa-regular fa-map-location-dot f32 mf20 c2"></i>
+                            <span class="en bold f18 c2">nearby travel</span>
+                            <!-- <?php
+                                foreach ($travel as $k => $v) {
+                                $int = $k + 1;
+                                $href = 'travel.html';
+                            ?>
+                            <div>
+                                <h3 class="en f42 mf32 bold upp c2"><?=$v['eng_label']?></h3>
+                                <h4 class="f16 re c2"><?=$v['title']?></h4>
+                                <a href="<?=$href?>" class="more-btn f12 c2 re">더보기</a>
+                            </div>
+                            <?php } ?> -->
+                            <div>
+                                <h3 class="en f42 mf32 bold upp c2">여행지영문명</h3>
+                                <h4 class="f16 re c2">여행지</h4>
+                                <a href="travel.html" class="more-btn f12 c2 re">더보기</a>
+                            </div>
+                            <div>
+                                <h3 class="en f42 mf32 bold upp c2">여행지영문명</h3>
+                                <h4 class="f16 re c2">여행지</h4>
+                                <a href="travel.html" class="more-btn f12 c2 re">더보기</a>
+                            </div>
+                            <div>
+                                <h3 class="en f42 mf32 bold upp c2">여행지영문명</h3>
+                                <h4 class="f16 re c2">여행지</h4>
+                                <a href="travel.html" class="more-btn f12 c2 re">더보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-wrap">
+                        <div class="swiper-button-next swiper-button"><i class="fa-light fa-arrow-right-long travel-btn swiper-arrow arrow-next travel-next"></i></div>
+                        <div class="swiper-button-prev swiper-button"><i class="fa-light fa-arrow-left-long travel-btn swiper-arrow arrow-prev travel-prev"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section08" class="bgi" style="background-image: url(img/main/08.jpg);">
+        </section>
+
+        <!-- <?php include "./_footer.html"; ?> -->
+        <footer>
+            <div class="f-top">
+                <div class="wrap1200">
+                    <div class="flex-wrap">
+                        <div class="logo-wrap">
+                            <svg version="1.1" id="layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                                y="0px" viewBox="0 0 68.3 23.2" style="enable-background:new 0 0 68.3 23.2;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0{fill:#89AE89;}
+                                .st1{fill:#1A311D;}
+                                .st2{fill:#FF665C;}
+                            </style>
+                            <g>
+                                <path class="st0" d="M8.7,11.5c1-5.3,5-9.8,10.6-11.2c1.5-0.4,3-0.5,4.5-0.3c-1,5.3-5,9.8-10.6,11.2C11.7,11.6,10.1,11.7,8.7,11.5"
+                                    />
+                                <path class="st1" d="M4.2,6.7C4.1,6.7,4,6.6,4,6.6V5.1C4,5,4.1,4.9,4.2,4.9h6.9c0.1,0,0.2,0.1,0.2,0.2v1.5c0,0.1-0.1,0.2-0.2,0.2
+                                    H8.7V12c0,0.1-0.1,0.1-0.1,0.1H6.7c-0.1,0-0.1-0.1-0.1-0.1V6.7H4.2z M13.8,7.5L13.8,7.5c0.4-0.3,0.9-0.5,1.5-0.5c1.3,0,2,0.8,2,2
+                                    v2.8c0,0.1-0.1,0.2-0.2,0.2h-1.6c-0.1,0-0.2-0.1-0.2-0.2V9.3c0-0.3-0.3-0.6-0.6-0.6c-0.4,0-0.7,0.2-0.9,0.6v2.6
+                                    c0,0.1-0.1,0.2-0.2,0.2H12c-0.1,0-0.2-0.1-0.2-0.2V4.4c0-0.1,0.1-0.2,0.2-0.2h1.6c0.1,0,0.2,0.1,0.2,0.2V7.5z M20.1,10.1
+                                    c0.1,0.4,0.5,0.6,1.2,0.6c0.6,0,1.2-0.2,1.5-0.3c0.1,0,0.2-0.1,0.3-0.1c0.2,0,0.3,0.1,0.3,0.2l0.2,0.6c0,0.1,0.1,0.2,0.1,0.3
+                                    c0,0.1,0,0.2-0.2,0.3c-0.5,0.3-1.3,0.5-2.1,0.5c-1.9,0-3.2-1-3.2-2.6c0-1.4,1.2-2.6,3-2.6c1.8,0,2.8,1,2.8,2.3
+                                    c0,0.4-0.1,0.8-0.1,0.8H20.1z M20.1,9.1h1.7c0-0.4-0.3-0.6-0.8-0.6C20.6,8.4,20.2,8.7,20.1,9.1z"/>
+                                <path class="st2" d="M26.9,12.2V8.2h2.6V7.6h-3.7V5.9H35v1.7h-3.7v0.6h2.6v4.1H26.9z M33.7,5.8L30.4,4l-3.3,1.8l-0.8-1.5l3.2-1.8
+                                    V1.3h1.8v1.2l3.2,1.8L33.7,5.8z M32.2,9.9h-3.5v0.6h3.5V9.9z"/>
+                                <path class="st1" d="M38.4,12.1c-0.1,0-0.1-0.1-0.1-0.1V5.1c0-0.1,0.1-0.1,0.1-0.1h4.8c0.1,0,0.1,0.1,0.1,0.2v1.5
+                                    c0,0.1-0.1,0.2-0.1,0.2h-3V8h2.8C42.9,8,43,8.1,43,8.2v1.4c0,0.1-0.1,0.2-0.1,0.2h-2.8V12c0,0.1-0.1,0.1-0.1,0.1H38.4z M48.6,9.6
+                                    c0,1.7-1.2,2.6-2.5,2.6s-2.5-0.9-2.5-2.6c0-1.7,1.2-2.6,2.5-2.6S48.6,8,48.6,9.6z M46.1,8.7c-0.5,0-0.8,0.4-0.8,0.9
+                                    c0,0.5,0.3,0.9,0.8,0.9s0.8-0.4,0.8-0.9C46.9,9.1,46.5,8.7,46.1,8.7z M51,9.3v2.6c0,0.1-0.1,0.2-0.2,0.2h-1.4
+                                    c-0.1,0-0.2-0.1-0.2-0.2V7.4c0-0.1,0.1-0.2,0.2-0.2h1.2c0.1,0,0.1,0.1,0.2,0.2l0.1,0.5h0c0.3-0.6,0.8-0.8,1.3-0.8
+                                    c0.8,0,1.3,0.5,1.3,1.6v0.8c0,0.1-0.1,0.2-0.2,0.2H52c-0.1,0-0.2-0.1-0.2-0.2V9.1c0-0.2-0.1-0.4-0.3-0.4C51.3,8.7,51,9,51,9.3z
+                                    M55.8,10.1c0.1,0.4,0.4,0.6,1,0.6c0.5,0,1-0.2,1.3-0.3c0.1,0,0.2-0.1,0.3-0.1c0.1,0,0.2,0.1,0.2,0.2l0.1,0.6
+                                    c0,0.1,0.1,0.2,0.1,0.3c0,0.1,0,0.2-0.2,0.3c-0.4,0.3-1.1,0.5-1.8,0.5c-1.6,0-2.7-1-2.7-2.6c0-1.4,1-2.6,2.5-2.6
+                                    c1.6,0,2.4,1,2.4,2.3c0,0.4-0.1,0.8-0.1,0.8H55.8z M55.8,9.1h1.5c0-0.4-0.2-0.6-0.7-0.6C56.2,8.4,55.8,8.7,55.8,9.1z M61.1,10.5
+                                    c0.1,0,0.2,0,0.2,0.1c0.1,0.2,0.2,0.3,0.6,0.3c0.4,0,0.5-0.2,0.5-0.3c0-0.2-0.1-0.3-0.5-0.3l-0.9-0.1c-1-0.1-1.5-0.6-1.5-1.4
+                                    c0-0.9,0.8-1.8,2.2-1.8c1.4,0,2.1,0.7,2.1,1.4c0,0.1-0.1,0.2-0.2,0.2h-1.3c-0.1,0-0.2,0-0.2-0.1c-0.1-0.1-0.2-0.2-0.4-0.2
+                                    c-0.3,0-0.5,0.1-0.5,0.3c0,0.1,0.1,0.2,0.3,0.2l1,0.1c1.1,0.1,1.5,0.7,1.5,1.4c0,0.9-0.7,1.8-2.3,1.8c-1.5,0-2.3-0.7-2.3-1.5
+                                    c0-0.1,0.1-0.3,0.2-0.3H61.1z M64.7,8.9c-0.1,0-0.1-0.1-0.1-0.2V7.4c0-0.1,0.1-0.2,0.1-0.2h0.4V6.1c0-0.1,0.1-0.2,0.2-0.2h1.4
+                                    c0.1,0,0.2,0.1,0.2,0.2v1.1H68c0.1,0,0.1,0.1,0.1,0.2v1.3c0,0.1-0.1,0.2-0.1,0.2h-1.2v1.1c0,0.4,0.2,0.6,0.5,0.6
+                                    c0.2,0,0.4-0.1,0.5-0.2c0.1-0.1,0.3,0,0.3,0.1l0.2,0.9c0,0.1,0,0.2,0,0.2c0,0.1,0,0.2-0.1,0.2c-0.2,0.2-0.7,0.4-1.3,0.4
+                                    c-1.1,0-1.8-0.7-1.8-2V8.9H64.7z"/>
+                                <path class="st0" d="M4.9,18.9c-0.1,0-0.1-0.1-0.2-0.2c-0.1-0.7-0.6-1.1-1.3-1.1c-0.8,0-1.5,0.7-1.5,1.9c0,1.2,0.7,1.9,1.5,1.9
+                                    c0.7,0,1.2-0.4,1.3-1.1c0-0.1,0.1-0.2,0.2-0.2h1.5c0.1,0,0.2,0,0.2,0.2c0,1.5-1.1,2.9-3.2,2.9c-1.9,0-3.4-1.5-3.4-3.7
+                                    c0-2.1,1.5-3.7,3.4-3.7c2,0,3.2,1.4,3.2,3c0,0.1-0.1,0.2-0.2,0.2H4.9z M11.9,22.1H9.2l-0.3,0.8c-0.1,0.1-0.1,0.2-0.2,0.2H7
+                                    c-0.1,0-0.1,0-0.1-0.1s0-0.1,0-0.1l2.8-7h1.7l2.8,7c0,0,0,0.1,0,0.1s0,0.1-0.1,0.1h-1.7c-0.1,0-0.2,0-0.2-0.2L11.9,22.1z M9.8,20.4
+                                    h1.4L11,19.7c-0.2-0.4-0.4-1.4-0.4-1.4h-0.1c0,0-0.2,0.9-0.4,1.4L9.8,20.4z M22.3,15.9c0.1,0,0.1,0.1,0.1,0.1V23
+                                    c0,0.1-0.1,0.1-0.1,0.1h-1.6c-0.1,0-0.1-0.1-0.1-0.1v-3.6h0c0,0-0.2,0.4-0.4,0.7l-1.5,2.4L17.2,20c-0.2-0.4-0.4-0.7-0.4-0.7h0V23
+                                    c0,0.1-0.1,0.1-0.1,0.1H15c-0.1,0-0.1-0.1-0.1-0.1v-6.9c0-0.1,0.1-0.1,0.1-0.1h1.4c0.1,0,0.1,0,0.2,0.1l2,3.3h0l2-3.3
+                                    c0.1-0.1,0.1-0.1,0.2-0.1H22.3z M23.7,23.1c-0.1,0-0.1-0.1-0.1-0.1v-6.9c0-0.1,0.1-0.1,0.1-0.1h2.7c1.5,0,2.6,1.1,2.6,2.8
+                                    c0,1.7-1.1,2.7-2.6,2.7h-1V23c0,0.1-0.1,0.1-0.1,0.1H23.7z M25.4,17.7v2h0.8c0.6,0,0.9-0.4,0.9-1c0-0.6-0.3-1-0.9-1H25.4z M31.7,23
+                                    c0,0.1-0.1,0.1-0.1,0.1H30c-0.1,0-0.1-0.1-0.1-0.1v-6.9c0-0.1,0.1-0.1,0.1-0.1h1.6c0.1,0,0.1,0.1,0.1,0.1V23z M35.4,20
+                                    c-0.3-0.3-0.6-0.8-0.6-0.8h0V23c0,0.1-0.1,0.1-0.1,0.1H33c-0.1,0-0.1-0.1-0.1-0.1v-6.9c0-0.1,0.1-0.1,0.1-0.1h1.4L37,19
+                                    c0.3,0.3,0.6,0.7,0.6,0.7h0v-3.7c0-0.1,0.1-0.1,0.1-0.1h1.6c0.1,0,0.1,0.1,0.1,0.1V23c0,0.1-0.1,0.1-0.1,0.1H38L35.4,20z
+                                    M47.3,19.7c0,1.9-1.3,3.5-3.3,3.5c-2.2,0-3.6-1.7-3.6-3.7c0-2.1,1.5-3.7,3.5-3.7c2,0,3.2,1.5,3.2,2.6c0,0.1-0.1,0.2-0.2,0.2h-1.4
+                                    c-0.1,0-0.2,0-0.2-0.1c-0.2-0.4-0.7-0.8-1.4-0.8c-0.9,0-1.6,0.9-1.6,1.9c0,1.1,0.7,1.9,1.7,1.9c1,0,1.4-0.5,1.4-0.9v0h-1.9
+                                    c-0.1,0-0.1-0.1-0.1-0.2v-1.3c0-0.1,0.1-0.2,0.1-0.2h3.8V19.7z"/>
+                            </g>
+                            </svg>
+                        </div>
+                        <div class="left">
+                            <ul>
+                                <li class="f12 med c2">더(The) 숨 Forest</li>
+                                <li><span class="f12 med c2">사업자등록번호</span><p class="f12 re c2"><?=$biz_no?></p></li>
+                                <li><span class="f12 med c2">대표자명</span><p class="f12 re c2"><?=$owner_name?></p></li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li><span class="f12 med c2">Location</span><p class="f12 re c2"><?=$road_addr?></p></li>
+                                <li><span class="f12 med c2">Reservation</span><a href="tel:055-222-6200" class="f12 re c2">055-222-6200</a></li>
+                                <li><span class="f12 med c2">Bank</span><p class="f12 re c2">
+                                    <?
+                                        for($i=0;$i<count($bank_info);$i++) {
+                                            if( $bank_info[$i]['bank_use_yn'] == 'Y') {
+                                                echo $bank_info[$i]['bank_name']." "	.$bank[$i]['bank_no']." ".$bank[$i]['bank_owner'] ;
+                                            }
+                                        }
+                                    ?>
+                                </p></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="f-btm">
+                <div class="wrap1200">
+                    <ul>
+                        <li><a href="javascript:linkPopup('auth')" class="f12 reg c2">저작권</a></li>
+                        <li><a href="javascript:linkPopup('internet_rule')" class="f12 reg c2">이용약관</a></li>
+                        <li><a href="javascript:linkPopup('rule')" class="f12 reg c2">개인정보처리방침</a></li><br class="none-pc">
+                        <li><a href="javascript:linkPopup('admin')" class="f12 reg c2">관리자로그인</a></li>
+                        <li><a href="javascript:linkPopup('inet')" class="f12 reg c2">Design by Einet</a></li><br class="none-pc">
+                        <li><p class="f12 reg c2">© THE SUM FOREST 2023</p></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+
+<script src="./js/plugin/jquery.cookie.js"></script>
+<script src="./js/plugin/jquery-ui.min.js"></script>
+<? include_once("include/xhr/is_popup.php");?>
+<!-- 영상 제어 -->
+
+<script>
+videoFrame('.main-video', '#ei-Top-Vimeo');
+videoFrame('.sub-video01', '#ei-Sub-Vimeo1');
+videoFrame('.sub-video02', '#ei-Sub-Vimeo2');
+videoFrame('.last-video', '#ei-Btm-Vimeo');
+
+function videoFrame(frame, video) {
+    const videoArea = $(frame);
+    videoArea.css('position', 'relative');
+
+    videoCotrl(video, videoArea);
+    window.addEventListener('scroll', () => videoCotrl(video, videoArea));
+}
+
+function videoCotrl(iframe, top) {
+    const vimeoPlayer = new Vimeo.Player(document.querySelector(iframe));
+    if (
+        (pageYOffset + $(window).height() - 50 >= top.offset().top) && // 시작
+        (pageYOffset <= top.offset().top + top.height() - 50) // 끝
+    ) {
+        vimeoPlayer.play()
+    } else {
+        vimeoPlayer.pause()
+    }
+}
+</script>

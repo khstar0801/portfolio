@@ -1,0 +1,122 @@
+<?php include "./_header.html"; ?>
+<?php
+$menutree_idx = $_GET['menutree_idx'];
+$file_path = $img_path.'/room/'.$menutree_idx.'/';
+$file_count = file_count($file_path);
+$roomInfo_menu = $pension->roomInfo_menu($menutree_idx);
+
+$getDongName = $pension->getDongName($roomInfo_menu['dong_idx']);
+
+$adult_excess = ($roomInfo_menu['adult_excess']) ? number_format($roomInfo_menu['adult_excess']) : '없음';
+$child_excess = ($roomInfo_menu['child_excess']) ? number_format($roomInfo_menu['child_excess']) : '없음';
+$baby_excess = ($roomInfo_menu['baby_excess']) ? number_format($roomInfo_menu['baby_excess']) : '없음';
+$limit_man = str_replace('명', '', $roomInfo_menu['limit_man']);
+$max_man = str_replace('명', '', $roomInfo_menu['max_man']);
+
+$booking_id = ($roomInfo_menu['room_ddnayo_idx']) ? $roomInfo_menu['room_ddnayo_idx'] : $InfoPension['ddnayo_id'];
+
+$gubun = ($_GET['gubun']) ? $_GET['gubun']-1 : 0;
+
+$replace_str = preg_match('/.+\=(.*)/', $reser_url, $replace_data);
+$idx_grp = preg_split('/\_/', $replace_data[1]);
+?>
+
+
+<link rel="stylesheet" href="pages/css/room.css">
+<script src="pages/js/room.js"></script>
+
+
+<section id="section01">
+    <div class="wrap1400">
+        <div class="flex-wrap all-wrap">
+            <div class="left">
+                <div class="tit">
+                    <h3 class="f24 med "><?=$roomInfo_menu['room_name']?></h3>
+                    <p class="f12 lig">객실상세설명 연결 / 바다 전망의 개별 바비큐, 실내 프라이빗 풀 (미온수 무료) 이 있는 키즈 전용 객실입니다.</p>
+                </div>
+                <div class="con">
+                    <h5 class="f14 med font1">객실 정보</h5>
+                    <ul>
+                        <li>
+                            <span class="f12 med">기준인원</span>
+                            <p class="f12 lig">기준 <?= $limit_man; ?>인 / 최대 <?=$max_man; ?>인</p>
+                        </li>
+                        <li>
+                            <span class="f12 med">넓이</span>
+                            <p class="f12 lig"><?= $roomInfo_menu['pyeong']; ?>평형 (약 <?=$roomInfo_menu['pyeong_m2'];?> m²)</p>
+                        </li>
+                        <li>
+                            <span class="f12 med">객실유형/형태</span>
+                            <p class="f12 lig"><?= $roomInfo_menu['room_class']; ?>/<?= $roomInfo_menu['room_type']; ?></p>
+                        </li>
+                        <li>
+                            <span class="f12 med">특이사항</span>
+                            <p class="f12 lig"><?= $roomInfo_menu['room_remark']; ?></p>
+                        </li>
+                    </ul>
+                    <h5 class="f14 med font1">구비시설</h5>
+                    <p class="f12 lig"><?= $roomInfo_menu['facilities']; ?></p>
+                </div>
+                <div class="a-wrap">
+                    <a href="reservation.html">
+                        <p class="f14 med font1">실시간 예약하기</p>
+                        <div class="circle-wrap">
+                            <div class="line"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </a>
+                    <a href="charge.html">
+                        <p class="f14 med font1">이용안내 및 요금표</p>
+                        <div class="circle-wrap">
+                            <div class="line"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </a>
+                    <a href="rooms.html">
+                        <p class="f14 med font1">다른 객실 보기</p>
+                        <div class="circle-wrap">
+                            <div class="line"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="con-wrap">
+                    <div class="flex-wrap">
+                        <?php for($i=1; $i<=($file_count); $i++) { ?>
+                        <img src="http://img.einet.kr/<?=$pension_code?>/room/<?= $menutree_idx ?>/<?=sprintf("%02d",$i)?>.jpg" alt="">
+                        <?php }?>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="a-wrap none-pc">
+                <a href="reservation.html">
+                    <p class="f14 med font1">실시간 예약하기</p>
+                    <div class="circle-wrap">
+                        <div class="line"></div>
+                        <div class="circle"></div>
+                    </div>
+                </a>
+                <a href="charge.html">
+                    <p class="f14 med font1">이용안내 및 요금표</p>
+                    <div class="circle-wrap">
+                        <div class="line"></div>
+                        <div class="circle"></div>
+                    </div>
+                </a>
+                <a href="rooms.html">
+                    <p class="f14 med font1">다른 객실 보기</p>
+                    <div class="circle-wrap">
+                        <div class="line"></div>
+                        <div class="circle"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<?php include "./_footer.html"; ?>  

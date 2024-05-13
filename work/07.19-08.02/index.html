@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>title</title>
+
+    <meta name="keyword" content="">
+    <meta name="description" content="">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+
+    <!-- <link rel="shortcut icon" href="/favicon.ico"> -->
+    
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="pages/css/index.css">
+    <link rel="stylesheet" href="plugin/css/animate.min.css">
+    <link rel="stylesheet" href="plugin/css/swiper.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kok5bpl.css">
+
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/bd8686ee32.js" crossorigin="anonymous"></script>
+    <script src="plugin/js/ScrollToPlugin.min.js"></script>
+    <script src="plugin/js/ScrollMagic.min.js"></script>
+    <script src="plugin/js/debug.addIndicators.min.js"></script>
+    <script src="plugin/js/TweenMax.min.js"></script>
+    <script src="plugin/js/animation.gsap.min.js"></script>
+    <script src="plugin/js/swiper.min.js"></script>
+    <script src="plugin/js/wow.min.js"></script>
+    <!-- <script src="plugin/js/scroll.js"></script> -->
+    <script src="https://player.vimeo.com/api/player.js"></script>
+        
+</head>
+
+<body class="preload">
+
+    <!-- Header -->
+    <div class="cm-header" >
+        <header class="header">
+            <div class="header-wrapper">
+                <div class="logo-wrap wow fadeIn" data-wow-duration="1.5s" data-wow-delay="1300ms">
+                    <a href=""><img src="assets/img/logo.png" alt="" class="logo-normal"><img src="assets/img/logo-c.png" alt="" class="logo-scroll"></a>
+                </div>
+                <div class="brand">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <a href="reservation.html" class="nav-reser-btn">실시간 예약하기</a>
+                <div class="menu-icon_wrap">
+                    <div class="menu-icon wow fadeIn" data-wow-duration="1.5s" data-wow-delay="1000ms">
+                        <span class="menu-icon__line line-a"></span>
+                        <span class="menu-icon__line line-b"></span>
+                        <span class="menu-icon__line line-c"></span>
+                    </div>	
+                </div>					
+            </div>				
+        </header>
+        <div class="nav">
+            
+            <div class="nav-content">
+                <div class="nav-wrap">
+                    <div class="img-wrap ">
+                        <img src="assets/img/layout/01.jpg" alt="">
+                        <img src="assets/img/layout/02.jpg" alt="">
+                        <img src="assets/img/layout/03.jpg" alt="">
+                    </div>
+                    <ul class="nav-list">
+                        <li class="nav-item"><a data-toggle="collapse" href="index.html" class="hover-target" role="button" aria-expanded="false" aria-controls="collapseSub"><p class="enM f_30">Home</p></a></li>
+                        <li class="nav-item"><a data-toggle="collapse" href="#" class="hover-target enM f_30" role="button" aria-expanded="false" aria-controls="collapseSub"><p class="enM f_30">reservation</p></a>
+                            <ul class="sub-links collapse" id="collapseSub">
+                                <li><a href="reservation.html" class="hover-target animsition-link f_14 color_f op_3 koR">실시간예약</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a data-toggle="collapse" href="#" class="hover-target enM f_30" role="button" aria-expanded="false" aria-controls="collapseSub"><p class="enM f_30">room</p></a>
+                            <ul class="sub-links collapse" id="collapseSub">
+                                <li><a href="rooms.html" class="hover-target animsition-link f_14 color_f op_3 koR">미리보기</a></li>
+                                <li><a href="room.html" class="hover-target animsition-link f_14 color_f op_3 koR">객실</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a data-toggle="collapse" href="#" class="hover-target enM f_30" role="button" aria-expanded="false" aria-controls="collapseSub"><p class="enM f_30">Dining</p></a>
+                            <ul class="sub-links collapse" id="collapseSub">
+                                <li><a href="dining.html" class="hover-target animsition-link f_14 color_f op_3 koR">다이닝</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a data-toggle="collapse" href="#" class="hover-target enM f_30" role="button" aria-expanded="false" aria-controls="collapseSub"><p class="enM f_30">offer</p></a>
+                            <ul class="sub-links collapse" id="collapseSub">
+                                <li><a href="offer.html" class="hover-target animsition-link f_14 color_f op_3 koR">룸패키지</a></li>
+                                <li><a href="event.html" class="hover-target animsition-link f_14 color_f op_3 koR">이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a data-toggle="collapse" href="#" class="hover-target enM f_30" role="button" aria-expanded="false" aria-controls="collapseSub"><p class="enM f_30">Actibity & Facilities</p></a>
+                            <ul class="sub-links collapse" id="collapseSub">
+                                <li><a href="facilities.html" class="hover-target animsition-link f_14 color_f op_3 koR">미리보기</a></li>
+                                <li><a href="fac.html" class="hover-target animsition-link f_14 color_f op_3 koR">부대시설상세</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a data-toggle="collapse" href="#" class="hover-target enM f_30" role="button" aria-expanded="false" aria-controls="collapseSub"><p class="enM f_30">Information</p></a>
+                            <ul class="sub-links collapse" id="collapseSub">
+                                <li><a href="location.html" class="hover-target animsition-link f_14 color_f op_3 koR">location</a></li>
+                                <li><a href="notice.html" class="hover-target animsition-link f_14 color_f op_3 koR">Notice</a></li>
+                                <li><a href="qna.html" class="hover-target animsition-link f_14 color_f op_3 koR">Q&A</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <div class="mo-brand">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Container or Wrap -->
+    <div id="container" class="wrap">
+
+        <section id="" class="video-fullscreen">
+            <div class="ttl wrap1520">
+                <h2 class="f16 mf16 reg">Upscale luxury hotel with hidden place.</h2>
+                <h1 class="f50 mf40 bold">CLUB YP & SUITE HOTEL</h1>
+                <p class="f14 lig">CLUB YP & SUITE HOTEL은 다른 호텔과 품격이 다른 서비스를 제공합니다.<br>
+                    숨겨진 보석과 같은 CLUB YP & SUITE HOTEL에서 프라이빗하고 새로운 여행을 즐겨보세요.</p>
+                <a href="" id="btn-color">Explore</a>
+            </div>
+            <div class="frame">
+                <iframe 
+                    id="main-top-video" class="video cover" style="background-color:#000"
+                    src="https://player.vimeo.com/video/803758751/?api=1&background=1&mute=1"
+                    allowfullscreen frameborder="0"      
+                >
+                </iframe>
+            </div>
+        </section>
+
+
+        <!-- delete -->
+
+        <!-- section01 -->
+        <section id="section01">
+            <div class="content flex-wrap">
+                <div class="left flex-wrap">
+                    <img src="pages/img/index/01-01.jpg" alt="">
+                    <img src="pages/img/index/01-02.jpg" alt="">
+                </div>
+                <div class="right">
+                    <h3 class="f36 mf24 reg c2">Discover luxury hidden place<br>
+                        sophistication<br>
+                        in <span class="bold">CLUB YP & SUITE</span></h3>
+                    <p class="f14 c4">CLUB YP & SUITE 호텔은 품격있는 라이프스타일과<br>
+                        특별한 경험을 제안합니다.<br>
+                        다채로운 경험과 최상의 서비스를 누려보세요.</p>
+                    <a href="" id="btn-color">Brand Story</a>
+                </div>
+            </div>
+            <p class="f18 mf14 c2 reg">Discover luxury hidden place sophistication<br>
+                in  <span class="bold">CLUB YP & SUITE</span></p>
+            <div class="wrap1520 flex-wrap">
+                <img src="pages/img/index/01-03.jpg" alt="">
+                <img src="pages/img/index/01-04.jpg" alt="">
+                <img src="pages/img/index/01-05.jpg" alt="">
+            </div>
+        </section>
+
+        <!-- section02 -->
+        <section id="section02">
+            <!-- pc -->
+            <div class="scroll-wrap">
+                <div class="text-wrap scroll">
+                    <div class="content one">
+                        <ul>
+                            <li class="reg f12 c2 active">Young Suite</li>
+                            <li class="reg f12 c2">Young Suite Terrace</li>
+                            <li class="reg f12 c2">Premier Suite</li>
+                            <li class="reg f12 c2">Premier Suite VIP</li>
+                        </ul>
+                        <h3 class="c2 f36 bold">Young Suite</h3>
+                        <p class="c9 f14">탁 트인 통유리 너머로 펼쳐지는 오션뷰에서 만날 수 있는 전망이 아름답습니다.<br>
+                            여유로운 크기의 유리창을 통해 자연과의 일체감을 경험할 수 있습니다.</p>
+                        <a href="" id="btn-text">
+                            <p>Detail View</p>
+                            <img src="assets/img/arrow.png" alt="">
+                            <svg class="circle-img" xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+                                <g fill="none" stroke="#222" stroke-width="1" stroke-linejoin="round" stroke-miterlimit="10">
+                                    <circle class="circle" cx="26" cy="26" r="25"></circle>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="content two">
+                        <ul>
+                            <li class="reg f12 c2 ">Young Suite</li>
+                            <li class="reg f12 c2 active">Young Suite Terrace</li>
+                            <li class="reg f12 c2">Premier Suite</li>
+                            <li class="reg f12 c2">Premier Suite VIP</li>
+                        </ul>
+                        <h3 class="c2 f36 bold">Young Suite Terrace</h3>
+                        <p class="c9 f14">탁 트인 통유리 너머로 펼쳐지는 오션뷰에서 만날 수 있는 전망이 아름답습니다.<br>
+                            여유로운 크기의 유리창을 통해 자연과의 일체감을 경험할 수 있습니다.</p>
+                        <a href="" id="btn-text">
+                            <p>Detail View</p>
+                            <img src="assets/img/arrow.png" alt="">
+                            <svg class="circle-img" xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+                                <g fill="none" stroke="#222" stroke-width="1" stroke-linejoin="round" stroke-miterlimit="10">
+                                    <circle class="circle" cx="26" cy="26" r="25"></circle>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="content three">
+                        <ul>
+                            <li class="reg f12 c2 ">Young Suite</li>
+                            <li class="reg f12 c2">Young Suite Terrace</li>
+                            <li class="reg f12 c2 active">Premier Suite</li>
+                            <li class="reg f12 c2">Premier Suite VIP</li>
+                        </ul>
+                        <h3 class="c2 f36 bold">Premier Suite</h3>
+                        <p class="c9 f14">탁 트인 통유리 너머로 펼쳐지는 오션뷰에서 만날 수 있는 전망이 아름답습니다.<br>
+                            여유로운 크기의 유리창을 통해 자연과의 일체감을 경험할 수 있습니다.</p>
+                        <a href="" id="btn-text">
+                            <p>Detail View</p>
+                            <img src="assets/img/arrow.png" alt="">
+                            <svg class="circle-img" xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+                                <g fill="none" stroke="#222" stroke-width="1" stroke-linejoin="round" stroke-miterlimit="10">
+                                    <circle class="circle" cx="26" cy="26" r="25"></circle>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="content four">
+                        <ul>
+                            <li class="reg f12 c2 ">Young Suite</li>
+                            <li class="reg f12 c2">Young Suite Terrace</li>
+                            <li class="reg f12 c2 ">Premier Suite</li>
+                            <li class="reg f12 c2 active">Premier Suite VIP</li>
+                        </ul>
+                        <h3 class="c2 f36 bold">Premier Suite VIP</h3>
+                        <p class="c9 f14">탁 트인 통유리 너머로 펼쳐지는 오션뷰에서 만날 수 있는 전망이 아름답습니다.<br>
+                            여유로운 크기의 유리창을 통해 자연과의 일체감을 경험할 수 있습니다.</p>
+                        <a href="" id="btn-text">
+                            <p>Detail View</p>
+                            <img src="assets/img/arrow.png" alt="">
+                            <svg class="circle-img" xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+                                <g fill="none" stroke="#222" stroke-width="1" stroke-linejoin="round" stroke-miterlimit="10">
+                                    <circle class="circle" cx="26" cy="26" r="25"></circle>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="bottom-img">
+                    <img src="pages/img/index/02-bg.jpg" alt="">
+                </div>
+                <div class="img-area scroll">
+                    <div class="img-wrap one">
+                        <img src="pages/img/index/02-01.jpg" alt="">
+                    </div>
+                    <div class="img-wrap two">
+                        <img src="pages/img/index/02-01.jpg" alt="">
+                    </div>
+                    <div class="img-wrap three">
+                        <img src="pages/img/index/02-01.jpg" alt="">
+                    </div>
+                    <div class="img-wrap four">
+                        <img src="pages/img/index/02-01.jpg" alt="">
+                    </div>
+                </div>
+                <a href="" class="btn-hover more-btn upp none-pc">READ MORE</a>
+            </div>
+            <!-- mo -->
+            <div class="wrap1520 none-pc">
+                <div class="content">
+                    <ul>
+                        <li class="reg mf12 c2 active">Young Suite</li>
+                        <li class="reg mf12 c2">Young Suite Terrace</li>
+                        <li class="reg mf12 c2 ">Premier Suite</li>
+                        <li class="reg mf12 c2 ">Premier Suite VIP</li>
+                    </ul>
+                    <h3 class="c2 mf25 bold">Young Suite</h3>
+                    <p class="c9 mf14">탁 트인 통유리 너머로 펼쳐지는 오션뷰에서 만날 수 있는 전망이 아름답습니다.<br>
+                        여유로운 크기의 유리창을 통해 자연과의 일체감을 경험할 수 있습니다.</p>
+                    <a href="" id="btn-text">
+                        <p>Detail View</p>
+                        <img src="assets/img/arrow.png" alt="">
+                        <svg class="circle-img" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                            <g fill="none" stroke="#222" stroke-width="1" stroke-linejoin="round" stroke-miterlimit="10">
+                                <circle class="circle" cx="21" cy="21" r="20"></circle>
+                            </g>
+                        </svg>
+                    </a>
+                    <img src="pages/img/index/02-01.jpg" alt="">
+                </div>
+                <div class="content">
+                    <ul>
+                        <li class="reg mf12 c2 ">Young Suite</li>
+                        <li class="reg mf12 c2 active">Young Suite Terrace</li>
+                        <li class="reg mf12 c2 ">Premier Suite</li>
+                        <li class="reg mf12 c2 ">Premier Suite VIP</li>
+                    </ul>
+                    <h3 class="c2 mf25 bold">Young Suite Terrace</h3>
+                    <p class="c9 mf14">탁 트인 통유리 너머로 펼쳐지는 오션뷰에서 만날 수 있는 전망이 아름답습니다.<br>
+                        여유로운 크기의 유리창을 통해 자연과의 일체감을 경험할 수 있습니다.</p>
+                    <a href="" id="btn-text">
+                        <p>Detail View</p>
+                        <img src="assets/img/arrow.png" alt="">
+                        <svg class="circle-img" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                            <g fill="none" stroke="#222" stroke-width="1" stroke-linejoin="round" stroke-miterlimit="10">
+                                <circle class="circle" cx="21" cy="21" r="20"></circle>
+                            </g>
+                        </svg>
+                    </a>
+                    <img src="pages/img/index/02-01.jpg" alt="">
+                </div>
+                <div class="content">
+                    <ul>
+                        <li class="reg mf12 c2 ">Young Suite</li>
+                        <li class="reg mf12 c2">Young Suite Terrace</li>
+                        <li class="reg mf12 c2 active">Premier Suite</li>
+                        <li class="reg mf12 c2 ">Premier Suite VIP</li>
+                    </ul>
+                    <h3 class="c2 mf25 bold">Premier Suite</h3>
+                    <p class="c9 mf14">탁 트인 통유리 너머로 펼쳐지는 오션뷰에서 만날 수 있는 전망이 아름답습니다.<br>
+                        여유로운 크기의 유리창을 통해 자연과의 일체감을 경험할 수 있습니다.</p>
+                    <a href="" id="btn-text">
+                        <p>Detail View</p>
+                        <img src="assets/img/arrow.png" alt="">
+                        <svg class="circle-img" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                            <g fill="none" stroke="#222" stroke-width="1" stroke-linejoin="round" stroke-miterlimit="10">
+                                <circle class="circle" cx="21" cy="21" r="20"></circle>
+                            </g>
+                        </svg>
+                    </a>
+                    <img src="pages/img/index/02-01.jpg" alt="">
+                </div>
+                <div class="content">
+                    <ul>
+                        <li class="reg mf12 c2 ">Young Suite</li>
+                        <li class="reg mf12 c2">Young Suite Terrace</li>
+                        <li class="reg mf12 c2 ">Premier Suite</li>
+                        <li class="reg mf12 c2 active">Premier Suite VIP</li>
+                    </ul>
+                    <h3 class="c2 mf25 bold">Premier Suite VIP</h3>
+                    <p class="c9 mf14">탁 트인 통유리 너머로 펼쳐지는 오션뷰에서 만날 수 있는 전망이 아름답습니다.<br>
+                        여유로운 크기의 유리창을 통해 자연과의 일체감을 경험할 수 있습니다.</p>
+                    <a href="" id="btn-text">
+                        <p>Detail View</p>
+                        <img src="assets/img/arrow.png" alt="">
+                        <svg class="circle-img" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                            <g fill="none" stroke="#222" stroke-width="1" stroke-linejoin="round" stroke-miterlimit="10">
+                                <circle class="circle" cx="21" cy="21" r="20"></circle>
+                            </g>
+                        </svg>
+                    </a>
+                    <img src="pages/img/index/02-01.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <div id="trigger01"></div>
+        <div id="trigger02"></div>
+
+        <!-- circle -->
+        <div id="section-top-circle-wrap">
+            <div class="section-top-circle"></div>
+        </div>
+
+        <!-- section03 -->
+        <section id="section03">
+            <div class="wrap1620">
+                <h3 class="f120 mf50 cf reg">The night at<br>
+                    <span class="bold">CLUB YP</span> is filled</h3>
+                <h4 class="f36 mf20 cf reg">with a new space different<br>
+                    from the daytime.</h4>
+                <p class="f14 mf12 cf reg">CLUB YP & SUITE HOTEL의 어덜트 풀 파티는 매 회 다른 컨셉으로 준비됩니다.<br>
+                    다양한 컨셉의 이색파티와 팝업스토어 더 나은 서비스로 고품격의 즐길거리를 제공합니다.<br>
+                    잊지 못 할 일생의 단 한번의 경험. CLUB YP & SUITE HOTEL을 즐겨보세요.</p>
+                <a href="" id="btn-circle-animation">
+                    <div class="text-wrap">
+                        <div class="flex-wrap normal-show"><p class="c2">Reservation</p><img src="assets/img/arrow.png" alt=""></div>
+                        <div class="flex-wrap hover-show"><p class="cf">Reservation</p><img src="assets/img/arrow-w.png" alt=""></div>
+                    </div>
+                </a>
+                <img src="pages/img/index/03-01.jpg" alt="">
+            </div>
+            <div class="wrap1520">
+                <div id="calendar-area">
+                    달력영역
+
+                    <!-- class="show" 노출  -->
+                    <div id="day-info">
+                        <a class="close-info" href="#close-info"><i class="fa-light fa-circle-xmark cf f30"></i></a>
+                        <div class="info-wrap wrap1520">
+                            <h3 class="date bold f40 mf30 cf">2023. 8. 18 Fri</h3>
+                            <div class="flex-wrap">
+                                <a href="#open-detail" class="party open-detail">
+                                    <div class="img-wrap" style="background-image: url(pages/img/index/01-04.jpg);">
+                                        <div class="fliter"></div>
+                                    </div>
+                                    <div class="text-wrap">
+                                        <div class="text">
+                                            <h3 class="tit cf bold f20 mf18">CLUB YP 풀파티</h3>
+                                            <p class="time cf lig f14 mf14"><i class="fa-solid fa-clock cf"></i>16:00 - 20:00</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#open-detail" class="party open-detail">
+                                    <div class="img-wrap" style="background-image: url(pages/img/index/01-04.jpg);">
+                                        <div class="fliter"></div>
+                                    </div>
+                                    <div class="text-wrap">
+                                        <div class="text">
+                                            <h3 class="tit cf bold f20 mf18">CLUB YP 풀파티</h3>
+                                            <p class="time cf lig f14 mf14"><i class="fa-solid fa-clock cf"></i>16:00 - 20:00</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#open-detail" class="party open-detail">
+                                    <div class="img-wrap" style="background-image: url(pages/img/index/01-04.jpg);">
+                                        <div class="fliter"></div>
+                                    </div>
+                                    <div class="text-wrap">
+                                        <div class="text">
+                                            <h3 class="tit cf bold f20 mf18">CLUB YP 풀파티</h3>
+                                            <p class="time cf lig f14 mf14"><i class="fa-solid fa-clock cf"></i>16:00 - 20:00</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#open-detail" class="event open-detail">
+                                    <div class="img-wrap" style="background-image: url(pages/img/index/01-04.jpg);">
+                                        <div class="fliter"></div>
+                                    </div>
+                                    <div class="text-wrap">
+                                        <div class="text">
+                                            <h3 class="tit cf bold f20 mf18">CLUB YP 풀파티</h3>
+                                            <p class="time cf lig f14 mf14"><i class="fa-solid fa-clock cf"></i>16:00 - 20:00</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#open-detail" class="event open-detail">
+                                    <div class="img-wrap" style="background-image: url(pages/img/index/01-04.jpg);">
+                                        <div class="fliter"></div>
+                                    </div>
+                                    <div class="text-wrap">
+                                        <div class="text">
+                                            <h3 class="tit cf bold f20 mf18">CLUB YP 풀파티</h3>
+                                            <p class="time cf lig f14 mf14"><i class="fa-solid fa-clock cf"></i>16:00 - 20:00</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#open-detail" class="event open-detail">
+                                    <div class="img-wrap" style="background-image: url(pages/img/index/01-04.jpg);">
+                                        <div class="fliter"></div>
+                                    </div>
+                                    <div class="text-wrap">
+                                        <div class="text">
+                                            <h3 class="tit cf bold f20 mf18">CLUB YP 풀파티</h3>
+                                            <p class="time cf lig f14 mf14"><i class="fa-solid fa-clock cf"></i>16:00 - 20:00</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#open-detail" class="discount open-detail">
+                                    <div class="img-wrap" style="background-image: url(pages/img/index/01-04.jpg);">
+                                        <div class="fliter"></div>
+                                    </div>
+                                    <div class="text-wrap">
+                                        <div class="text">
+                                            <h3 class="tit cf bold f20 mf18">CLUB YP 풀파티</h3>
+                                            <p class="time cf lig f14 mf14"><i class="fa-solid fa-clock cf"></i>16:00 - 20:00</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#open-detail" class="discount open-detail">
+                                    <div class="img-wrap" style="background-image: url(pages/img/index/01-04.jpg);">
+                                        <div class="fliter"></div>
+                                    </div>
+                                    <div class="text-wrap">
+                                        <div class="text">
+                                            <h3 class="tit cf bold f20 mf18">CLUB YP 풀파티</h3>
+                                            <p class="time cf lig f14 mf14"><i class="fa-solid fa-clock cf"></i>16:00 - 20:00</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- class="show" 노출  -->
+                    <div id="calendar-detail" class="">
+                        <div class="detail-wrap">
+                            <a class="close-detail" href="#close-detail"><i class="fa-light fa-circle-xmark c2 f30"></i></a>
+                            <div class="top">
+                                <h3 class="tit bold f36 mf25 c2">CLUB YP 풀파티</h3>
+                                <p class="date lig f16 mf14 c2">23. 8. 18 Fri / 16:00 - 20:00</p>
+                            </div>
+                            <div class="img">
+                                <img src="pages/img/index/01-01.jpg" alt="">
+                            </div>
+                            <div class="btm">
+                                <h4 class="c2 f16 mf12 bold">파티내용</h4>
+                                <div class="content f14 mf12 c9 reg">
+                                    파티내용 파티내용 파티내용 파티내용 파티내용 파티내용 파티내용 파티내용 파티내용 
+                                    파티내용 파티내용 파티내용 파티내용 파티내용 파티내용 파티내용 파티내용 파티내용 
+                                    파티내용 파티내용 파티내용 파티내용 파티내용 파티내용 파티내용 파티내용 파티내용 
+                                    파티내용 파티내용 파티내용 파티내용 파티내용 파티내용 파티내용 파티내용 파티내용 
+                                    파티내용 파티내용 파티내용 파티내용 파티내용 파티내용 파티내용 파티내용 파티내용 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-wrap">
+                    <div id="trigger03"></div>
+                    <div class="img-wrap img01 right-show">
+                        <img src="pages/img/index/03-02.jpg" alt="" class="img">
+                        <img src="pages/img/index/03-02-p.jpg" alt="" class="pattern">
+                    </div>
+                    <div id="text01-trigger"></div>
+                    <h3 class="deco-text f400 text01 gray">CLUB</h3>
+                    <div id="trigger04"></div>
+                    <div class="img-wrap img02 left-show">
+                        <img src="pages/img/index/03-03.jpg" alt="" class="img">
+                        <img src="pages/img/index/03-03-p.jpg" alt="" class="pattern">
+                    </div>
+                    <div id="text02-trigger"></div>
+                    <h3 class="deco-text f400 text02 cf">Y</h3>
+                    <div id="text03-trigger"></div>
+                    <h3 class="deco-text f400 text03 cf">P</h3>
+                    <div id="trigger05"></div>
+                    <div class="img-wrap img03 right-show">
+                        <img src="pages/img/index/03-04.jpg" alt="" class="img">
+                        <img src="pages/img/index/03-04-p.jpg" alt="" class="pattern">
+                    </div>
+                    <div id="text04-trigger"></div>
+                    <h3 class="deco-text f400 text04 gray">&</h3>
+                    <div id="text05-trigger"></div>
+                    <h3 class="deco-text f400 text05 gray">SUITE</h3>
+                    <div id="text06-trigger"></div>
+                    <h3 class="deco-text f36 mf20 text06 cf reg"><span class="bold">YP CLUB & SUITE</span><br>NIGHT</h3>
+                    <div id="trigger06"></div>
+                    <div class="img-wrap img04 left-show">
+                        <img src="pages/img/index/03-05.jpg" alt="" class="img">
+                        <img src="pages/img/index/03-05-p.jpg" alt="" class="pattern">
+                    </div>
+                    <div id="text07-trigger"></div>
+                    <h3 class="deco-text f14 text07 cf lig">
+                        CLUB YP's night gives a new vibe<br>
+                        Youthful spirit and passion gather<br>
+                        to communicate with inspiration
+                    </h3>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- section04 -->
+        <section id="section04" style="background-image: url(pages/img/index/04.jpg);">
+        </section>
+
+        <!-- // delete -->
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="f-top">
+            <div class="flex-wrap">
+                <img src="assets/img/logo.png" alt="">
+                <div class="f-nav">
+                    <a href="">Reservation</a>
+                    <a href="">Room</a>
+                    <a href="">Dining</a>
+                    <a href="">Offers</a>
+                    <a href="">Actibity & Facilities</a>
+                    <a href="">About</a>
+                </div>
+                <div class="btn-wrap">
+                    <a href="tel:000-000-0000"><i class="fa-light fa-phone"></i> 000-000-0000</a>
+                    <a href=""><i class="fa-light fa-calendar-clock"></i> 예약하기</a>
+                </div>
+            </div>
+        </div>
+        <div class="f-btm">
+            <div class="flex-wrap">
+                <ul>
+                    <li><a href="">통신판매업확인</a></li>
+                    <li><a href="">저작권</a></li>
+                    <li><a href="">개인정보처리방침</a></li><br class="none-pc">
+                    <li><a href="">이용약관</a></li>
+                    <li><a href="">관리자로그인</a></li>
+                </ul>
+                <p>Copyright (C) 2023 Club yp & suite  all rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- script -->
+    <script src="assets/js/function.js"></script>
+    <script src="assets/js/layout.js"></script>
+    <script src="pages/js/index.js"></script>
+
+
+</body>
+</html>

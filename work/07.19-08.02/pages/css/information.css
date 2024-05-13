@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+/* location */
+#section01.location{ padding-bottom: 150px;}
+#section01.location .top{ padding: 100px 0 40px; border-bottom: 1px solid #ddd;}
+#section01.location .top #map{ width: 100%; height: 600px; background-color: aliceblue;}
+#section01.location .top .text-wrap{ text-align: right; padding-top: 40px;}
+#section01.location .top .text-wrap i{ display: inline-block; padding-left: 30px;}
+#section01.location .top .text-wrap p{ display: inline-block; padding-left: 15px;line-height: 34px; vertical-align: top;}
+#section01.location .btm{ padding-top: 150px;}
+#section01.location .btm h3{ line-height: 50px; padding-bottom: 40px;}
+#section01.location .btm .a-wrap{ display: flex; justify-content: flex-end; text-align: right; font-size: 0;}
+#section01.location .btm a{ display: flex; align-items: center; justify-content: center; position: relative; width: 420px; height: 275px; background-color: #222; margin-left: 20px; overflow: hidden;}
+#section01.location .btm a img{ position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; opacity: .3; transition: .3s; transform-origin: center;}
+#section01.location .btm a:hover img{ transform: scale(1.1);}
+#section01.location .btm p{ position: relative; z-index: 1;}
+
+.board-wrap{ padding: 100px 0 150px; font-family:'Pretendard', sans-serif; overflow: hidden;}
+.board-wrap .top{ padding-bottom: 30px;}
+.board-wrap .top .write-btn{ display: block; width: 180px; height: 50px; line-height: 50px; background-color: #222; text-align: center;}
+.board-wrap .top .select-wrap{ width:200px; height: 50px; border-radius: 25px; border: 1px solid #ddd; padding: 0 20px; position: relative; }
+.board-wrap .top .select-wrap > i{ position: absolute; right: 20px; top: 15px;}
+.board-wrap .top .select{ font-family:'D-DIN', 'Pretendard', sans-serif; color: #222; width: 100%; height: 48px; outline: unset; border: unset; appearance: none; font-size: 14px; }
+.board-wrap .top .search-wrap{ width:330px; height: 50px; border-radius: 25px; border: 1px solid #ddd; padding: 0 20px; position: relative; margin-left: 10px;}
+.board-wrap .top .search-wrap .search-button{ width: 20px; height: 20px; border: unset; background-color: transparent; position: absolute; right: 20px; top: 13px; cursor: pointer;}
+.board-wrap .top .search-wrap #search-box{ font-family:'D-DIN', 'Pretendard', sans-serif; color: #222; width: calc(100% - 10px); height: 46px; outline: unset; border: unset; appearance: none; font-size: 14px; }
+input::placeholder {color: #ccc;}
+.board-wrap .board{ display: flex; flex-direction: column; width: 100%; border-top: 2px solid #222; padding-bottom: 50px;}
+.board-wrap .board a{ padding: 25px 0; text-align: center; font-size: 0; border-bottom: 1px solid #ddd; overflow: hidden;}
+.board-wrap .board a.question{ padding: 20px 0; align-items: center; }
+.board-wrap .board a.inform{ background-color: #f8f8f8;}
+.board-wrap .board a .num, .board-wrap .board a .tit{ float: left;}
+.board-wrap .board a .date, .board-wrap .board a .name, .board-wrap .board a .complete{ float: right; }
+.board-wrap .board a .num, .board-wrap .board a .date{ width: 15%; font-family:'Pretendard', sans-serif; vertical-align: middle;}
+.board-wrap .board a.question .num, .board-wrap .board a.question .tit, .board-wrap .board a.question .date,
+.board-wrap .board a.question .name, .board-wrap .board a.question .complete{ line-height: 32px; }
+.board-wrap .board a .tit{ width: 70%; text-align: left;}
+.board-wrap .board a.question .complete{ width: 90px; height: 32px; line-height: 32px; text-align: center; background-color: #ee720d; font-size: 13px; display: none;}
+.board-wrap .board a.question.fin .complete{ display: block;}
+.board-wrap .board a.question .name{ width: 5%; text-align: right;}
+.board-wrap .board a.question .tit{ width: calc(65% - 90px); text-align: left;}
+.board-wrap .board a .num i, .board-wrap .board a .tit i{ color: #ee720d; font-size: 14px;}
+.board-wrap .board a .tit i{ padding-right: 10px;}
+.board-wrap .board-pag{ text-align: center; width: fit-content; left: 0; right: 0; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;}
+.board-wrap .board-pag .prev-btn, .board-wrap .board-pag .next-btn{ display: block; width: 30px; height: 30px; border-radius: 50%; border: 1px solid #ddd; line-height: 28px; font-size: 12px; color: #222; text-align: center; margin: 0 10px;}
+.board-wrap .board-pag .pag-num{ display: flex; width: fit-content;}
+.board-wrap .board-pag .pag-num a{ font-family:'Pretendard', sans-serif; font-size: 14px; color: #ccc; margin: 0 10px;}
+.board-wrap .board-pag .pag-num a.active{ color: #222;}
+/* board-view */
+.board-wrap .board-view{ display: flex; flex-direction: column; width: 100%; border-top: 2px solid #222; padding-bottom: 60px; }
+.board-wrap .board-view > div { border-bottom: 1px solid #ddd;}
+.board-wrap .board-view .title-area{ padding: 40px 20px; display: flex; justify-content: space-between; align-items: center;}
+.board-wrap .board-view .title-area .name{ padding-right: 60px;}
+.board-wrap .board-view .con{ padding: 80px 20px; line-height: 28px;}
+.qna .board-wrap .board-view .con{ border-bottom: unset;}
+.board-wrap .board-view .answer{ padding: 80px 40px; background-color: #fafafa; overflow: hidden;}
+.board-wrap .board-view .answer i{ width: 35px; color: #ee720d; padding-right: 20px; float: left;}
+.board-wrap .board-view .answer .text{ width: calc(100% - 35px); float: left; line-height: 28px;}
+.board-wrap .board-view .prev, .board-wrap .board-view .next{ border-bottom: 1px solid #ddd; padding: 30px 20px; display: flex; justify-content: flex-start; text-align: left; align-items: center;}
+.board-wrap .board-view .prev p, .board-wrap .board-view .next p{ padding-right: 40px;}
+.board-wrap .go-list{ display: block; float: right; width: 180px; height: 50px; line-height: 48px; border: 1px solid #ddd; text-align: center; }
+/* qna-password */
+.qna-password .board-view{ padding: 100px 0; text-align: center; border-bottom: 1px solid #ddd;}
+.qna-password .board-view h3{ line-height: 30px; padding-bottom: 50px;}
+.qna-password .board-view h3 span{ color: #ee720d;}
+.qna-password .board-view p{ padding-bottom: 20px;}
+.qna-password .board-view p i{ padding-right: 10px; color: #ee720d;}
+.qna-password input[type=password]{ outline: unset; width: 450px; height: 50px; line-height: 50px; border: 1px solid #ddd; padding: 0 10px; left: 0; right: 0; margin: 0 auto 60px;}
+.qna-password .a-wrap{ text-align: center; border-bottom: unset!important;}
+.qna-password .a-wrap a, .qna-password .a-wrap button{ width: 180px; height: 50px; line-height: 48px; text-align: center; display: inline-block; border: 1px solid #999; float: none; clear: both; margin: 0 10px;}
+.qna-password .a-wrap button{ border: 1px solid #222; background-color: #222; cursor: pointer;}
+/* qna-write */
+.qna-write .board-view li{ padding: 20px; display: flex; justify-content: flex-start; align-items: flex-start;  text-align: left; flex-wrap: wrap; border-bottom: 1px solid #ddd; font-size: 0;}
+.qna-write .board-view li .tit{ width: 95px!important; line-height: 50px;}
+.qna-write .board-view li .con{ width: calc(100% - 95px); padding: 0; height: unset; display: flex; align-items: center; justify-content: flex-start; flex-wrap: wrap;}
+.qna-write .a-wrap{ text-align: center; border-bottom: unset!important;}
+.qna-write .a-wrap a, .qna-write .a-wrap button{ width: 180px; height: 50px; line-height: 48px; text-align: center; display: inline-block; border: 1px solid #999; float: none; clear: both; margin: 0 10px;}
+.qna-write .a-wrap button{ border: 1px solid #222; background-color: #222; cursor: pointer;}
+.qna-write input[type=text]{ font-family:'Pretendard', sans-serif; outline: unset; height: 50px; line-height: 48px; padding: 0 20px; border: 1px solid #777; box-sizing: border-box; font-size: 14px;}
+.qna-write textarea{ font-family:'Pretendard', sans-serif; outline: unset; height: 300px; line-height: 20px; padding: 20px; border: 1px solid #777; box-sizing: border-box; font-size: 14px;}
+.qna-write .select{ font-family:'Pretendard', sans-serif; outline: unset; height: 50px; line-height: 48px; padding: 0 20px; border: 1px solid #777; box-sizing: border-box; font-size: 14px;  appearance: none; }
+.qna-write .box i{ position: absolute; right: 20px; top: calc(50% - 5px);}
+.qna-write .w350{ width: 350px;}
+.qna-write .w200{ width: 200px;}
+.qna-write .w120{ width: 120px;}
+.qna-write .w100{ width: 100%;}
+.qna-write input[type=checkbox]{ outline: unset; width: 20px; height: 20px; border-radius: 4px; border: 1px solid #999; color: #fff; accent-color: #ee720d; position: relative; top: -3px; margin-left: 10px;}
+.qna-write .chkbox{ padding-left: 40px; line-height: 28px;}
+.qna-write span{ padding: 0 10px;}
+.qna-write .box{ position: relative;}
+.qna-write .file-btn{ width: 180px; height: 50px; line-height: 48px; text-align: center; display: inline-block; background-color: #222; color: #fff;}
+.qna-write input[type=file]{ display: none;}
+.qna-write .file-area p{ padding-left: 20px;}
+.qna-write .attached-area{ padding-top: 20px!important;}
+.qna-write .attached{ padding: 15px 20px; font-size: 0; border: 1px solid #ccc; overflow: hidden; line-height: 17px; margin-right: 10px;}
+.qna-write .attached i{ display: inline-block; font-size: 17px; color: #777; padding-right: 10px;}
+.qna-write .attached p{ display: inline-block; font-size: 13px; color: #999; padding-left: unset; width: 180px; position: relative; top: -1px;}
+.qna-write .attached a{ float: right; width: 17px; height: 17px;}
+
+/*-------------- Responsive ---------------*/
+/* Mobile */
+@media screen and (max-width:1024px) {
+    /* location */
+    #section01.location{ padding-bottom: 75px;}
+    #section01.location .top{ padding: 60px 0 30px; }
+    #section01.location .top #map{ height: 93.33vw; }
+    #section01.location .top .text-wrap{ padding-top: 30px;}
+    #section01.location .top .text-wrap i{ padding-left: 20px;}
+    #section01.location .top .text-wrap p{ padding-left: 10px; line-height: 25px;}
+    #section01.location .btm{ padding-top: 75px;}
+    #section01.location .btm h3{ line-height: 35px; padding-bottom: 60px;}
+    #section01.location .btm .a-wrap{ justify-content: flex-start; flex-direction: column; align-items: flex-end; }
+    #section01.location .btm a{ width: 66.67vw; height: 42.67vw; margin-left: 0; margin-bottom: 10px;}
+
+    /* board */
+    .board-wrap{ padding: 60px 0 75px;}
+    .board-wrap .top{ padding-bottom: 30px;}
+    .board-wrap .top .left{ width: 100%; padding-bottom: 30px;}
+    .board-wrap .top .write-btn{ width: 100%; height: 40px; line-height: 40px;}
+    .board-wrap .top .right{ width: 100%;}
+    .board-wrap .top .select-wrap{ width:33.33vw; height: 35px; border-radius: 4.27vw; padding: 0 15px; }
+    .board-wrap .top .select-wrap > i{ position: absolute; right: 15px; top: 10px;}
+    .board-wrap .top .select{ height: 32px; font-size: 12px; }
+    .board-wrap .top .search-wrap{ width:calc(100% - 33.33vw - 10px); height: 35px; border-radius: 4.27vw;  padding: 0 15px; margin-left: 10px;}
+    .board-wrap .top .search-wrap .search-button{ width: 20px; height: 20px; border: unset; background-color: transparent; position: absolute; right: 15px; top: 5px; cursor: pointer;}
+    .board-wrap .top .search-wrap #search-box{ width: calc(100% - 15px); height: 31px; font-size: 12px; }
+    .board-wrap .board{  border-top: 1px solid #222; padding-bottom: 40px;}
+    .board-wrap .board a{ padding: 20px 15px; text-align: left; flex-direction: column;}
+    .board-wrap .board a .date, .board-wrap .board a .name, .board-wrap .board a .complete{ float: left; }
+    .board-wrap .board a.question .date{ position: absolute; top: 38px; left: 50px;}
+    .board-wrap .board a.question .num, .board-wrap .board a.question .tit, .board-wrap .board a.question .date,
+    .board-wrap .board a.question .name, .board-wrap .board a.question .complete{ line-height:unset; }
+    .board-wrap .board a.question{ padding: 18px 15px; text-align: left; position: relative; display: block;}
+    .board-wrap .board a .num, .board-wrap .board a .date{ width: 100%; }
+    .board-wrap .board a .tit{ width: 100%; padding-bottom: 5px;}
+    .board-wrap .board a .tit i{ padding-right: 5px;}
+    .board-wrap .board a.question .complete{ position: absolute; right: 15px; top: 19px; width: 85px; height: 30px; line-height: 30px; font-size: 12px;}
+    .board-wrap .board a.question .name{ display: inline-block; width: unset; padding-right: 10px; position: relative; vertical-align: bottom;}
+    .board-wrap .board a.question .name:after{ content: '|'; font-size: 10px; color: #ddd; position: absolute; right: 0; top: 2px;}
+    .board-wrap .board a.question .date{ display: inline-block; width: unset; padding-left: 7px;}
+    .board-wrap .board a.question .tit{ width: 100%; text-align: left;}
+    .board-wrap .board-pag .pag-num a{ margin: 0 7px;}
+    /* board-view */
+    .board-wrap .board-view{ border-top: 1px solid #222; padding-bottom: 40px; }
+    .board-wrap .board-view .title-area{ padding: 25px 15px; flex-direction: column; align-items: flex-start;}
+    .board-wrap .board-view .title-area .tit{ padding-bottom: 10px;}
+    .board-wrap .board-view .title-area .name{ padding-right: 10px;}
+    .board-wrap .board-view .con{ padding: 50px 15px; line-height: 20px;}
+    .board-wrap .board-view .answer{ padding: 50px 30px; }
+    .board-wrap .board-view .answer i{ width: 25px; padding-right: 10px; }
+    .board-wrap .board-view .answer .text{ width: calc(100% - 25px); line-height: 20px;}
+    .board-wrap .board-view .prev, .board-wrap .board-view .next{ padding: 20px 15px; }
+    .board-wrap .board-view .prev p, .board-wrap .board-view .next p{ padding-right: 30px;}
+    .board-wrap .go-list{ float: unset; clear: both; width: 100%; height: 40px; line-height: 38px; }
+    /* qna-password */
+    .qna-password .board-view{ padding: 60px 0; }
+    .qna-password .board-view h3{ line-height: 20px; padding-bottom: 35px;}
+    .qna-password .board-view p{ padding-bottom: 10px;}
+    .qna-password .board-view p i{ padding-right: 5px; }
+    .qna-password input[type=password]{ width: 270px; height: 40px; line-height: 40px; margin: 0 auto 30px; }
+    .qna-password .a-wrap a, .qna-password .a-wrap button{ width: 100%; height: 40px; line-height: 38px; margin: 0 0 10px;}
+    /* qna-write */
+    .qna-write .board-view li{ padding: 20px 15px; }
+    .qna-write .board-view li .tit{ width: 60px!important; line-height: 40px;}
+    .qna-write .board-view li .con{ width: calc(100% - 60px);display: flex; justify-content: flex-end;}
+    .qna-write .board-view li.password-area .con, .qna-write .board-view li.file-area .con{ justify-content: flex-start;}
+    .qna-write .a-wrap{ text-align: center; border-bottom: unset!important;}
+    .qna-write .a-wrap a, .qna-write .a-wrap button{ width: 100%; height: 40px; line-height: 38px; margin: 0 0 10px;}
+    .qna-write input[type=text]{ height: 40px; line-height: 38px; padding: 0 10px; font-size: 12px;}
+    .qna-write textarea{ height: 66.67vw; line-height: 18px; padding: 10px; font-size: 12px;}
+    .qna-write .select{ height: 40px; line-height: 38px; padding: 0 10px; font-size: 12px;  }
+    .qna-write .box i{ position: absolute; right: 10px; top: calc(50% - 5px);}
+    .qna-write .w350{ width: 100%;}
+    .qna-write .w200{ width: 46.13vw;}
+    .qna-write .w120{ width: calc(33.33% - 17px);}
+    .qna-write .w100{ width: 100%;}
+    .qna-write input[type=checkbox]{ outline: unset; width: 20px; height: 20px; border-radius: 4px; border: 1px solid #999; color: #fff; accent-color: #ee720d; position: relative; top: -3px; margin-left: 10px;}
+    .qna-write .chkbox{ padding-left: 0; line-height: 28px; padding-top: 10px;}
+    .qna-write #mail01{ width: 100%; margin-bottom: 10px;}
+    .qna-write span{ padding: 0 10px;}
+    .qna-write .file-btn{ width: 100%; height: 40px; line-height: 38px; background-color: #222; color: #fff;}
+    .qna-write input[type=file]{ display: none;}
+    .qna-write .file-area p{ padding-left: 0;}
+    .qna-write .attached-area{ padding-top: 20px!important;}
+    .qna-write .attached{ padding: 0 10px; width: 100%; height: 40px; line-height: 38px; margin-right: 0; margin-bottom: 10px; position: relative;}
+    .qna-write .attached i{ display: inline-block; font-size: 17px; color: #777; padding-right: 10px;}
+    .qna-write .attached p{ display: inline-block; font-size: 13px; color: #999; padding-left: unset; width: 180px; position: relative; top: -1px;}
+    .qna-write .attached a{ position: absolute; right: 10px; top: 5px; width: 17px; height: 17px;}
+}
+@media screen and (max-width:768px) {
+}
+@media screen and (max-width:480px) {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

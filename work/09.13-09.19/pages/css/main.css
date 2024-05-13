@@ -1,0 +1,105 @@
+/* tween-animation trigger */
+
+#trigger01{ position: absolute; top: 70px;}
+#trigger02{ position: absolute; top: 480px;}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    #trigger01{ top:-82.05vw;}
+    #trigger02{ top:-2.05vw;}
+}
+
+
+/* section01 */
+#section01{ overflow: hidden; position: fixed; width: 100%; height: 100vh; top: 0; left: 0; background-color: rgba(0,0,0); z-index: -1;}
+#section01 .videoWrap{position:absolute; width: 100%; height:100vh; top: 0; left: 0; margin:0; pointer-events: none; }
+#section01 .videoWrap iframe, #section01 .videoWrap object, #section01 .videoWrap embed{ position:absolute; top:0; left:0; width:100%; height:100%; opacity: 1; transform: scale(1.2); pointer-events: none; }
+#section01 .videoWrap .inner{ position: absolute; width: 100%; height: 100%; top: 0; left: 0; }
+#section01 .fullSlogan{ position: fixed; top: calc(50% - 100px); width: 100%; text-align: center; }
+#section01 .fullSlogan h3{ letter-spacing: 0.05em;}
+#section01 .control{ font-size: 0; position: absolute; bottom: 120px; left: 0; right: 0; margin: 0 auto; width: 170px; text-align: center; z-index: 100;}
+#section01 .control li{ display: inline-block; padding: 0 5px;}
+#section01 .control li a{ display: block; font-size: 12px; color: #fff; width: 30px; height: 30px; line-height: 28px; border-radius: 50%; border: 1px solid rgba(255,255,255,.6); text-align: center;}
+#section01 .control li i{ color: #fff; position: relative; }
+#section01 .play-pause a.hide{ display: none;}
+#section01 .control .mute-onoff a.hide{ display: none;}
+.vidbox .ratio iframe, .end-video .videoWrap iframe, #cutvideo1, #cutvideo2{pointer-events: none;}
+.m-play{ display: none;}
+
+#section01 #scrollDown{ width: 40px; height: 40px; line-height: 40px; border-radius: 50%; display: block; position: absolute; bottom: 40px; left: 0; right: 0; margin: 0 auto; background-color: #fff; text-align: center; z-index: 100;  color: #000; transition: .3s;}
+#section01 #scrollDown i{ font-size: 12px; }
+#section01 #scrollDown:hover{ color: #636A52;}
+#section01.scroll{ position: relative;}
+.tween-opacity{ transition: .3s;}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    #section01 { width: 100%; height:100vh; margin-top: 50px;}
+    #section01 .videoWrap{position:absolute; width: 100%; height:100%; top: 0; left: 0;  }
+    #section01 .videoWrap, #section01 .videoWrap iframe, #section01 .videoWrap object, #section01 .videoWrap embed{ pointer-events: unset;}
+    #section01 .videoWrap iframe, #section01 .videoWrap object, #section01 .videoWrap embed{ opacity: 1; transform: scale(3.6);}
+    #section01 .fullSlogan { display: none;}
+    #section01 .control li a{ display: block; font-size: 10px; color: #fff; width: 20px; height: 20px; line-height: 17px; border-radius: 50%; border: 1px solid #fff; text-align: center;}
+    #section01 .control{ bottom: 30px; display: none; }
+    #section01 #scrollDown{ width: 30px; height: 30px; line-height: 30px; bottom: 20px;}
+}
+
+#section02{ width: 100%; position: relative; padding: 80px 0; margin-top: 100vh; text-align: center; overflow: hidden; background-color: #fff; }
+#section02 h3{ padding-bottom: 40px;}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+  #section02{ padding: 60px 0; text-align: left;}
+}
+
+
+#section03{ position: relative; padding-bottom: 180px; overflow: hidden; background-color: #fff;}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    #section03{ position: relative; padding-bottom: 60px; overflow: hidden;}
+}
+
+
+#section04{ position: relative; padding: 100px 0; background-color: #FAFAF8;}
+#section04 .tit-wrap{ position: relative; padding-bottom: 60px; text-align: center;}
+#section04 .tit-wrap h3{ padding-bottom: 20px;}
+#section04  .rooms-tab{ display: none;}
+#section04 .none-mo{ width: 100%;}
+#section04 .none-mo > .flex-wrap{ align-items: flex-start;}
+#section04 .room-con{ width: calc(33.33% - 10px);}
+#section04 .room-con > p{ padding-bottom: 10px;}
+#section04 .room-con .img-wrap{ position: relative; display: block; width: 100%; height: 456px; transition: .3s;}
+#section04 .room-con .text-wrap .tit{overflow: hidden; padding-top: 20px; padding-bottom: 10px; border-bottom: 1px solid rgba(81,80,75,.1); margin-bottom: 10px;}
+#section04 .room-con .text-wrap > a{ display: block; padding-left: 0; transition: .3s;}
+#section04 .room-con .text-wrap > a:hover{ margin-left: 20px;}
+#section04 .room-con .text-wrap .line{ width: 8px; height: 1px; background-color: #51504B; margin-right: 3px; display: inline-block; position: relative; top: -4px;}
+#section04 .room-con:hover .img-wrap .img{ opacity: .6;}
+#section04 .room-con:hover .text-wrap > a{ opacity: .8;}
+/* =================== 1440px =================== */
+@media (max-width: 1440px) {
+  #section04 .room-con .img-wrap{height: 31.67vw; }
+}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+  #section04{ position: relative; padding: 60px 0 80px; }
+  #section04 .tit-wrap{ position: relative; padding-bottom: 20px; text-align: left;}
+  #section04 .rooms-tab{ display: block; justify-content: flex-start; width: 100%; padding-bottom: 20px;}
+  #section04 .rooms-tab a{ display: inline-block; padding: 0 10px; line-height: 24px; height: 26px; border-radius: 13px; border: 1px solid rgba(81,80,75,.1); margin-right: 6px;}
+  #section04 .rooms-tab a.active{ background-color: #C09A85; border: 1px solid #C09A85; color: #fff;} 
+  #section04 .none-pc{ width: 100%;}
+  #section04 .room-con{ width: 100%;}
+  #section04 .room-con > p{ padding-bottom: 10px;}
+  #section04 .room-con .img-wrap{ height: 60.53vw;}
+  #section04 .room-con .text-wrap .tit{ padding-top: 8px; padding-bottom: 10px; }
+  #section04 .room-con .text-wrap > a{ display: block; padding-left: 0; transition: .3s;}
+  #section04 .room-con .text-wrap > a:hover{ margin-left: 20px;}
+  #section04 .room-con .text-wrap .line{ width: 8px; height: 1px; background-color: #51504B; margin-right: 3px; display: inline-block; position: relative; top: -4px;}
+  #section04 .swiper-slide-active .room-con .img-wrap .img{ opacity: 1;}
+  #section04 .swiper-slide-active .room-con .text-wrap > a{ opacity: .8;}
+}
+
+
+
+#section05{ width: 100%; height: 33.33vw; position: relative;}
+#section05 .videoWrap{ position: relative; width: 100%; height: 100%;}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+  #section05{ height: 133.33vw;}
+}

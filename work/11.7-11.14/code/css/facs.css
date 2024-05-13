@@ -1,0 +1,58 @@
+/* header */
+header .header-area #logo-path{ fill: #222!important;}
+header #panelbtn a{ color: #222;}
+
+/* sub-top */
+#sub-top .img-wrap{ width: 1176px; height: 100%; position: absolute; left: -360px;}
+#sub-top .text-wrap{ padding: 60px 133px 0 0; position: relative; z-index: 1; }
+#sub-top h3{ line-height: 76.8px; padding-bottom: 40px; }
+#sub-top h4{ line-height: 38.4px; padding-bottom: 254px; }
+#sub-top p{ position: relative; right: -133px; text-align: right; line-height: 22.4px; }
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+  #sub-top .img-wrap{ width: calc(100% - 80px); height: 66.13vw; position: absolute; left: 0; }
+  #sub-top .text-wrap{ padding: 55.47vw 0 0 0; position: relative; z-index: 1; text-align: right;}
+  #sub-top h3{ position: relative; line-height: 51.2px; padding-bottom: 20px; color: #222;}
+  #sub-top span{ color: #fff;}
+  #sub-top h4{ line-height: 32px; padding-bottom: 40px; color: #222;}
+  #sub-top p{ text-align: right; color: #222; right: 0;}
+}
+
+
+/* section01 */
+#section01{ width: 100%; position: relative; overflow: hidden; padding: 80px 0 40px; background-color: #F8F5F1; }
+#section01 .wrap1200 .flex-wrap{ padding-bottom: 80px;}
+#section01 .wrap1200 .flex-wrap .img-wrap{ width: 690px; height: 388px; position: relative;}
+#section01 .wrap1200 .flex-wrap .text-wrap{ width: calc(100% - 690px); height: 388px; position: relative; display: flex; flex-direction: column; justify-content: flex-start; padding: 40px 87px 0 78px;}
+#section01 .wrap1200 .flex-wrap .text-wrap p{ padding-bottom: 20px;}
+#section01 .wrap1200 .flex-wrap .text-wrap h3{ padding-bottom: 20px; line-height: 38.4px;}
+#section01 .wrap1200 .flex-wrap .text-wrap h4{ padding-bottom: 40px;}
+#section01 .wrap1200 .flex-wrap .text-wrap p.lig{ line-height: 22.4px; padding-bottom: 50px;}
+#section01 .wrap1200 .flex-wrap .text-wrap a{ position: absolute; bottom: 40px; right: 88px; text-align: right; display: inline-block; text-decoration: underline;}
+#section01 .wrap1200 .flex-wrap:nth-child(2n-1) .img-wrap{ order: 1;}
+#section01 .wrap1200 .flex-wrap:nth-child(2n-1) .text-wrap{ order: 0;}
+#section01 .wrap1200 .flex-wrap:nth-child(2n-1) .img-wrap .img{  left: 0; right: unset;}
+#section01 .wrap1200 .flex-wrap:nth-child(2n) .img-wrap{ order: 0;}
+#section01 .wrap1200 .flex-wrap:nth-child(2n) .text-wrap{ order: 1;}
+#section01 .wrap1200 .flex-wrap:nth-child(2n) .img-wrap .img{  right: 0; left: unset;}
+/* =================== 1240px =================== */
+@media (max-width: 1240px) {
+  #section01 .wrap1200 .flex-wrap .img-wrap{ width: 63.87vw; }
+}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+  #section01{ padding: 80px 0 60px; }
+  #section01 .wrap1200 .flex-wrap{ padding-bottom: 60px;}
+  #section01 .wrap1200 .flex-wrap .img-wrap{ width: 100%; height: 50.13vw; position: relative;}
+  #section01 .wrap1200 .flex-wrap .img-wrap .img{ width: calc(100% + 40px); }
+  #section01 .wrap1200 .flex-wrap .text-wrap{ width: 100%; padding: 20px 0 0 0; text-align: left; height: auto;}
+  #section01 .wrap1200 .flex-wrap .text-wrap h3{ padding-bottom: 10px; }
+  #section01 .wrap1200 .flex-wrap .text-wrap h4{ padding-bottom: 20px;}
+  #section01 .wrap1200 .flex-wrap .text-wrap p.lig{ padding-bottom: 30px;}
+  #section01 .wrap1200 .flex-wrap .text-wrap a{ position: relative; bottom: unset; right: unset;}
+  #section01 .wrap1200 .flex-wrap:nth-child(2n-1) .img-wrap{ order: 0; }
+  #section01 .wrap1200 .flex-wrap:nth-child(2n-1) .text-wrap{ order: 1; text-align: left;}
+  #section01 .wrap1200 .flex-wrap:nth-child(2n-1) .text-wrap ul{ position: relative; left: 0;}
+  #section01 .wrap1200 .flex-wrap:nth-child(2n-1) .text-wrap li a{ height: 32px; padding: 0 60px 0 20px; }
+  #section01 .wrap1200 .flex-wrap:nth-child(2n-1) .text-wrap li a:hover{ padding: 0 50px 0 20px; }
+}

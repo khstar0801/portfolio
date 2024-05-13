@@ -1,0 +1,84 @@
+<?php include "./_header.html"; ?>
+<?
+$file_path = $img_path.'/landscape/slides'.$idx;
+$file_count = file_count($file_path);
+?>
+
+
+<link rel="stylesheet" href="pages/css/landscape.css">
+
+<section id="section01">
+    <div class="full-swiper swiper-container">
+        <div class="swiper-wrapper">
+            <?php for($i=0; $i<$file_count; $i++) { ?>
+            <div class="swiper-slide bgi" style="background-image: url(http://img.einet.kr/<?=$pension_code?>/landscape/slides/<?=sprintf("%02d",$i+1)?>.jpg)"></div>
+            <?php } ?>
+        </div>
+        <div class="control-wrap">
+            <div class="swiper-pagination full-pag font1"></div>
+            <div class="btn-wrap">
+                <div class="swiper-button-prev full-prev full-btn"><i class="fa-light fa-chevron-left cf"></i></div>
+                <div class="play-pause">
+                    <a href="#play" class="play hide" ><i class="fa-light fa-circle-play cf"></i></a>
+                    <a href="#pause" class="pause" ><i class="fa-light fa-circle-pause cf"></i></a>
+                </div>
+                <div class="swiper-button-next full-next full-btn"><i class="fa-light fa-chevron-right cf"></i></div>
+            </div>
+        </div>
+    </div>
+    <a href="#open-view-all" class="f14 reg view-all open-view-all none-pc">전체사진 보기 <i class="fa-light fa-arrow-right"></i></a>
+</section>
+
+<div id="img-view-all">
+    <img src="assets/img/common/logo.png" alt="" class="logo">
+    <p class="f14 med cf">landscape</p>
+    <?php for($i=0; $i<$file_count; $i++) { ?>
+    <img src="http://img.einet.kr/<?=$pension_code?>/landscape/slides/<?=sprintf("%02d",$i+1)?>.jpg" alt="">
+    <?php } ?>
+    <a href="#close" class="close-view-all"><i class="fa-regular fa-xmark-large"></i></a>
+</div>
+
+<section id="section02">
+    <div class="wrap1400 flex-wrap">
+        <div class="text-wrap">
+            <div class="top">
+                <img src="assets/img/common/scroll-logo.png" alt="">
+                <p class="f14 reg">서울(잠실) 40분대 거리에서 만나는 청정 계곡 앞 아름다운 자연 속 특별함이 머무는 곳. 아란에 오신 걸 환영합니다.<br>
+                    aran poolvilla , since 2023. 08</p>
+            </div>
+            <div class="btm">
+                <h3 class="f20 med">Contact</h3>
+                <div class="flex-wrap">
+                    <i class="fa-solid fa-phone f14"></i>
+                    <p class="op6 f14 reg"><?=$user_hp;?></p>
+                </div>
+                <h3 class="f20 med">Location</h3>
+                <div class="flex-wrap">
+                    <i class="fa-solid fa-car f14"></i>
+                    <p class="op6 f14 reg"><?=$road_addr?></p>
+                </div>
+                <div class="flex-wrap">
+                    <i class="fa-solid fa-bus f14"></i>
+                    <p class="op6 f14 reg">
+                        <서울 잠실역><br>
+                        - 잠실역.롯데월드(잠실5단지 방면)에서 7001번 승차(대체버스 : 7000번,7002번)<br>
+                        - 한교막 하차, 한교막(양평방면)에서 20-3번 승차<br>
+                        - 성곡마을 하차, 목적지까지 도보 약 370m 이동<br>
+                        * 네이버 길찾기 기준 1시간 9분 소요<br><br>
+                        
+                        <가평 설악버스터미널><br>
+                        - 설악터미널에서 20-3번 승차<br>
+                        - 성곡마을 하차, 목적지까지 도보 약 370m 이동<br>
+                        * 네이버 길찾기 기준 25분 소요</p>
+                </div>
+            </div>
+        </div>
+        <div id="map">
+            <iframe
+                src="http://pre.einet.kr/inner/map/rspn.html?biz_code=<?=$biz_code?>&lat=<?=$InfoPension['lat']?>&lng=<?=$InfoPension['lng']?>&biz_name=<?=$biz_name?>"
+                width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+        </div>
+    </div>
+</section>
+
+<?php include "./_footer.html"; ?>
