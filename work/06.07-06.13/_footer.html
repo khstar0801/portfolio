@@ -1,0 +1,91 @@
+<footer>
+    <div class="wrap1600">
+        <div class="flex-wrap">
+            <div class="left">
+                <img src="img/common/logo_w.png" alt="">
+                <ul class="license">
+                    <li><a href="landscape.html#map" class="f12 cf lig">오시는길</a></li>
+                    <li><a href="javascript:linkPopup('auth')" class="f12 cf lig">저작권</a></li>
+                    <li><a href="javascript:linkPopup('rule')" class="point f12 lig">개인정보처리방침</a></li><br class="none-pc">
+                    <li><a href="javascript:linkPopup('admin')" class="f12 cf lig">관리자로그인</a></li>
+                </ul>
+                <ul class="info">
+                    <li class="f12 cf lig">상호명 : <?=$biz_name?></li>
+                    <li class="f12 cf lig">대표자명 : <?=$owner_name?></li>
+                    <li class="f12 cf lig">연락처 : <a href="tel:<?=$user_tel?>" class="f12 cf lig"><?=$user_tel?></a></li>
+                    <li class="f12 cf lig">사업자등록번호 : <?=$biz_no?></li>
+                    <li class="f12 cf lig">주소 : <?=$road_addr?></li>
+                </ul>
+                <p class="copy f12 cf lig">© 2023. Aerim Poolvilla. all rights reserved.</p>
+            </div>
+            <div class="right none-mo">
+                <ul class="f-nav">
+                    <li>
+                        <a herf="landscape.html" class="upp lig cf f14">about</a>
+                        <ul>
+                            <li><a href="landscape.html"class="cf lig f12">펜션전경</a></li>
+                            <li><a href="landscape.html#map"class="cf lig f12">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a herf="rooms.html" class="upp lig cf f14">rooms</a>
+                        <ul>
+                            <?php foreach($getRooms as $k => $v) {
+                                $int = $k + 1;
+                            ?>
+                            <li><a href="room.html?menutree_idx=<?=$v['menutree_idx']?>&gubun=<?=$k+1?>"class="cf lig f12"><?=$v['room_name']?></a></li>
+                            <?php } ?>
+                        </ul>
+                    </li>
+                    <li>
+                        <a herf="facs.html" class="upp lig cf f14">facilities</a>
+                        <ul>
+                            <?php
+                                foreach ($facilities as $k => $v) {
+                                $int = $k + 1;
+                            ?>
+                            <li><a href="fac.html?idx=<?=$v['idx']?>&gubun=<?=$int?>"class="cf lig f12"><?=$v['title']?></a></li>
+                            <?php } ?>
+                        </ul>
+                    </li>
+                    <li>
+                        <a herf="service.html" class="upp lig cf f14"><?=$v['title']?></a>
+                        <ul>
+                            <?php
+                                foreach ($service as $k => $v) {
+                                $int = $k + 1;
+                            ?>
+                            <li><a href="service.html"class="cf lig f12">실내 개별바베큐장</a></li>
+                            <?php } ?>
+                        </ul>
+                    </li>
+                    <li>
+                        <a herf="travels.html" class="upp lig cf f14">travel</a>
+                        <ul>
+                            <?php
+                                foreach ($travel as $k => $v) {
+                                $int = $k + 1;
+                            ?>
+                            <li><a href="travel.html?idx=<?=$v['idx']?>&gubun=<?=$int?>"class="cf lig f12"><?=$v['title']?></a></li>
+                            <?php } ?>
+                        </ul>
+                    </li>
+                    <li>
+                        <a herf="reservation" class="upp lig cf f14">reservation</a>
+                        <ul>
+                            <li><a href="charge.html"class="cf lig f12">요금가이드</a></li>
+                            <li><a href="reservation.html"class="cf lig f12">실시간예약</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a herf="notice.html" class="upp lig cf f14">community</a>
+                        <ul>
+                            <li><a href="notice.html"class="cf lig f12">공지사항</a></li>
+                            <li><a href="faq.html"class="cf lig f12">FAQ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

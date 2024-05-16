@@ -1,0 +1,54 @@
+<?php include "./_header.html"; ?>
+
+        <link rel="stylesheet" href="css/reservation.css">
+
+
+        <section id="sub-top">
+            <div class="img" style="background-image: url(img/subtop/reservation.jpg);"></div>
+            <h3 class="en re cf f40 mf20 upp">how to booking?</h3>
+        </section>
+        
+        <section id="section01">
+            <div class="wrap1600">
+                <div class="flex-wrap">
+                    <div class="left">
+                        <div id="tit">
+                            <h3 class="en re f60 mf30 c2 upp">reservation</h3>
+                            <p class="lig f16 mf14 c9">애림풀빌라 실시간예약 및 요금가이드</p>
+                        </div>
+                        <div id="tab">
+                            <a href="charge.html" class="">
+                                <h4 class="upp en re c2 f32 mf20">fee guide</h4>
+                                <p class="lig c9 f16 mf14">요금가이드</p>
+                            </a>
+                            <a href="reservation.html" class="active">
+                                <h4 class="upp en re c2 f32 mf20">booking</h4>
+                                <p class="lig c9 f16 mf14">실시간예약</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="content-wrap">
+                            <div class="reserv-calendar none-mo">
+                                <iframe width="100%" height="1700" id="inner-calendar" src="<?=$reser_url; ?>" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" topmargin="0"></iframe>
+                            </div>
+                            <div class="reserv-mo none-pc">
+                                <a href="<?=$reser_url; ?>">
+                                    <div id="btn-wrap" class="p-side btn-next color-g">
+                                        <p class="en re f18 mf14">Go to reservation</p>
+                                        <div id="prevnext">
+                                            <div class="circle"></div>
+                                            <div class="line"></div>
+                                        </div>
+                                    </div>
+                                </a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </section>
+
+        <?php include "./_footer.html"; ?>

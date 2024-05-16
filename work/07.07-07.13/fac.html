@@ -1,0 +1,82 @@
+<?php include "./_header.html"; ?>
+<?php
+$idx = ($_GET['idx']) ? $_GET['idx'] : $facilities[0]['idx'];
+
+$menuInfo = $pension->menuInfo($idx);
+$content = str_replace('<p>&nbsp;</p>', '', $menuInfo['content']);
+$file_path = $img_path.'/facilities/'.$idx.'/';
+$file_count = file_count($file_path);
+$etc_script = $menuInfo['etc_script'];
+$addr = $menuInfo['addr'];
+$gubun = ($_GET['gubun']) ? $_GET['gubun']-1 : 0;
+?>
+
+
+        <link rel="stylesheet" href="css/fac.css">
+
+
+        <section id="section01">
+            <div class="full-swiper swiper-container">
+                <div class="swiper-wrapper">
+                    <?php for($i=0; $i<$file_count; $i++) { ?>
+                    <div class="swiper-slide bgi" style="background-image: url(http://img.einet.kr/<?=$pension_code?>/facilities/<?= $idx?>/<?=sprintf("%02d",$i+1)?>.jpg);"></div>
+                    <?php } ?>
+                </div>
+                <div class="swiper-pagination full-pag"></div>
+                <div id="full-num-pag" class="none-pc f14 cf reg">
+                    <span class="number">01</span><span class="bar">|</span><span class="all">12</span>
+                </div>
+                <div class="swiper-button-next full-next full-btn circle-btn none-mo">🡢</div>
+                <div class="swiper-button-prev full-prev full-btn circle-btn none-mo">🡠</div>
+            </div>
+        </section>
+        
+        
+
+        <section id="section02">
+            <div class="wrap1400">
+                    <h3 class="f40 mf24 c2 med"><?=$menuInfo['title']?></h3>
+                    <div class="content c2 op6 reg f14">
+                        <?=$menuInfo['content']?>
+                    </div>
+            </div>
+        </section>
+
+
+        <section id="section03">
+            <div class="wrap1400">
+                <div id="tit">
+                    <h3 class="med f40 mf24 c2">다른 부대시설</h3>
+                    <p class="reg f14 c2 op6">당신의 여행을 한층 더 알차게 채워줄 아름다운 조경과 뷰, 여행을 알차게 즐길 쾌적한 시설.</p>
+                    <a href="facs.html" class="reg f14 c2">모든 부대시설 보기</a>
+                </div>
+                <div class="slide-wrap">
+                    <div class="service-swiper swiper-container">
+                        <div class="swiper-wrapper">
+                            <?php
+                                foreach ($facilities as $k => $v) {
+                                $int = sprintf($k + 1);
+                                $href = 'fac.html?idx='.$v['idx'].'&gubun='.$int;
+                                if($v['idx']==$_GET['idx']) $clsActive = "active-pag";
+                                else $clsActive = "";
+                            ?>
+                            <a class="swiper-slide <?=$clsActive?>" href="<?=$href?>">
+                                <div class="img-wrap">
+                                    <div class="img" style="background-image: url(http://img.einet.kr/<?=$pension_code?>/facilities/<?=$v['idx']?>/01.jpg);"></div>
+                                </div>
+                                <div class="text-wrap">
+                                    <h3 class="reg f16 mf14 c2"><?=$v['title']?></h3>
+                                </div>
+                            </a>
+                            <?php } ?>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination service-pag none-pc"></div>
+
+                    <div class="swiper-button-next service-next service-btn box-btn none-mo">></div>
+                    <div class="swiper-button-prev service-prev service-btn box-btn none-mo"><</div>
+                </div>
+            </div>
+        </section>
+
+        <?php include "./_footer.html"; ?> 

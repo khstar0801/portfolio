@@ -1,0 +1,102 @@
+<?php include "./_header.html"; ?>
+<?
+$file_path = $img_path.'/landscape/slides'.$idx;
+$file_count = file_count($file_path);
+?>
+
+        <link rel="stylesheet" href="css/landscape.css">
+
+
+        <section id="section01">
+            <div class="full-swiper swiper-container">
+                <div class="swiper-wrapper">
+                    <?php for($i=0; $i<$file_count; $i++) { ?>
+                    <div class="swiper-slide bg-img" style="background-image: url(http://img.einet.kr/<?=$pension_code?>/landscape/slides/<?=sprintf("%02d",$i+1)?>.jpg);"></div>
+                    <?php } ?>
+                </div>
+                <div class="wrap1600">
+                    <div class="swiper-pagination full-pag"></div>
+                    <div class="arrow flex-wrap">
+                        <div class="swiper-button-prev full-prev full-btn">
+                            <div id="btn-wrap" class="p-side btn-prev color-w">
+                                <p class="en re f18 mf14">Previous</p>
+                                <div id="prevnext">
+                                    <div class="circle"></div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next full-next full-btn">
+                            <div id="btn-wrap" class="p-side btn-next color-w">
+                                <p class="en re f18 mf14">Next</p>
+                                <div id="prevnext">
+                                    <div class="circle"></div>
+                                    <div class="line"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section02">
+            <div class="wrap1600">
+                <img src="img/common/round-tit.png" alt="">
+                <h3 class="upp re f60 mf30 c2 en">prologue</h3>
+                <p class="f16 mf14 lig c9">애림풀빌라에 오신 여러분을 진심으로 환영합니다.</p>
+                <p class="f16 mf14 lig c9">애림풀빌라는 계곡(涯물가:애)과 산(林수풀:림)이 주는 자연의 선물을 펜션에 담았습니다.</p>
+                <p class="f16 mf14 lig c9">실내 온수 수영장은 수조를 넘어 흐르는 물소리가 마치 계곡에서 물놀이는 하는 듯한 <span class="color2">“즐김”</span>의 공간으로,<br class="none-mo">
+                    천창 밑 중정은 빛에 따라 느낌을 달리 주는 작은 숲에 있는 착각이 들도록 <span class="color2">“자연”</span>의 공간으로,<br class="none-mo">
+                    수영장을 바라보고 자연의 소리를 들으며 잠들 수 있는 침실과 막힘 없이 모든 공간을 공유할 수 있는 카페 같은 거실은 <span class="color2">“쉼”</span>의 공간으로,<br class="none-mo">
+                    잔잔한 물결 속에서 마음의 평온함을 찾고 화로대 장작불 속에서 기억속에 녹아 있는 추억을 회상할 수 있는 물정원은 <span class="color2">“치유”</span>의 공간으로,<br class="none-mo">
+                    자연과 가장 가까이 할수 있는 테라스와 이와 이어진 바비큐실은 즐거움을 맞는 <span class="color2">“만남”</span>의 공간으로,<br class="none-mo">
+                    개별주차장은 차고문을 닫는 순간 이 모든 공간이 나만의 소유가 되게 외부 간섭을 막는 <span class="color2">“차단”</span>의 공간으로 계획 하였습니다.</p>
+            </div>
+        </section>
+
+        <section id="img-section">
+            <div class="wrap1600">
+                <div class="top flex-wrap">
+                    <div class="img-wrap flex-wrap">
+                        <div class="bg-img" style="background-image: url(img/landscape/02-01.jpg);"></div>
+                        <h3 class="en f40 mf20 c2 re upp">healing meeting block</h3>
+                    </div>
+                    <div class="img-wrap flex-wrap">
+                        <div class="bg-img" style="background-image: url(img/landscape/02-02.jpg);"></div>
+                        <h3 class="en f40 mf20 c2 re upp">enjoy nature resting</h3>
+                    </div>
+                </div>
+                <h2 class="en upp f120 mf48 c2 re">let's see our <br class="none-pc">beautiful view</h2>
+                <div class="btm flex-wrap">
+                    <div class="bg-img" style="background-image: url(img/landscape/02-03.jpg);"></div>
+                    <div class="bg-img" style="background-image: url(img/landscape/02-04.jpg);"></div>
+                    <div class="bg-img" style="background-image: url(img/landscape/02-05.jpg);"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section03">
+            <div class="wrap1600 flex-wrap">
+                <div id="map">
+                    <iframe
+                    src="http://pre.einet.kr/inner/map/rspn.html?biz_code=<?=$biz_code?>&lat=<?=$InfoPension['lat']?>&lng=<?=$InfoPension['lng']?>&biz_name=<?=$biz_name?>"
+                    width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                </div>
+                <div class="content">
+                    <div id="tit">
+                        <h3 class="en re f60 mf30 c2 upp">location</h3>
+                        <p class="lig f16 mf14 c9">가평 애림풀빌라로 오시는 길</p>
+                    </div>
+                    <h4 class="en re f32 mf16 c2 upp">adress</h4>
+                    <p class="lig f16 mf14 c9 top"><?=$road_addr?></p>
+                    <h4 class="en re f32 mf16 c2 upp">call</h4>
+                    <a href="tel:<?=$user_tel?>" class="lig f16 mf14 c9"><?=$user_tel?></a>
+                </div>
+            </div>
+        </section>
+
+        
+
+
+        <?php include "./_footer.html"; ?>

@@ -116,4 +116,24 @@
 
 <br />
 
+> ## 10. 보헤미아빌리지
+
+> 펜션 홈페이지 퍼블리싱 작업 
+>
+> - 개발기간 : 2023.07.07-2023.07.13
+> - 핵심 역할 : 퍼블리싱 및 DB 연결 
+> - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![php](https://img.shields.io/badge/php-9896c8?style=flat-square&logo=php&logoColor=white)
+> - http://bohemiavillage.co.kr/?intro=OK
+
+<br />
+
+> ## 11. 애림풀빌라
+
+> 펜션 홈페이지 퍼블리싱 작업 
+>
+> - 개발기간 : 2023.06.07-2023.06.13
+> - 핵심 역할 : 퍼블리싱 및 DB 연결 
+> - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![php](https://img.shields.io/badge/php-9896c8?style=flat-square&logo=php&logoColor=white)
+> - http://ae-rim.com/
+
 ## 업데이트중

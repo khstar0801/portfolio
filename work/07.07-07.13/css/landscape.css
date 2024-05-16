@@ -1,0 +1,53 @@
+/* header */
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    header{ background-color: #222; border-bottom: unset;}
+}
+
+
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    #section01{ margin-top: 60px; } 
+}
+
+
+#section02{ padding: 120px 0; overflow: hidden; text-align: center;}
+#section02 .text-wrap{ padding-bottom: 120px;}
+#section02 .text-wrap h3{ padding-bottom: 40px; display: block;}
+#section02 .bgi{ width: 100%; height: 787px;}
+/* =================== 1440px =================== */
+@media (max-width: 1440px) {
+    #section02 .bgi{ width: 100%; height: 54.65vw;}
+}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    #section02{ padding: 60px 0 40px; text-align: left;}
+    #section02 .text-wrap{ padding-bottom: 40px}
+    #section02 .text-wrap h3{ padding-bottom: 20px;}
+    #section02 .bgi{ width: 100%; height: 51.47vw;}
+}
+
+
+#plan img{ width: 100%; object-fit: cover;}
+
+
+#section03{ position: relative; padding: 120px 0 125px;}
+#section03 #map{ width: 100%; height: 787px; background-color: aliceblue; border: 1px solid #222;}
+#section03 .text-wrap{ overflow: hidden; padding-top: 40px;}
+#section03 .text-wrap p{ position: relative; padding-left: 60px; color: #7A7A7A;}
+#section03 .text-wrap p:first-child{ padding-bottom: 40px; }
+#section03 .text-wrap p i{ position: absolute; left: 0; top: 0; font-size: 24px; color: #222;}
+/* =================== 1440px =================== */
+@media (max-width: 1440px) {
+    #section03 #map{ width: 100%; height: 54.65vw;}
+}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    #section03{ padding: 40px 0 90px; }
+    #section03 #map{ width: 100%; height: 51.47vw;}
+    #section03 .text-wrap{ overflow: hidden; padding-top: 40px;}
+    #section03 .text-wrap h3{ padding-bottom: 40px;}
+    #section03 .text-wrap p{ padding-left: 45px;}
+    #section03 .text-wrap p:first-child{ padding-bottom: 20px;}
+    #section03 .text-wrap p i{ font-size: 20px;}
+}

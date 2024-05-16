@@ -1,0 +1,50 @@
+<?php include "./_header.html"; ?>
+<?php
+$idx = ($_GET['idx']) ? $_GET['idx'] : $service[0]['idx'];
+
+$menuInfo = $pension->menuInfo($idx);
+$content = str_replace('<p>&nbsp;</p>', '', $menuInfo['content']);
+$file_path = $img_path.'/service/'.$idx.'/';
+$file_count = file_count($file_path);
+$etc_script = $menuInfo['etc_script'];
+$addr = $menuInfo['addr'];
+$gubun = ($_GET['gubun']) ? $_GET['gubun']-1 : 0;
+?>
+
+
+        <link rel="stylesheet" href="css/service.css">
+
+
+        <section id="sub-top">
+            <div class="img" style="background-image: url(img/subtop/service.jpg);"></div>
+            <h3 class="en re cf f40 mf20 upp">all of us be happy</h3>
+        </section>
+
+        <section id="section01">
+            <div class="deco-box01"></div>
+            <div class="wrap1600">
+                <div id="tit">
+                    <h3 class="en re f60 mf30 c2 upp">service</h3>
+                    <p class="lig f16 mf14 c9">최고의 공간에서 최고의 서비스로 모시겠습니다.</p>
+                </div>
+                <div class="flex-wrap">
+                    <?php
+                        foreach ($service as $k => $v) {
+                        $int = sprintf($k + 1);
+                        $href = 'service.html?idx='.$v['idx'].'&gubun='.$int;
+                    ?>
+                    <div class="con">
+                        <div class="bg-img" style="background-image: url(http://img.einet.kr/<?=$pension_code?>/service/<?=$v['idx']?>/01.jpg);"></div>
+                        <span class="num en re color2 f32 mf24">0<?=$int?></span>
+                        <h3 class="en re c2 f32 mf24"><?=$v['eng_title']?></h3>
+                        <h4 class="lig c9 f16 mf14"><?=$v['title']?></h4>
+                        <div class="content lig c9 f16 mf14">
+                            <?=$v['content']; ?>
+                        </div>
+                    </div>
+                    <?php } ?>
+                </div>
+            </div>
+        </section>
+
+        <?php include "./_footer.html"; ?>  

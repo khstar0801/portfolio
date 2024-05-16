@@ -1,0 +1,65 @@
+<?php include "./_header.html"; ?>
+
+<link rel="stylesheet" href="css/reservation.css">
+
+<div id="comm-top">
+    <div class="img" style="background-image: url(img/subtop/reservation.jpg);"></div>
+    <h3 class="upp f40 mf24 cf med">RESERVATION</h3>
+</div>
+<div id="comm-btn" class="flex-wrap">
+    <a href="use_info.html" class="f24 mf16 c2 reg active">예약 및 이용안내</a>
+    <a href="charge.html" class="f24 mf16 c2 reg">요금 가이드</a>
+    <a href="reservation.html" class="f24 mf16 c2 reg ">실시간 예약</a>
+</div>
+
+<section id="section01" class="use-info">
+    <div class="wrap1046">
+        <div class="content-wrap">
+            <div class="wrap">
+                <div class="charge-tit"><p class="med f40 mf24 c2">예약안내</p></div>
+                <div class="content reg c2 op6 f14">
+                    <?=$InfoPension['reserve_text']; ?>
+                </div>
+            </div>
+            <div class="wrap">
+                <div class="charge-tit"><p class="med f40 mf24 c2">이용안내</p></div>
+                <div class="content reg c2 op6 f14">
+                    <?=$InfoPension['use_text']; ?>
+                </div>
+            </div>
+            <div class="wrap">
+                <div class="charge-tit"><p class="med f40 mf24 c2">환불규정</p></div>
+                <div class="content reg c2 op6 f14">
+                    <?=$InfoPension['refund_text']; ?>
+                </div>
+                <div class="refund">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>이용당일</th>
+                                <th>1일전</th>
+                                <th>2일전</th>
+                                <th>3일전</th>
+                                <th>4일전</th>
+                                <th>5일전</th>
+                                <th>6일전</th>
+                                <th>7일전</th>
+                                <th>8일전</th>
+                                <th>9일전</th>
+                                <th>10일전</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <?php for($i=0; $i<count($off_charge); $i++) { ?>
+                                <td><?=$off_charge[$i];?>%</td>
+                                <?php } ?>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<?php include "./_footer.html"; ?>

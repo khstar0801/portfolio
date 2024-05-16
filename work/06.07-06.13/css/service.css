@@ -1,0 +1,58 @@
+/* header */
+.header .logo-wrap img.logo-normal{opacity: 0;}
+.header .logo-wrap img.logo-scroll{opacity: 1;}
+.header {position: fixed; height: 80px; transition: tranform 0.3s;  top: 0;}
+.header:after{height: 100%; background-color: rgba(255,255,255,.6); backdrop-filter: blur(10px); transform: scaleY(1); z-index: -1;}
+.header .menu-icon_wrap{ color: #222;}
+.header .menu-icon_wrap .line{ background-color: #222;}
+.header .header-icon{ color: #81A69B;}
+body.nav-active .header .header-wrapper{ border-bottom: 1px solid rgba(255,255,255,.3);}
+body.nav-active .header:after{height: 100%; background-color: transparent; transform: scaleY(1); z-index: -1;}
+body.nav-active .header .logo-wrap img.logo-normal{opacity: 0;}
+body.nav-active .header .logo-wrap img.logo-scroll{opacity: 1;}
+body.nav-active .header .header-icon > a.reser-btn{ display: inline-block; border: 1px solid #fff; background-color: transparent; color: #fff; }
+body.nav-active .header .header-icon > a i{ color: #fff;}
+body.nav-active .header .menu-icon__line{ background-color: #fff; }
+body.nav-active .header{ background: transparent;}
+body.nav-active .header .header-icon i, body.nav-active .header .header-icon div{color:#fff;}
+
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+  .header{ height: 50px; top: 0;}
+  .header:after{height: 100%; background-color: #EEF7F5; backdrop-filter: unset; transform: scaleY(1); z-index: -1;}
+  body.nav-active .header .header-icon > a.reser-btn {border: 1px solid rgba(255,255,255,.5); position: relative; color: #fff; }
+
+}
+
+
+
+#section01{ padding: 160px 0 120px; position: relative; text-align: center;}
+#section01 .deco-box01{ width: 100%; height: calc(100% - 1068px); position: absolute; right: 0; top: 489px; background-color: #EEF7F5;}
+#section01 #tit{ padding-bottom: 120px;}
+#section01 .con{ width: 520px; position: relative; text-align: left; padding-bottom: 80px;}
+#section01 .con .bg-img{ width: 100%; height: 366px; margin-bottom: 20px; }
+#section01 .con .num{ padding-bottom: 10px;}
+#section01 .con h3{ padding-bottom: 10px;}
+#section01 .con h4{ padding-bottom: 20px;}
+#section01 .con .content{ padding-top: 20px; border-top: 1px solid rgba(136,136,136,.5); line-height: 26px;}
+#section01 .flex-wrap > .con:nth-child(2){ top: -80px;}
+#section01 .flex-wrap > .con:nth-child(8){ top: 80px;}
+/* =================== 1640px =================== */
+@media (max-width: 1640px) {
+  #section01 .con{ width: 31.71vw; }
+  #section01 .con .bg-img{ height: 22.32vw; }
+}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+  #section01{ padding: 80px 0 40px; }
+  #section01 .deco-box01{ width: 100%; height: calc(100% - 675px); top: 280px; }
+  #section01 #tit{ padding-bottom: 20px;}
+  #section01 .con{ width: 100%; padding-bottom: 40px;}
+  #section01 .con .bg-img{ height: 61.54vw; margin-bottom: 10px; }
+  #section01 .con .num{ padding-bottom: 5px;}
+  #section01 .con .content{ line-height: 24px;}
+  #section01 .flex-wrap > .con:nth-child(2){ top: unset;}
+  #section01 .flex-wrap > .con:nth-child(8){ top: unset;}
+}
+
+ 

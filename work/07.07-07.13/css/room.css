@@ -1,0 +1,73 @@
+/* header */
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    header{ background-color: #222; border-bottom: unset;}
+}
+
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    #section01{ margin-top: 60px; } 
+}
+
+
+#section02{ padding: 120px 0 80px; text-align: left;}
+#section02 .wrap1400{ overflow: hidden;}
+#section02 .text-wrap{ padding-right: 170px;}
+#section02 .text-wrap > h3{ padding-bottom: 40px; }
+#section02 .text-wrap > p{ padding-bottom: 60px; }
+#section02 .text-wrap li{ padding-bottom: 40px;}
+#section02 .text-wrap li span, #section02 .text-wrap li p{ display: inline-block; line-height: 24px;}
+#section02 .text-wrap li i{ width: 47px; font-size: 24px; position: relative; top: 3px; vertical-align: top;}
+#section02 .text-wrap li span{ width: 72px; vertical-align: top;}
+#section02 .text-wrap li p{ width: calc(100% - 126px );}
+#section02 .text-wrap li p span{ width: 100%;}
+#section02 .text-wrap li a{ display: block; width: 456px; height: 38px; line-height: 36px; text-align: center; border: 1px solid #222; transition: .5s;}
+#section02 .text-wrap li a:hover{ background-color: #222; color: #fff;}
+#section02 .img-wrap img{ width: 100%; max-width: 692px; object-fit: cover;}
+/* =================== 1440px =================== */
+@media (max-width: 1440px) {
+    #section02 .text-wrap{ padding-right: 11.81vw;}
+}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    #section02{ padding: 40px 0 60px; }
+    #section02 .text-wrap{ padding-right: 0;}
+    #section02 .text-wrap > h3{ padding-bottom: 20px; }
+    #section02 .text-wrap > p{ padding-bottom: 40px; }
+    #section02 .text-wrap li{ padding-bottom: 20px;}
+    #section02 .text-wrap li:nth-child(7), #section02 .text-wrap li:last-child{ padding-bottom: 40px;}
+    #section02 .text-wrap li span, #section02 .text-wrap li p{ line-height: 20px;}
+    #section02 .text-wrap li i{ width: 42px; font-size: 20px; top: 1px; }
+    #section02 .text-wrap li p{ width: calc(100% - 126px );}
+    #section02 .text-wrap li p span{ width: 100%;}
+    #section02 .text-wrap li a{ width: 100%; height: 40px; line-height: 38px; }
+}
+
+#reser-calendar{ border-bottom: 1px solid rgba(34,34,34,.6);}
+#reser-calendar a{ display: block; width: 100%; height: 100px; line-height: 98px; border-top: 1px solid rgba(34,34,34,.6); border-bottom: 1px solid rgba(34,34,34,.6); text-align: center;}
+#reser-calendar a.active i{ transition: .5s;}
+#reser-calendar a .close{ display: inline-block;}
+#reser-calendar a .open{ display: none;}
+#reser-calendar a.active .close{ display: none;}
+#reser-calendar a.active .open{ display: inline-block;}
+#reser-calendar a.active i{ transform: rotate(180deg);}
+#reser-calendar .slide-wrap{ padding: 60px 20px; }
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    #reser-calendar a{ display: block; width: 100%; height: 60px; line-height: 58px;}
+    #reser-calendar .slide-wrap{ padding: 40px 20px; }
+}
+
+
+
+#section03{ padding: 180px 0; width: 100%; text-align: center;}
+#section03 #tit h3, #section03 #tit p{ padding-bottom: 40px;}
+#section03 .slide-wrap{ position: relative;}
+#section03 .swiper-slide.active-pag{ pointer-events: none;}
+#section03 .swiper-slide.active-pag .img{ opacity: .4;}
+#section03 .swiper-slide.active-pag .text-wrap h3{ color: #AB6333; text-decoration: underline;text-underline-position:under;}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+    #section03{ padding: 60px 0 170px; }
+    #section03 #tit h3, #section03 #tit p{ padding-bottom: 20px;}
+}

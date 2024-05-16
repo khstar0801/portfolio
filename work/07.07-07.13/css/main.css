@@ -1,0 +1,198 @@
+/* section01 */
+#section01{ overflow: hidden; position: relative; width: 100%; height: 100vh; background-color: #000; }
+#section01 > .img{ opacity: .6; }
+#section01 .videoWrap{position:relative; width: 100%; height:100%; top: 0; left: 0; margin:0; pointer-events: none;}
+#section01 .videoWrap iframe, #section01 .videoWrap object, #section01 .videoWrap embed{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    object-fit: cover;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    display: block;
+ }
+#section01 .fullSlogan { position: absolute; top: calc(50% - 130px); left: 0; right: 0; margin: 0 auto; z-index: 10; text-align: left;}
+#section01 .fullSlogan p{ display: inline-block; font-size: 18px; line-height: 24px; padding-bottom: 25px; position: relative;}
+#section01 .fullSlogan h3{ font-size: 60px; line-height: 64px; padding-bottom: 50px;}
+#section01 .fullSlogan .a-wrap{ font-size: 0;}
+#section01 .fullSlogan a{ border: 1px solid #fff; color: #fff; transition: .3s; margin-right: 10px;}
+#section01 .fullSlogan a:hover{ border: 1px solid #133e6e;}
+#section01 .control{ z-index: 1; font-size: 0; position: absolute; bottom: 100px; left: 0; right: 0; margin: 0 auto; width: 170px; text-align: center; z-index: 100;}
+#section01 .control li{ display: inline-block; padding: 0 5px;}
+#section01 .control li a{ display: block; font-size: 18px; color: #fff; width: 30px; height: 30px; line-height: 30px; border-radius: 50%; text-align: center; border: 1px solid #fff;}
+#section01 .control li i{ color: #fff; position: relative; }
+#section01 .scroll-down{ position: absolute; width: 34px; height: 23px; z-index: 10; bottom: 30px; left: 0; right: 0; margin: 0 auto;}
+#section01 .play-pause a.hide{ display: none;}
+#section01 .control .mute-onoff a.hide{ display: none;}
+.vidbox .ratio iframe, .end-video .videoWrap iframe, #cutvideo1, #cutvideo2{pointer-events: none;}
+.m-play{ display: none;}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+  #section01 { width: 100%; height:133.33vw; padding-top: 0; }
+  #section01 .videoWrap{position:absolute; width: 100%; height:100%; top: 0; left: 0;  }
+  #section01 .videoWrap, #section01 .videoWrap iframe, #section01 .videoWrap object, #section01 .videoWrap embed{ pointer-events: unset;}
+  #section01 .videoWrap iframe, #section01 .videoWrap object, #section01 .videoWrap embed{ opacity: 1; }
+  #section01 .fullSlogan { top: calc(50% - 100px); }
+  #section01 .control{ bottom: 25px; }
+  #section01 .control li a{ display: block; font-size: 12px; width: 28px; height: 28px; line-height: 29px; }
+}
+
+
+#section02{ width: 100%; position: relative; padding: 120px 0; text-align: center;}
+#section02 .bgi{ width: 100%; height: 787px; position: relative; margin-bottom: 60px;}
+#section02 .text-wrap{ overflow: hidden; width: 100%; text-align: left;}
+/* =================== 1440px =================== */
+@media (max-width: 1440px) {
+  #section02 .bgi{ height: 54.65vw; }
+}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+  #section02{ padding: 60px 0; }
+  #section02 .bgi{ height: 51.47vw; margin-bottom: 40px;}
+  #section02 .text-wrap{ text-align: center;}
+  #section02 .text-wrap h3{ padding-bottom: 40px;}
+}
+
+#section03{ padding-bottom: 180px; overflow: hidden;}
+#section03 .slide-wrap{ width: 100%; overflow: hidden;}
+#section03 .movie-swiper{ width: 928px; left: 0; right: 0; margin: 0 auto; height: auto; transition: .5s;}
+#section03 .movie-swiper .swiper-slide{ opacity: .4; transition: .5s;}
+#section03 .movie-swiper .swiper-slide.swiper-slide-active{ opacity: 1;}
+#section03 .movie-swiper .video-wrap{ width: 100%; height: 522px; position: relative; margin-bottom: 40px;}
+#section03 .movie-swiper .text-wrap{text-align: left;}
+#section03 .movie-swiper .text-wrap h3{ padding-bottom: 40px;}
+#section03 .swiper-button-prev.box-btn, #section03 .swiper-button-next.box-btn{ top: calc(50% - 124px);}
+#section03 .swiper-button-next.box-btn{ right: -44px;}
+#section03 .swiper-button-prev.box-btn{ left: -44px;}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+  #section03{ padding-bottom: 30px;}
+  #section03 .wrap1400 > .none-pc{ width: 100%;}
+  #section03 .movie-wrap{ position: relative; padding-bottom: 60px;}
+  #section03 .video-wrap{ width: 100%; height: 51.73vw; margin-bottom: 20px; position: relative;}
+  #section03 .movie-swiper .text-wrap h3{ padding-bottom: 20px;}
+}
+
+
+#section04{ position: relative; padding: 120px 0 180px;}
+#section04 .deco-box{ width: 100%; height: 844px; position: absolute; top: 0; left: 0;}
+#section04 .wrap1400 > div{ overflow: hidden;}
+#section04 .wrap1400 .top { padding-bottom: 40px;}
+#section04 .wrap1400 .top .bgi{ width: 1046px; height: 456px; position: relative;}
+#section04 .wrap1400 .top h3{ text-align: right;}
+#section04 .wrap1400 .btm{ position: relative;}
+#section04 .wrap1400 .btm > p{ position: absolute; bottom: 0; left: 0;}
+#section04 .wrap1400 .btm .img-wrap{ width: 90%; text-align: right; font-size: 0;}
+#section04 .wrap1400 .btm .btm-01{ width: 574px; height: 456px; display: inline-block; margin-right: 16px;}
+#section04 .wrap1400 .btm .btm-02{ width: 456px; height: 456px; display: inline-block;}
+/* =================== 1440px =================== */
+@media (max-width: 1440px) {
+  #section04 .deco-box{ height: 58.61vw; }
+  #section04 .wrap1400 .top .bgi{ width: 72.64vw; height: 31.67vw; position: relative;}
+  #section04 .wrap1400 .btm .btm-01{ width: 39.86vw; height: 31.67vw; display: inline-block; margin-right: 1.11vw;}
+  #section04 .wrap1400 .btm .btm-02{ width: 31.67vw; height: 31.67vw; display: inline-block;}
+}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+  #section04{  padding: 0 0 100px;}
+  #section04 .wrap1400 > div{ overflow: hidden;}
+  #section04 .wrap1400 .top { padding-bottom: 10px;}
+  #section04 .wrap1400 .top .bgi{ width: 100%; height: 43.73vw;}
+  #section04 .wrap1400 .top h3{ position: absolute; text-align: left; bottom: 0; left: 15px;}
+  #section04 .wrap1400 .btm{ padding-bottom: 50px;}
+  #section04 .wrap1400 .btm > p{ position: absolute; bottom: 0; right: 0; left: unset;}
+  #section04 .wrap1400 .btm .img-wrap{ width: 100%; }
+  #section04 .wrap1400 .btm .btm-01{ width: 60.53vw; height: 51.47vw; margin-right: 10px;}
+  #section04 .wrap1400 .btm .btm-02{ width: calc(100% - 60.53vw - 10px); height: 51.47vw; display: inline-block; }
+}
+
+#scroll-animation{ position: relative; padding-top: 120px;}
+#scroll-animation .wrap1400{ position: relative; width: 1164px; height: 654px;}
+#scroll-animation #hero-lightpass{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%!important;
+  height: 100%!important;
+}
+/* =================== 1440px =================== */
+@media (max-width: 1440px) {
+  #scroll-animation .wrap1400{ position: relative; width: 80.83vw; height: 45.42vw;}
+}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+  #scroll-animation{ padding-top: 60px;}
+  #scroll-animation .wrap1400{ padding: 0;}
+  #scroll-animation .wrap1400{ position: relative; width: 100%; height: 56.00vw;}
+}
+
+
+
+#section05{ padding: 0 0 180px; text-align: center;}
+#section05 .slide-wrap{ position: relative;}
+#section05 .swiper-button-prev.box-btn, #section05 .swiper-button-next.box-btn{ top: calc(50% - 64px);}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+  #section05{ padding: 20px 0 100px; }
+}
+
+
+
+#section06{ position: relative; text-align: center; padding: 120px 0 110px;}
+#section06 #tit p{ padding-bottom: 40px;}
+#section06 #tit a{ width: 220px; margin: 0 8px;}
+#section06 .flex-wrap a{ width: calc(50% - 8px); margin-bottom: 70px; display: block;}
+#section06 .flex-wrap a .img-wrap{ position: relative; width: 100%; height: 389px; margin-bottom: 20px; overflow: hidden;}
+#section06 .flex-wrap a:hover .img-wrap .img{ transform: scale(1.1);}
+#section06 .flex-wrap a .text-wrap{ overflow: hidden;}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+  #section06{  padding: 40px 0 60px;}
+  #section06 #tit a{ width: calc(50% - 8px); margin: 0;}
+  #section06 #tit a.margin{ margin-right: 12px;}
+  #section06 .flex-wrap a{ width: 100%; margin-bottom: 40px; }
+  #section06 .flex-wrap a .img-wrap{ width: 100%; height: 44.80vw; margin-bottom: 10px; }
+}
+
+
+#section07{ position: relative; text-align: center; padding: 120px 0 180px;}
+#section07 #tit p{ padding-bottom: 0;}
+#section07 .slide-wrap{ position: relative;}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+  #section07{ position: relative; text-align: center; padding: 40px 0 100px;}
+}
+
+
+#section08{ position: relative; text-align: center; padding: 120px 0 180px;}
+#section08 #tit p{ padding-bottom: 40px;}
+#section08 .slide-wrap{ position: relative;}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+  #section08{ position: relative; text-align: center; padding: 40px 0 100px;}
+  #section08 #tit p{ padding-bottom: 20px;}
+}
+
+
+
+#section09{ font-size: 0; position: relative;}
+#section09 a{ width: 220px; height: 38px; line-height: 36px; border: 1px solid #fff; position: absolute; top: calc(50% - 19px); left: 0; right: 0; margin: 0 auto; z-index: 10; text-align: center; transition: .5s;}
+#section09 a:hover{ color: #222; background-color: #fff;}
+#section09 .videoWrap{ width: 100%; height: 56.25vw; position: relative;}
+#section09 .videoWrap iframe{ position: absolute; width: 100%; height: 100%;}
+/* =================== 1024px =================== */
+@media (max-width: 1024px) {
+  #section09 .videoWrap{ height: 100.00vw; position: relative;}
+}
+
+
+
+
+
+
+
+
