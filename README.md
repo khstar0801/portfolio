@@ -12,7 +12,7 @@
 <br />
 
 # 🛠 기술 및 도구
-> ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript)
+> ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![JQuery](https://img.shields.io/badge/JQuery-463dff?style=flat-square&logo=JQuery&logoColor=white)
 ![GitHub](https://img.shields.io/badge/Github-%23121011.svg?style=flat-square&logo=github&logoColor=white) ![AdobePhotoshop](https://img.shields.io/badge/AdobePhotoshop-4c8de5.svg?style=flat-square&logo=AdobePhotoshop&logoColor=white) ![AdobeXD](https://img.shields.io/badge/AdobeXD-872262.svg?style=flat-square&logo=AdobeXD&logoColor=white) ![Zeplin](https://img.shields.io/badge/Zeplin-e5a64c.svg?style=flat-square&logo=Zeplin&logoColor=white) ![php](https://img.shields.io/badge/php-9896c8?style=flat-square&logo=php&logoColor=white)
 
 <br />
@@ -25,7 +25,7 @@
 >
 > - 개발기간 : 2024.05.10-
 > - 핵심 역할 : 디자인 기획, 퍼블리싱 
-> - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript)
+> - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![JQuery](https://img.shields.io/badge/JQuery-463dff?style=flat-square&logo=JQuery&logoColor=white)
 
 <br />
 
@@ -35,7 +35,7 @@
 >
 > - 개발기간 : 2023.11.27-2023.12.01
 > - 핵심 역할 : 퍼블리싱 및 DB 연결 
-> - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![php](https://img.shields.io/badge/php-9896c8?style=flat-square&logo=php&logoColor=white)
+> - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![php](https://img.shields.io/badge/php-9896c8?style=flat-square&logo=php&logoColor=white) ![JQuery](https://img.shields.io/badge/JQuery-463dff?style=flat-square&logo=JQuery&logoColor=white)
 > - http://www.xn--9m1b62gfwkhoae75dzub.com/
 
 <br />
@@ -46,7 +46,7 @@
 >
 > - 개발기간 : 2023.11.15-2023.11.22
 > - 핵심 역할 : 퍼블리싱 및 DB 연결 
-> - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![php](https://img.shields.io/badge/php-9896c8?style=flat-square&logo=php&logoColor=white)
+> - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![php](https://img.shields.io/badge/php-9896c8?style=flat-square&logo=php&logoColor=white) ![JQuery](https://img.shields.io/badge/JQuery-463dff?style=flat-square&logo=JQuery&logoColor=white)
 > - http://penthouse700.co.kr/?intro=OK
 
 <br />
@@ -57,7 +57,7 @@
 >
 > - 개발기간 : 2023.11.07-2023.11.14
 > - 핵심 역할 : 퍼블리싱 및 DB 연결 
-> - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![php](https://img.shields.io/badge/php-9896c8?style=flat-square&logo=php&logoColor=white)
+> - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![php](https://img.shields.io/badge/php-9896c8?style=flat-square&logo=php&logoColor=white) ![JQuery](https://img.shields.io/badge/JQuery-463dff?style=flat-square&logo=JQuery&logoColor=white)
 > - http://www.isumglamping.com/
 
 <br />
@@ -68,7 +68,7 @@
 >
 > - 개발기간 : 2023.09.13-2023.09.19
 > - 핵심 역할 : 퍼블리싱 및 DB 연결 
-> - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![php](https://img.shields.io/badge/php-9896c8?style=flat-square&logo=php&logoColor=white)
+> - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![php](https://img.shields.io/badge/php-9896c8?style=flat-square&logo=php&logoColor=white) ![JQuery](https://img.shields.io/badge/JQuery-463dff?style=flat-square&logo=JQuery&logoColor=white)
 > - http://mrjun.kr/
  
 <br />
@@ -79,7 +79,7 @@
 >
 > - 개발기간 : 2023.09.04-2023.09.08
 > - 핵심 역할 : 퍼블리싱 및 DB 연결 
-> - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![php](https://img.shields.io/badge/php-9896c8?style=flat-square&logo=php&logoColor=white)
+> - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![php](https://img.shields.io/badge/php-9896c8?style=flat-square&logo=php&logoColor=white) ![JQuery](https://img.shields.io/badge/JQuery-463dff?style=flat-square&logo=JQuery&logoColor=white)
 > - http://xn--oi2bh433c3vhgru.com/
 
 <br />
@@ -90,7 +90,7 @@
 >
 > - 개발기간 : 2023.08.29-2023.09.04
 > - 핵심 역할 : 퍼블리싱 및 DB 연결 
-> - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![php](https://img.shields.io/badge/php-9896c8?style=flat-square&logo=php&logoColor=white)
+> - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![php](https://img.shields.io/badge/php-9896c8?style=flat-square&logo=php&logoColor=white) ![JQuery](https://img.shields.io/badge/JQuery-463dff?style=flat-square&logo=JQuery&logoColor=white)
 > - http://instnthotel.com/
 
 <br />
@@ -101,7 +101,7 @@
 >
 > - 개발기간 : 2023.08.03-2023.08.09
 > - 핵심 역할 : 퍼블리싱 및 DB 연결 
-> - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![php](https://img.shields.io/badge/php-9896c8?style=flat-square&logo=php&logoColor=white)
+> - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![php](https://img.shields.io/badge/php-9896c8?style=flat-square&logo=php&logoColor=white) ![JQuery](https://img.shields.io/badge/JQuery-463dff?style=flat-square&logo=JQuery&logoColor=white)
 
 <br />
 
@@ -111,7 +111,7 @@
 >
 > - 개발기간 : 2023.07.19-2023.08.02
 > - 핵심 역할 : 퍼블리싱 및 DB 연결 
-> - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![php](https://img.shields.io/badge/php-9896c8?style=flat-square&logo=php&logoColor=white)
+> - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![php](https://img.shields.io/badge/php-9896c8?style=flat-square&logo=php&logoColor=white) ![JQuery](https://img.shields.io/badge/JQuery-463dff?style=flat-square&logo=JQuery&logoColor=white)
 > - http://calacatta-hotel.com/
 
 <br />
