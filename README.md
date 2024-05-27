@@ -43,14 +43,21 @@
 
 <br />
 
-> ## 2. 더 숨 포레스트
+> ## 2. [기업] 이아이넷
 
-> 펜션 홈페이지 퍼블리싱 작업 
+> 기업 홈페이지 제작 경험
+> 자사 홈페이지 리뉴얼 작업 진행
 >
-> - 개발기간 : 2023.11.27-2023.12.01
-> - 핵심 역할 : 퍼블리싱 및 DB 연결 
+> - 개발기간 : 21.04.13 ~ 21.05.17 (약 1개월)
+> - 핵심 역할 : 퍼블리싱 및 애니메이션 효과 구현 / 반응형 작업
 > - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![php](https://img.shields.io/badge/php-9896c8?style=flat-square&logo=php&logoColor=white) ![JQuery](https://img.shields.io/badge/JQuery-463dff?style=flat-square&logo=JQuery&logoColor=white)
-> - http://www.xn--9m1b62gfwkhoae75dzub.com/
+> - http://www.einet.co.kr/
+>
+> ### hover시 이미지 내부 스크롤 효과 구현 작업
+>![inet_scroll](https://github.com/khstar0801/portfolio/assets/169116738/a5158986-d0c7-43a4-a470-ee4317c38c52)
+> 
+> ### 숫자 카운트 구현
+> ![inet_count](https://github.com/khstar0801/portfolio/assets/169116738/447e4d6d-2efd-405f-b716-e7973c438473)
 
 <br />
 
