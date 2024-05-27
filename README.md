@@ -61,40 +61,73 @@
 
 <br />
 
-> ## 3. 펜트하우스
+> ## 3. [종교] 세화교회
 
-> 펜션 홈페이지 퍼블리싱 작업 
+> 게시판 구성과 로그인 화면 등 input을 활용한 다양한 폼 제작 경험.
 >
-> - 개발기간 : 2023.11.15-2023.11.22
-> - 핵심 역할 : 퍼블리싱 및 DB 연결 
+> - 개발기간 : 22.02.18 ~ 22.02.25 (약 6일)
+> - 핵심 역할 : 퍼블리싱 및 DB 연결 / 로그인 및 회원가입 페이지, 다양한 게시판 제작 작업
 > - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![php](https://img.shields.io/badge/php-9896c8?style=flat-square&logo=php&logoColor=white) ![JQuery](https://img.shields.io/badge/JQuery-463dff?style=flat-square&logo=JQuery&logoColor=white)
-> - http://penthouse700.co.kr/?intro=OK
+> - http://xn--9d0bm19ahnppga.com/
+>
+> ### 로그인/회원가입 
+> ![church_join1](https://github.com/khstar0801/portfolio/assets/169116738/8ff23cc9-50ca-4ba9-a92f-da08d89f553d)
+> ![church_join2](https://github.com/khstar0801/portfolio/assets/169116738/998ca7b4-5c90-4ba6-9841-9b47ee7f4cfc)
+> ![church_login](https://github.com/khstar0801/portfolio/assets/169116738/a89a2845-4682-4a04-91d4-463076f85d6f)
+>
+> ### 갤러리/자료실/이미지게시판 등 다양한 게시판 제작 경험
+>
 
 <br />
 
-> ## 4. 아이섬 풀&글램핑
+> ## 4. 펜션타운
 
-> 펜션 홈페이지 퍼블리싱 작업 
+> 장기 대형 프로젝트 경험, 결제 페이지 및 시스템 관리자 페이지 제작 경험
+> input을 활용한 필터 제작
 >
-> - 개발기간 : 2023.11.07-2023.11.14
-> - 핵심 역할 : 퍼블리싱 및 DB 연결 
+> - 개발기간 : 21.03.08 ~ 21.08.18 (약 5개월)
+> - 핵심 역할 : 퍼블리싱 및 DB 연결 / 관리자 페이지 제작 
 > - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![php](https://img.shields.io/badge/php-9896c8?style=flat-square&logo=php&logoColor=white) ![JQuery](https://img.shields.io/badge/JQuery-463dff?style=flat-square&logo=JQuery&logoColor=white)
-> - http://www.isumglamping.com/
+> - https://www.ddtown.co.kr/
+> - 
+> ### input을 활용한 필터 제작
+> ![town_filter](https://github.com/khstar0801/portfolio/assets/169116738/6f422237-17c2-46c9-826f-451662e18063)
+> 
+> ### 관리자 페이지 제작 경험
 
 <br />
 
-> ## 5. 미스터준 
+> ## 5. [기업] QNE
 
-> 펜션 홈페이지 퍼블리싱 작업 
+> 기업 사이트 퍼블리싱 작업
 >
-> - 개발기간 : 2023.09.13-2023.09.19
-> - 핵심 역할 : 퍼블리싱 및 DB 연결 
+> - 개발기간 : 22.06.20 ~ 22.06.24 (약 4일) / 유지보수 및 추가 디자인 작업 22.07.13 ~ 22.07.20 (약 6일)
+> - 핵심 역할 : 퍼블리싱 및 DB 연결 / 게시판 구성
 > - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![php](https://img.shields.io/badge/php-9896c8?style=flat-square&logo=php&logoColor=white) ![JQuery](https://img.shields.io/badge/JQuery-463dff?style=flat-square&logo=JQuery&logoColor=white)
-> - http://mrjun.kr/
- 
+> - https://www.qnekorea.co.kr/
+>
+> ### 각종 게시판 구성
+> ![qne01](https://github.com/khstar0801/portfolio/assets/169116738/ad416c9c-7a32-453c-be96-b23f76baa827)
+> ![qne02](https://github.com/khstar0801/portfolio/assets/169116738/19669f67-a386-4728-b5b5-c2ae584ffa32)
+> ![qne03](https://github.com/khstar0801/portfolio/assets/169116738/f24a35c3-d79e-4dcd-bb4e-5b3704bdb246)
+
 <br />
 
-> ## 6. 아란 풀빌라 
+> ## 6. 깔라까따 호텔
+
+> 펜션 홈페이지 퍼블리싱 작업 / wow, scrollmagic, GSAP를 이용한 애니메이션 효과 구현
+>
+> - 개발기간 : 2023.07.19-2023.08.02
+> - 핵심 역할 : 퍼블리싱 및 DB 연결 
+> - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![php](https://img.shields.io/badge/php-9896c8?style=flat-square&logo=php&logoColor=white) ![JQuery](https://img.shields.io/badge/JQuery-463dff?style=flat-square&logo=JQuery&logoColor=white)
+> - http://calacatta-hotel.com/
+>
+> ### 다양한 스크롤 애니메이션을 통한 다채로운 홈페이지 구성
+> ![hotel_scroll](https://github.com/khstar0801/portfolio/assets/169116738/00033e7a-41de-4db9-9aad-50c7e3a715eb)
+> ![hotel_scroll2](https://github.com/khstar0801/portfolio/assets/169116738/ad7ca3c7-af69-484b-8e28-20cf826b9a48)
+> ![hotel_scroll3](https://github.com/khstar0801/portfolio/assets/169116738/21e2ea80-0692-4bec-9dde-7f93137bacd2)
+
+> ## 7. 아란 풀빌라 
 
 > 펜션 홈페이지 퍼블리싱 작업 
 >
@@ -105,7 +138,7 @@
 
 <br />
 
-> ## 7. 인스턴트 호텔 
+> ## 8. 인스턴트 호텔 
 
 > 펜션 홈페이지 퍼블리싱 작업 
 >
@@ -116,7 +149,7 @@
 
 <br />
 
-> ## 8. 라서 리조트
+> ## 9. 라서 리조트
 
 > 펜션 홈페이지 퍼블리싱 작업 
 >
@@ -126,14 +159,7 @@
 
 <br />
 
-> ## 9. 깔라까따 호텔
 
-> 펜션 홈페이지 퍼블리싱 작업 
->
-> - 개발기간 : 2023.07.19-2023.08.02
-> - 핵심 역할 : 퍼블리싱 및 DB 연결 
-> - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![php](https://img.shields.io/badge/php-9896c8?style=flat-square&logo=php&logoColor=white) ![JQuery](https://img.shields.io/badge/JQuery-463dff?style=flat-square&logo=JQuery&logoColor=white)
-> - http://calacatta-hotel.com/
 
 <br />
 
