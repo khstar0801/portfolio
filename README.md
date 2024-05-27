@@ -32,10 +32,13 @@
 > ![portfolio](https://github.com/khstar0801/portfolio/assets/169116738/7dc13776-ac2c-4391-b2ed-6e6ec42115eb)
 > 
 > ### 스크롤과 함께 이동하는 이미지 추가
-> 
+> ![scroll](https://github.com/khstar0801/portfolio/assets/169116738/6106256f-3774-490f-8869-6855056204f5)
 >
-> ### 반응형 구현
+> ### 섹션 이동 시 해당 메뉴 active 처리
+>![menu](https://github.com/khstar0801/portfolio/assets/169116738/77c8086b-4949-4367-9d74-058057f61a9a)
 > 
+> ### 반응형 구현
+> ![size](https://github.com/khstar0801/portfolio/assets/169116738/a2b8e78b-addf-4f18-8a2a-e887ee3eeccf)
 
 
 <br />
