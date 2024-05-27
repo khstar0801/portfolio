@@ -122,10 +122,11 @@
 > - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![php](https://img.shields.io/badge/php-9896c8?style=flat-square&logo=php&logoColor=white) ![JQuery](https://img.shields.io/badge/JQuery-463dff?style=flat-square&logo=JQuery&logoColor=white)
 > - http://calacatta-hotel.com/
 >
-> ### 다양한 스크롤 애니메이션을 통한 다채로운 홈페이지 구성
+> ### GSAP, ScrollMagic, WOW 등 다양한 플러그인을 통해 다채로운 애니메이션 구성
 > ![hotel_scroll](https://github.com/khstar0801/portfolio/assets/169116738/00033e7a-41de-4db9-9aad-50c7e3a715eb)
 > ![hotel_scroll2](https://github.com/khstar0801/portfolio/assets/169116738/ad7ca3c7-af69-484b-8e28-20cf826b9a48)
 > ![hotel_scroll3](https://github.com/khstar0801/portfolio/assets/169116738/21e2ea80-0692-4bec-9dde-7f93137bacd2)
+> ![hotel_scroll4](https://github.com/khstar0801/portfolio/assets/169116738/7a72d806-b995-47ab-b6f1-a22fcfedcd72)
 
 > ## 7. 아란 풀빌라 
 
