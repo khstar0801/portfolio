@@ -184,4 +184,6 @@
 > - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![php](https://img.shields.io/badge/php-9896c8?style=flat-square&logo=php&logoColor=white)
 > - http://ae-rim.com/
 
-## 업데이트중
+# 🚀 Contact
+
+> E-MAIL : winterelves2@gmail.com
