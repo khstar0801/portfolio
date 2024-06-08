@@ -25,6 +25,10 @@ $(document).ready(function(){
                 menu.eq(i).addClass('active');
             }
         });
+        if(wst == $(document).height() - $(window).height()){
+          menu.removeClass('active');
+          menu.eq(3).addClass('active');
+        }
     });
     
 });
