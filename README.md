@@ -27,7 +27,8 @@
 > - 개발기간 : 2024.05.10-
 > - 핵심 역할 : 디자인 기획, 퍼블리싱
 > - Skill : ![html](https://img.shields.io/badge/html-53C1DE?style=flat-square&logo=html&logoColor=white) ![css3](https://img.shields.io/badge/css3-DB7C85?style=flat-square&logo=css3&logoColor=white) ![javascript](https://img.shields.io/badge/javascript-%23039BE5.svg?style=flat-square&logo=javascript) ![JQuery](https://img.shields.io/badge/JQuery-463dff?style=flat-square&logo=JQuery&logoColor=white)
-> 
+> - http://khstar0801.github.io/portfolio
+>   
 > ### JavaScript와 SVG 애니메이션을 통해 다채로운 시각 경험 제공
 > ![portfolio](https://github.com/khstar0801/portfolio/assets/169116738/7dc13776-ac2c-4391-b2ed-6e6ec42115eb)
 > 
