@@ -1,241 +1,886 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PORTFOLIO</title>
-        <link rel="shortcut icon" href="#">
-        <link rel="apple-touch-icon" href="#" sizes="180x180">
-        <link rel="icon" href="#" sizes="192x192">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="웹 퍼블리셔 김한별의 포트폴리오 페이지입니다.">
+    <meta name="keyword" content="김한별, 포트폴리오, 웹퍼블리셔, 웹 퍼블리셔 포트폴리오">
+    <meta name="robots" content="index">
+
+    <title>Hanbyeol's PORTFOLIO</title>
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hanbyeol's PORTFOLIO">
+    <meta property="og:description" content="웹 퍼블리셔 김한별의 포트폴리오 페이지입니다.">
+    <meta property="og:image" content="pages/img/index/circle_02.png">
+    <meta property="og:url" content="">
+
+    <!-- <link rel="shortcut icon" href="/favicon.ico"> -->
+    
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="pages/css/index.css">
+    <link rel="stylesheet" href="plugin/css/animate.min.css">
+    <link rel="stylesheet" href="plugin/css/swiper.min.css">
+
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="plugin/js/ScrollToPlugin.min.js"></script>
+    <script src="plugin/js/ScrollMagic.min.js"></script>
+    <script src="plugin/js/debug.addIndicators.min.js"></script>
+    <script src="plugin/js/TweenMax.min.js"></script>
+    <script src="plugin/js/animation.gsap.min.js"></script>
+    <script src="plugin/js/swiper.min.js"></script>
+    <script src="plugin/js/wow.min.js"></script>
+    <script src="plugin/js/scroll.js"></script>
+    
         
-        <link rel="stylesheet" href="css/common.css">
-        
-        <script src="js/jquery-1.12.0.min.js"></script>
-        <script src="js/popup.js"></script>
-        <script src="js/common.js"></script>
-    </head>
-    <body>
-       <header>
-           <nav class="gnb">
-               <ul class="menu">
-                   <li>
-                        <a href="#main" class="first"><img src="images/ghost01.png" alt="메인 바로가기">main</a>
-                   </li>
-                   <li>
-                        <a href="#about" class="second"><img src="images/ghost02.png" alt="About 바로가기">About</a>
-                   </li>
-                   <li>
-                        <a href="#portfolio" class="third"><img src="images/ghost03.png" alt="Portfolio 바로가기">Portfolio</a>
-                   </li>
-                   <li>
-                        <a href="#contact" class="fourth"><img src="images/ghost04.png" alt="Contact 바로가기">Contact</a>
-                   </li>
-               </ul>
-           </nav>
-       </header>
-       <div id="fullpage">
-            <div class="content" id="main">
-                <div class="main">
-                    <h1 class="word">PORTFOLIO</h1>
+</head>
+
+<body class="preload">
+
+    <!-- Header -->
+    <div class="cm-header" >
+        <div class="progress-bar"></div>
+        <header class="header">
+            <div class="header-wrapper">
+                <div class="logo-wrap">
+                    <a href="index.html" class=" f24 mf16 bold">HANBYEOL'S WEB PORTFOLIO</a>
+                </div>
+                <div class="menu">
+                    <a href="#section01" class="f16 mf16 bold" onclick="$('html, body').animate({scrollTop:$(this.hash).offset().top}, 1200)">ABOUT ME</a>
+                    <a href="#section02" class="f16 mf16 bold"  onclick="$('html, body').animate({scrollTop:$(this.hash).offset().top}, 1200)">PORTFOLIO</a>
+                    <a href="#section03" class="f16 mf16 bold" onclick="$('html, body').animate({scrollTop:$(this.hash).offset().top}, 1200)">CONTACT</a>
+                </div>			
+            </div>				
+        </header>
+    </div>
+
+    <a id="top-btn" href="#top" onclick="$('html, body').animate({scrollTop:0},1500);">
+        <img src="pages/img/index/star_w.png" alt="">
+        <h3 class="cf f14">TOP</h3>
+    </a>
+
+
+    <!-- Container or Wrap -->
+    <div id="container" class="wrap">
+        <section id="" class="video-fullscreen">
+            <div class="ttl wrap1520">
+                <div class="text-ani-wrap"><h3 class="f120 mf40 bold wow fadeInUp" data-wow-duration="1s">2024</h3></div>
+                <div class="text-ani-wrap"><h2 class="f120 mf40 bold wow fadeInUp" data-wow-duration="1s" data-wow-delay="400ms">HANBYEOL</h2></div>
+                <div class="text-ani-wrap"><h1 class="f120 mf40 bold wow fadeInUp" data-wow-duration="1s" data-wow-delay="800ms">WEB PORTFOLIO</h1></div>
+                <div class="text-ani-wrap"><p class="f24 mf16 reg wow fadeInUp" data-wow-duration="1s" data-wow-delay="1200ms">웹퍼블리셔 김한별 포트폴리오</p></div>
+            </div>
+            <div class="frame">
+                <video 
+                id="main-top-video" class="video cover" style="background-color:#000"
+                src="pages/video/mixkit-branches-swaying-in-the-wind-95-full-hd.mp4"
+                muted autoplay playsinline loop>
+                </video>
+            </div>
+        </section>
+
+
+        <!-- delete -->
+
+        <!-- section01 -->
+        <section id="section01">
+            <div class="content">
+                <div class="top flex-wrap">
+                    <div class="left flex-wrap">
+                        <img src="pages/img/index/01-01.png" alt="" class="photo wow fadeInUp" data-wow-duration="1.5s">
+                        <img src="pages/img/index/circle.png" alt="" class="circle ani-lotate">
+                    </div>
+                    <div class="right">
+                        <h4 class="f16 c2 wow fadeInUp" data-wow-duration="1.5s"  data-wow-delay="300ms">ABOUT ME</h4>
+                        <div class="line wow fadeInUp" data-wow-duration="1.5s"  data-wow-delay="300ms"></div>
+                        <h3 class="f36 mf24 reg c2 wow fadeInUp" data-wow-duration="1.5s"  data-wow-delay="300ms">안녕하세요<br>
+                            성장하는 웹 퍼블리셔,<br>
+                            김한별입니다.</h3>
+                        <p class="f16 c4 wow fadeInUp" data-wow-duration="1.5s"  data-wow-delay="300ms">
+                            3년 3개월차 웹 퍼블리셔 김한별입니다.<br>
+                            코드와 함께할 때 누구보다 더 즐거움을 느낍니다.<br><br>
+                            최신 기술을 배우고 받아들이기 위해 끊임없이 공부하고 있습니다.<br>
+                            매일매일 조금씩 발전하고 있어요.
+                        </p>
+                    </div>
+                </div>
+                <div class="btm flex-wrap">
+                    <div class="career">
+                        <img src="pages/img/index/star.png" alt="초록별" class="wow fadeInUp" data-wow-duration="1.5s"  data-wow-delay="300ms">
+                        <h4 class="f26 c2 wow fadeInUp" data-wow-duration="1.5s"  data-wow-delay="300ms">CAREER</h4>
+                        <ul>
+                            <li>
+                                <p class="tit f20 wow fadeInUp" data-wow-duration="1.5s"  data-wow-delay="300ms">이아이넷 <span class="f16 color1">퍼블리셔</span></p>
+                                <p class="date f20 color1 wow fadeInUp" data-wow-duration="1.5s"  data-wow-delay="300ms">2020.10 - 2023.12(3년 3개월)</span></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="education">
+                        <img src="pages/img/index/star.png" alt="초록별" class="wow fadeInUp" data-wow-duration="1.5s"  data-wow-delay="300ms">
+                        <h4 class="f26 c2 wow fadeInUp" data-wow-duration="1.5s"  data-wow-delay="300ms">education</h4>
+                        <ul>
+                            <li>
+                                <p class="tit f20 wow fadeInUp" data-wow-duration="1.5s"  data-wow-delay="300ms">오쌤의 니가스터디</p>
+                                <p class="date f20 color1 wow fadeInUp" data-wow-duration="1.5s"  data-wow-delay="300ms">2024.06 - </p>
+                            </li>
+                            <li>
+                                <p class="tit f20 wow fadeInUp" data-wow-duration="1.5s"  data-wow-delay="300ms">웹디자인기능사(UI/UX디자인) 과정평가형</p>
+                                <p class="date f20 color1 wow fadeInUp" data-wow-duration="1.5s"  data-wow-delay="300ms">2019.11 - 2020.03</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skill">
+                        <img src="pages/img/index/star.png" alt="초록별" class="wow fadeInUp" data-wow-duration="1.5s"  data-wow-delay="300ms">
+                        <h4 class="f26 c2 wow fadeInUp" data-wow-duration="1.5s"  data-wow-delay="300ms">SKILLS</h4>
+                        <ul>
+                            <li class="flex-wrap">
+                                <p class="tit f20 reg wow fadeInLeft" data-wow-duration="1.5s"  data-wow-delay="300ms">HTML5<br>CSS3</p>
+                                <div class="flex-wrap">
+                                    <span class="progress fill wow fadeInLeft" data-wow-duration="1.5s"  data-wow-delay="300ms"></span>
+                                    <span class="progress fill wow fadeInLeft" data-wow-duration="1.5s"  data-wow-delay="600ms"></span>
+                                    <span class="progress fill wow fadeInLeft" data-wow-duration="1.5s"  data-wow-delay="900ms"></span>
+                                    <span class="progress fill wow fadeInLeft" data-wow-duration="1.5s"  data-wow-delay="1200ms"></span>
+                                    <span class="progress fill wow fadeInLeft" data-wow-duration="1.5s"  data-wow-delay="1500ms"></span>
+                                </div>
+                            </li>
+                            <li class="flex-wrap">
+                                <p class="tit f20 reg wow fadeInLeft" data-wow-duration="1.5s"  data-wow-delay="300ms">JAVASCRIPT<br>ES6</p>
+                                <div class="flex-wrap">
+                                    <span class="progress fill wow fadeInLeft" data-wow-duration="1.5s"  data-wow-delay="300ms"></span>
+                                    <span class="progress fill wow fadeInLeft" data-wow-duration="1.5s"  data-wow-delay="600ms"></span>
+                                    <span class="progress fill wow fadeInLeft" data-wow-duration="1.5s"  data-wow-delay="900ms"></span>
+                                    <span class="progress fill wow fadeInLeft" data-wow-duration="1.5s"  data-wow-delay="1200ms"></span>
+                                    <span class="progress wow fadeInLeft" data-wow-duration="1.5s"  data-wow-delay="1500ms"></span>
+                                </div>
+                            </li>
+                            <li class="flex-wrap">
+                                <p class="tit f20 reg wow fadeInLeft" data-wow-duration="1.5s"  data-wow-delay="300ms">JQUERY</p>
+                                <div class="flex-wrap">
+                                    <span class="progress fill wow fadeInLeft" data-wow-duration="1.5s"  data-wow-delay="300ms"></span>
+                                    <span class="progress fill wow fadeInLeft" data-wow-duration="1.5s"  data-wow-delay="600ms"></span>
+                                    <span class="progress fill wow fadeInLeft" data-wow-duration="1.5s"  data-wow-delay="900ms"></span>
+                                    <span class="progress fill wow fadeInLeft" data-wow-duration="1.5s"  data-wow-delay="1200ms"></span>
+                                    <span class="progress wow fadeInLeft" data-wow-duration="1.5s"  data-wow-delay="1500ms"></span>
+                                </div>
+                            </li>
+                            <li class="flex-wrap">
+                                <p class="tit f20 reg wow fadeInLeft" data-wow-duration="1.5s"  data-wow-delay="300ms">Photoshop<br>Illustrator</p>
+                                <div class="flex-wrap">
+                                    <span class="progress fill wow fadeInLeft" data-wow-duration="1.5s"  data-wow-delay="300ms"></span>
+                                    <span class="progress fill wow fadeInLeft" data-wow-duration="1.5s"  data-wow-delay="600ms"></span>
+                                    <span class="progress fill wow fadeInLeft" data-wow-duration="1.5s"  data-wow-delay="900ms"></span>
+                                    <span class="progress fill wow fadeInLeft" data-wow-duration="1.5s"  data-wow-delay="1200ms"></span>
+                                    <span class="progress wow fadeInLeft" data-wow-duration="1.5s"  data-wow-delay="1500ms"></span>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- <ul>
+                            <li class="box">
+                                <span class="title">HTML5</span>
+                                <span class="percent text01">95%</span>
+                                <svg>
+                                    <circle cx="50" cy="50" r="47" />
+                                </svg>
+                            </li>
+                            <li class="box">
+                                <span class="title">CSS3</span>
+                                <span class="percent text02">95%</span>
+                                <svg>
+                                    <circle cx="50" cy="50" r="47" />
+                                </svg>
+                            </li>
+                            <li class="box">
+                                <span class="title">jQuery</span>
+                                <span class="percent text03">85%</span>
+                                <svg>
+                                    <circle cx="50" cy="50" r="47" />
+                                </svg>
+                            </li>
+                            <li class="box">
+                                <span class="title">Photoshop, Illustrator</span>
+                                <span class="percent text04">90%</span>
+                                <svg>
+                                    <circle cx="50" cy="50" r="47" />
+                                </svg>
+                            </li>
+                        </ul> -->
+                    </div>
                 </div>
             </div>
-            <div class="content" id="about">
-               <h3>ABOUT ME</h3>
-               <div class="aboutarea">
-                   <img src="images/hanbyeol.jpg" alt="김한별 사진">
-                   <div class="about">
-                       <table>
-                           <tr>
-                               <th>name</th>
-                               <td>김한별</td>
-                           </tr>
-                           <tr>
-                               <th>birth</th>
-                               <td>1993.08.01</td>
-                           </tr>
-                           <tr>
-                               <th>e-mail</th>
-                               <td>winterelves@naver.com</td>
-                           </tr>
-                           <tr>
-                               <th>education</th>
-                               <td>웹디자인기능사(UI/UX디자인) 과정평가형</td>
-                           </tr>
-                           <tr>
-                            <th>career</th>
-                            <td>2020.10 ~ 2023.12 ㈜이아이넷 (3년 3개월)</td>
-                           </tr>
-                       </table>
-                   </div>
-               </div>
-                <div class="skill">
-                   <ul>
-                       <li class="box">
-                            <span class="title01">HTML5</span>
-                            <span class="text01">95%</span>
-                            <svg>
-                                <circle cx="100" cy="100" r="90" />
-                            </svg>
-                        </li>
-                        <li class="box">
-                            <span class="title02">CSS3</span>
-                            <span class="text02">95%</span>
-                            <svg>
-                                <circle cx="100" cy="100" r="90" />
-                            </svg>
-                        </li>
-                        <li class="box">
-                            <span class="title03">jQuery</span>
-                            <span class="text03">85%</span>
-                            <svg>
-                                <circle cx="100" cy="100" r="90" />
-                            </svg>
-                        </li>
-                        <li class="box">
-                            <span class="title04">Photoshop, Illustrator</span>
-                            <span class="text04">90%</span>
-                            <svg>
-                                <circle cx="100" cy="100" r="90" />
-                            </svg>
-                        </li>
-                   </ul>
+        </section>
+
+        <section id="marquee-section">
+            <div class="marquee_wrap">
+                <div class="marquee_box box1">
+                    <span class="marquee_text upp en f40 mf20 c2"> &ensp;&ensp;hanbyeol kim's portfolio &ensp;&ensp;hanbyeol kim's portfolio &ensp;&ensp;hanbyeol kim's portfolio &ensp;&ensp;hanbyeol kim's portfolio</span>
+                </div>
+                <div class="marquee_box box2">
+                    <span class="marquee_text upp en f40 mf20 c2"> &ensp;&ensp;hanbyeol kim's portfolio &ensp;&ensp;hanbyeol kim's portfolio &ensp;&ensp;hanbyeol kim's portfolio &ensp;&ensp;hanbyeol kim's portfolio</span>
                 </div>
             </div>
-            <div class="content" id="portfolio">
-               <h3>PORTFOLIO</h3>
-                <figure class="textImg">
-                    <img src="images/pacman.png" alt="팩맨">
-                </figure>
-                <div class="wrap">
-                    <a href="http://www.einet.co.kr/" target="_blank">
-                        <div class="img-wrap">
-                            <img src="images/list_img/inet.png" alt="">
+        </section>
+
+
+        <!-- section02 -->
+        <section id="section02">
+            <div class="pin">
+                <img src="pages/img/index/circle_02.png" alt="">
+                <div class="horizontal-wrap">
+                    <div>
+                        <div class="wrap1520 flex-wrap">
+                            <div class="left">
+                                <div class="img-wrap">
+                                    <div class="img" style="background-image: url(pages/img/index/portfolio/inet.png);"></div>
+                                </div>
+                                <div class="box"></div>
+                                <div class="box02"></div>
+                            </div>
+                            <div class="right">
+                                <div class="text-wrap">
+                                    <img src="pages/img/index/star.png" alt="초록별">
+                                    <p class="c2 f24 bold">PROJECT <span class="f26 color1">01</span></p>
+                                    <h3 class="c2 f34 mf20">이아이넷</h3>
+                                    <p class="f18">
+                                        기업 홈페이지 제작 경험, 자사 홈페이지 리뉴얼 작업 진행<br>
+                                        작업기간 : 21.04.13 ~ 21.05.17 (약 1개월)<br>
+                                        핵심역할 : 퍼블리싱 및 애니메이션 100%
+                                    </p>
+                                    <a href="http://www.einet.co.kr/" id="btn-text" target="_blank">
+                                        <p class="f16 bold c2">Detail View</p>
+                                        <img src="assets/img/arrow.png" alt="">
+                                        <svg class="circle-img" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                                            <g fill="none" stroke="#222" stroke-width="1" stroke-linejoin="round" stroke-miterlimit="10">
+                                                <circle class="circle" cx="21" cy="21" r="20"></circle>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <h4>[기업] 이아이넷 </h4>
-                        <p>21.04.13-21.05.17</p>
-                        <p class="text">기업 홈페이지 제작 경험<br>자사 홈페이지 리뉴얼 작업 진행</p>
-                    </a>
-                    <a href="http://xn--9d0bm19ahnppga.com/" target="_blank">
-                        <div class="img-wrap">
-                            <img src="images/list_img/sehwa.png" alt="">
+                    </div>
+                    <div>
+                        <div class="wrap1520 flex-wrap">
+                            <div class="left">
+                                <div class="img-wrap">
+                                    <div class="img" style="background-image: url(pages/img/index/portfolio/sehwa.png);"></div>
+                                </div>
+                                <div class="box"></div>
+                                <div class="box02"></div>
+                            </div>
+                            <div class="right">
+                                <div class="text-wrap">
+                                    <img src="pages/img/index/star.png" alt="초록별">
+                                    <p class="c2 f24 bold">PROJECT <span class="f26 color1">02</span></p>
+                                    <h3 class="c2 f34 mf24">세화교회</h3>
+                                    <p class="f18">
+                                        게시판 구성과 로그인 화면 등 input을 활용한 다양한 폼 제작 경험<br>
+                                        작업기간 : 22.02.18 ~ 22.02.25 (약 6일)<br>
+                                        핵심역할 : 퍼블리싱 100% / DB연결 30%
+                                    </p>
+                                    <a href="http://xn--9d0bm19ahnppga.com/" id="btn-text" target="_blank">
+                                        <p class="f16 bold c2">Detail View</p>
+                                        <img src="assets/img/arrow.png" alt="">
+                                        <svg class="circle-img" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                                            <g fill="none" stroke="#222" stroke-width="1" stroke-linejoin="round" stroke-miterlimit="10">
+                                                <circle class="circle" cx="21" cy="21" r="20"></circle>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <h4>[종교] 세화교회 </h4>
-                        <p>22.02.18-22.02.25</p>
-                        <p class="text">퍼블리싱 및 DB 연결<br>로그인 및 회원가입 페이지, 다양한 게시판 제작 작업</p>
-                    </a>
-                    <a href="https://www.ddtown.co.kr/" target="_blank">
-                        <div class="img-wrap">
-                            <img src="images/list_img/town.png" alt="">
+                    </div>
+                    <div>
+                        <div class="wrap1520 flex-wrap">
+                            <div class="left">
+                                <div class="img-wrap">
+                                    <div class="img" style="background-image: url(pages/img/index/portfolio/town.png);"></div>
+                                </div>
+                                <div class="box"></div>
+                                <div class="box02"></div>
+                            </div>
+                            <div class="right">
+                                <div class="text-wrap">
+                                    <img src="pages/img/index/star.png" alt="초록별">
+                                    <p class="c2 f24 bold">PROJECT <span class="f26 color1">03</span></p>
+                                    <h3 class="c2 f34 mf24">펜션타운</h3>
+                                    <p class="f18">
+                                        장기 대형 프로젝트 경험, 결제 페이지 및 시스템 관리자 페이지 제작<br>input을 활용한 필터 제작<br>
+                                        작업기간 : 21.03.08 ~ 21.08.18 (약 5개월)<br>
+                                        핵심역할 : 퍼블리싱 100% / DB연결 20%
+                                    </p>
+                                    <a href="https://www.ddtown.co.kr/" id="btn-text" target="_blank">
+                                        <p class="f16 bold c2">Detail View</p>
+                                        <img src="assets/img/arrow.png" alt="">
+                                        <svg class="circle-img" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                                            <g fill="none" stroke="#222" stroke-width="1" stroke-linejoin="round" stroke-miterlimit="10">
+                                                <circle class="circle" cx="21" cy="21" r="20"></circle>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <h4>[연합] 펜션타운 </h4>
-                        <p> 21.03.08-21.08.18 </p>
-                        <p class="text">장기 대형 프로젝트 경험 <br> 결제 페이지 및 시스템 관리자 페이지 제작 경험<br>input을 활용한 필터 제작</p>
-                    </a>
-                    <a href="https://www.qnekorea.co.kr/" target="_blank">
-                        <div class="img-wrap">
-                            <img src="images/list_img/qne.png" alt="">
+                    </div>
+                    <div>
+                        <div class="wrap1520 flex-wrap">
+                            <div class="left">
+                                <div class="img-wrap">
+                                    <div class="img" style="background-image: url(pages/img/index/portfolio/qne.png);"></div>
+                                </div>
+                                <div class="box"></div>
+                                <div class="box02"></div>
+                            </div>
+                            <div class="right">
+                                <div class="text-wrap">
+                                    <img src="pages/img/index/star.png" alt="초록별">
+                                    <p class="c2 f24 bold">PROJECT <span class="f26 color1">04</span></p>
+                                    <h3 class="c2 f34 mf24">QNE</h3>
+                                    <p class="f18">
+                                        기업 사이트 퍼블리싱 작업<br>
+                                        작업기간 : 22.07.13 ~ 22.07.20 (약 6일)<br>
+                                        핵심역할 : 퍼블리싱 100% / DB연결 10%
+                                    </p>
+                                    <a href="https://www.qnekorea.co.kr/" id="btn-text" target="_blank">
+                                        <p class="f16 bold c2">Detail View</p>
+                                        <img src="assets/img/arrow.png" alt="">
+                                        <svg class="circle-img" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                                            <g fill="none" stroke="#222" stroke-width="1" stroke-linejoin="round" stroke-miterlimit="10">
+                                                <circle class="circle" cx="21" cy="21" r="20"></circle>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <h4>[기업] QNE </h4>
-                        <p> 21.03.08-21.08.18 </p>
-                        <p class="text">기업 사이트 퍼블리싱 작업</p>
-                    </a>
-                    <a href="http://calacatta-hotel.com/" target="_blank">
-                        <div class="img-wrap">
-                            <img src="work/07.19-08.02/pages/img/index/01-01.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="wrap1520 flex-wrap">
+                            <div class="left">
+                                <div class="img-wrap">
+                                    <div class="img" style="background-image: url(pages/img/index/portfolio/calacatta.png);"></div>
+                                </div>
+                                <div class="box"></div>
+                                <div class="box02"></div>
+                            </div>
+                            <div class="right">
+                                <div class="text-wrap">
+                                    <img src="pages/img/index/star.png" alt="초록별">
+                                    <p class="c2 f24 bold">PROJECT <span class="f26 color1">05</span></p>
+                                    <h3 class="c2 f34 mf24">깔라까따 호텔</h3>
+                                    <p class="f18">
+                                        호텔 홈페이지 퍼블리싱 작업<br>wow, scrollmagic, GSAP를 이용한 애니메이션 효과 구현<br>
+                                        작업기간 : 2023.07.19-2023.08.02 (약 11일 )<br>
+                                        핵심역할 : 퍼블리싱 및 애니메이션 100%
+                                    </p>
+                                    <a href="http://calacatta-hotel.com/" id="btn-text" target="_blank">
+                                        <p class="f16 bold c2">Detail View</p>
+                                        <img src="assets/img/arrow.png" alt="">
+                                        <svg class="circle-img" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                                            <g fill="none" stroke="#222" stroke-width="1" stroke-linejoin="round" stroke-miterlimit="10">
+                                                <circle class="circle" cx="21" cy="21" r="20"></circle>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <h4>[호텔] 깔라까따 호텔</h4>
-                        <p>23.07.19-23.08.02</p>
-                        <p class="text">호텔 홈페이지 퍼블리싱 작업 <br> wow, scrollmagic, GSAP를 이용한 애니메이션 효과 구현</p>
-                    </a>
-                    <a href="http://ae-rim.com/" target="_blank">
-                        <div class="img-wrap">
-                            <img src="work/06.07-06.13/img/main/video.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="wrap1520 flex-wrap">
+                            <div class="left">
+                                <div class="img-wrap">
+                                    <div class="img" style="background-image: url(pages/img/index/portfolio/sum.png);"></div>
+                                </div>
+                                <div class="box"></div>
+                                <div class="box02"></div>
+                            </div>
+                            <div class="right">
+                                <div class="text-wrap">
+                                    <img src="pages/img/index/star.png" alt="초록별">
+                                    <p class="c2 f24 bold">PROJECT <span class="f26 color1">06</span></p>
+                                    <h3 class="c2 f34 mf24">더 숨 포레스트</h3>
+                                    <p class="f18">
+                                        펜션 홈페이지 퍼블리싱 작업<br>
+                                        작업기간 : 2023.11.27-2023.12.01 (약 5일 )<br>
+                                        핵심역할 : 퍼블리싱 및 애니메이션 100% / DB연결 50%
+                                    </p>
+                                    <a href="http://www.xn--9m1b62gfwkhoae75dzub.com/" id="btn-text" target="_blank">
+                                        <p class="f16 bold c2">Detail View</p>
+                                        <img src="assets/img/arrow.png" alt="">
+                                        <svg class="circle-img" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                                            <g fill="none" stroke="#222" stroke-width="1" stroke-linejoin="round" stroke-miterlimit="10">
+                                                <circle class="circle" cx="21" cy="21" r="20"></circle>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <h4>[펜션] 애림풀빌라</h4>
-                        <p>23.06.07-23.06.13</p>
-                        <p class="text">펜션 홈페이지 퍼블리싱 및 DB 연결 작업 <br> wow, scrollmagic, GSAP를 이용한 애니메이션 효과 구현</p>
-                    </a>
-                    <a href="http://bohemiavillage.co.kr/?intro=OK" target="_blank">
-                        <div class="img-wrap">
-                            <img src="work/07.07-07.13/img/main/01.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="wrap1520 flex-wrap">
+                            <div class="left">
+                                <div class="img-wrap">
+                                    <div class="img" style="background-image: url(pages/img/index/portfolio/penthouse.png);"></div>
+                                </div>
+                                <div class="box"></div>
+                                <div class="box02"></div>
+                            </div>
+                            <div class="right">
+                                <div class="text-wrap">
+                                    <img src="pages/img/index/star.png" alt="초록별">
+                                    <p class="c2 f24 bold">PROJECT <span class="f26 color1">07</span></p>
+                                    <h3 class="c2 f34 mf24">펜트하우스</h3>
+                                    <p class="f18">
+                                        펜션 홈페이지 퍼블리싱 작업<br>
+                                        작업기간 : 2023.11.15-2023.11.22 (약 5일 )<br>
+                                        핵심역할 : 퍼블리싱 및 애니메이션 100% / DB연결 50%
+                                    </p>
+                                    <a href="http://penthouse700.co.kr/index.html?intro=OK" id="btn-text" target="_blank">
+                                        <p class="f16 bold c2">Detail View</p>
+                                        <img src="assets/img/arrow.png" alt="">
+                                        <svg class="circle-img" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                                            <g fill="none" stroke="#222" stroke-width="1" stroke-linejoin="round" stroke-miterlimit="10">
+                                                <circle class="circle" cx="21" cy="21" r="20"></circle>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <h4>[펜션] 보헤미아빌리지</h4>
-                        <p>23.07.07-23.07.13</p>
-                        <p class="text">펜션 홈페이지 퍼블리싱 및 DB 연결 작업 <br> wow, scrollmagic, GSAP를 이용한 애니메이션 효과 구현</p>
-                    </a>
-                    <a href="work/08.03-08.09/index.html" target="_blank">
-                        <div class="img-wrap">
-                            <img src="work/08.03-08.09/pages/img/main/01.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="wrap1520 flex-wrap">
+                            <div class="left">
+                                <div class="img-wrap">
+                                    <div class="img" style="background-image: url(pages/img/index/portfolio/isum.png);"></div>
+                                </div>
+                                <div class="box"></div>
+                                <div class="box02"></div>
+                            </div>
+                            <div class="right">
+                                <div class="text-wrap">
+                                    <img src="pages/img/index/star.png" alt="초록별">
+                                    <p class="c2 f24 bold">PROJECT <span class="f26 color1">08</span></p>
+                                    <h3 class="c2 f34 mf24">아이섬 풀&글램핑</h3>
+                                    <p class="f18">
+                                        펜션 홈페이지 퍼블리싱 작업<br>
+                                        작업기간 : 2023.11.07-2023.11.14 (약 5일 )<br>
+                                        핵심역할 : 퍼블리싱 및 애니메이션 100% / DB연결 50%
+                                    </p>
+                                    <a href="http://www.isumglamping.com/" id="btn-text" target="_blank">
+                                        <p class="f16 bold c2">Detail View</p>
+                                        <img src="assets/img/arrow.png" alt="">
+                                        <svg class="circle-img" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                                            <g fill="none" stroke="#222" stroke-width="1" stroke-linejoin="round" stroke-miterlimit="10">
+                                                <circle class="circle" cx="21" cy="21" r="20"></circle>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <h4>[펜션] 라서리조트</h4>
-                        <p>23.08.03-23.08.09</p>
-                        <p class="text">펜션 홈페이지 퍼블리싱 및 DB 연결 작업 <br> wow, scrollmagic, GSAP를 이용한 애니메이션 효과 구현</p>
-                    </a>
-                    <a href="http://instnthotel.com/" target="_blank">
-                        <div class="img-wrap">
-                            <img src="work/08.29-09.04/pages/img/main/video01.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="wrap1520 flex-wrap">
+                            <div class="left">
+                                <div class="img-wrap">
+                                    <div class="img" style="background-image: url(pages/img/index/portfolio/mrjun.png);"></div>
+                                </div>
+                                <div class="box"></div>
+                                <div class="box02"></div>
+                            </div>
+                            <div class="right">
+                                <div class="text-wrap">
+                                    <img src="pages/img/index/star.png" alt="초록별">
+                                    <p class="c2 f24 bold">PROJECT <span class="f26 color1">09</span></p>
+                                    <h3 class="c2 f34 mf24">미스터준 키즈 풀빌라</h3>
+                                    <p class="f18">
+                                        펜션 홈페이지 퍼블리싱 작업<br>
+                                        작업기간 : 2023.09.13-2023.09.19 (약 5일 )<br>
+                                        핵심역할 : 퍼블리싱 및 애니메이션 100% / DB연결 50%
+                                    </p>
+                                    <a href="http://mrjun.kr/" id="btn-text" target="_blank">
+                                        <p class="f16 bold c2">Detail View</p>
+                                        <img src="assets/img/arrow.png" alt="">
+                                        <svg class="circle-img" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                                            <g fill="none" stroke="#222" stroke-width="1" stroke-linejoin="round" stroke-miterlimit="10">
+                                                <circle class="circle" cx="21" cy="21" r="20"></circle>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <h4>[펜션] 인스턴트 호텔</h4>
-                        <p>23.08.29-23.09.04</p>
-                        <p class="text">펜션 홈페이지 퍼블리싱 및 DB 연결 작업 <br> wow, scrollmagic, GSAP를 이용한 애니메이션 효과 구현</p>
-                    </a>
-                    <a href="http://xn--oi2bh433c3vhgru.com/" target="_blank">
-                        <div class="img-wrap">
-                            <img src="work/09.04-09.08/pages/img/main/sample.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="wrap1520 flex-wrap">
+                            <div class="left">
+                                <div class="img-wrap">
+                                    <div class="img" style="background-image: url(pages/img/index/portfolio/aran.png);"></div>
+                                </div>
+                                <div class="box"></div>
+                                <div class="box02"></div>
+                            </div>
+                            <div class="right">
+                                <div class="text-wrap">
+                                    <img src="pages/img/index/star.png" alt="초록별">
+                                    <p class="c2 f24 bold">PROJECT <span class="f26 color1">10</span></p>
+                                    <h3 class="c2 f34 mf24">아란 풀빌라</h3>
+                                    <p class="f18">
+                                        펜션 홈페이지 퍼블리싱 작업<br>
+                                        작업기간 : 2023.09.04-2023.09.08 (약 5일 )<br>
+                                        핵심역할 : 퍼블리싱 및 애니메이션 100% / DB연결 50%
+                                    </p>
+                                    <a href="http://xn--oi2bh433c3vhgru.com/" id="btn-text" target="_blank">
+                                        <p class="f16 bold c2">Detail View</p>
+                                        <img src="assets/img/arrow.png" alt="">
+                                        <svg class="circle-img" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                                            <g fill="none" stroke="#222" stroke-width="1" stroke-linejoin="round" stroke-miterlimit="10">
+                                                <circle class="circle" cx="21" cy="21" r="20"></circle>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <h4>[펜션] 아란 풀빌라</h4>
-                        <p>23.09.04-23.09.08</p>
-                        <p class="text">펜션 홈페이지 퍼블리싱 및 DB 연결 작업 <br> wow, scrollmagic, GSAP를 이용한 애니메이션 효과 구현</p>
-                    </a>
-                    <a href="http://mrjun.kr/" target="_blank">
-                        <div class="img-wrap">
-                            <img src="work/09.13-09.19/pages/img/main/sample.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="wrap1520 flex-wrap">
+                            <div class="left">
+                                <div class="img-wrap">
+                                    <div class="img" style="background-image: url(pages/img/index/portfolio/instant.png);"></div>
+                                </div>
+                                <div class="box"></div>
+                                <div class="box02"></div>
+                            </div>
+                            <div class="right">
+                                <div class="text-wrap">
+                                    <img src="pages/img/index/star.png" alt="초록별">
+                                    <p class="c2 f24 bold">PROJECT <span class="f26 color1">11</span></p>
+                                    <h3 class="c2 f34 mf24">인스턴스 호텔</h3>
+                                    <p class="f18">
+                                        펜션 홈페이지 퍼블리싱 작업<br>
+                                        작업기간 : 2023.08.29-2023.09.04 (약 5일 )<br>
+                                        핵심역할 : 퍼블리싱 및 애니메이션 100% / DB연결 50%
+                                    </p>
+                                    <a href="http://instnthotel.com/" id="btn-text" target="_blank">
+                                        <p class="f16 bold c2">Detail View</p>
+                                        <img src="assets/img/arrow.png" alt="">
+                                        <svg class="circle-img" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                                            <g fill="none" stroke="#222" stroke-width="1" stroke-linejoin="round" stroke-miterlimit="10">
+                                                <circle class="circle" cx="21" cy="21" r="20"></circle>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <h4>[펜션] 미스터준</h4>
-                        <p>23.09.13-23.09.19</p>
-                        <p class="text">펜션 홈페이지 퍼블리싱 및 DB 연결 작업 <br> wow, scrollmagic, GSAP를 이용한 애니메이션 효과 구현</p>
-                    </a>
-                    <a href="http://www.isumglamping.com/" target="_blank">
-                        <div class="img-wrap">
-                            <img src="work/11.7-11.14/code/img/main/ex01.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="wrap1520 flex-wrap">
+                            <div class="left">
+                                <div class="img-wrap">
+                                    <div class="img" style="background-image: url(pages/img/index/portfolio/bohemia.png);"></div>
+                                </div>
+                                <div class="box"></div>
+                                <div class="box02"></div>
+                            </div>
+                            <div class="right">
+                                <div class="text-wrap">
+                                    <img src="pages/img/index/star.png" alt="초록별">
+                                    <p class="c2 f24 bold">PROJECT <span class="f26 color1">12</span></p>
+                                    <h3 class="c2 f34 mf24">보헤미아빌리지</h3>
+                                    <p class="f18">
+                                        펜션 홈페이지 퍼블리싱 작업<br>
+                                        작업기간 : 2023.07.07-2023.07.13 (약 5일 )<br>
+                                        핵심역할 : 퍼블리싱 및 애니메이션 100% / DB연결 50%
+                                    </p>
+                                    <a href="http://bohemiavillage.co.kr/?intro=OK" id="btn-text" target="_blank">
+                                        <p class="f16 bold c2">Detail View</p>
+                                        <img src="assets/img/arrow.png" alt="">
+                                        <svg class="circle-img" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                                            <g fill="none" stroke="#222" stroke-width="1" stroke-linejoin="round" stroke-miterlimit="10">
+                                                <circle class="circle" cx="21" cy="21" r="20"></circle>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <h4>[펜션] 아이섬 풀&글램핑</h4>
-                        <p>23.11.07-23.11.14</p>
-                        <p class="text">펜션 홈페이지 퍼블리싱 및 DB 연결 작업 <br> wow, scrollmagic, GSAP를 이용한 애니메이션 효과 구현</p>
-                    </a>
-                    <a href="http://penthouse700.co.kr/?intro=OK" target="_blank">
-                        <div class="img-wrap">
-                            <img src="work/11.15-11.22/img/main/01-01.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="wrap1520 flex-wrap">
+                            <div class="left">
+                                <div class="img-wrap">
+                                    <div class="img" style="background-image: url(pages/img/index/portfolio/arim.png);"></div>
+                                </div>
+                                <div class="box"></div>
+                                <div class="box02"></div>
+                            </div>
+                            <div class="right">
+                                <div class="text-wrap">
+                                    <img src="pages/img/index/star.png" alt="초록별">
+                                    <p class="c2 f24 bold">PROJECT <span class="f26 color1">13</span></p>
+                                    <h3 class="c2 f34 mf24">애림풀빌라</h3>
+                                    <p class="f18">
+                                        펜션 홈페이지 퍼블리싱 작업<br>
+                                        작업기간 : 2023.06.07-2023.06.13 (약 5일 )<br>
+                                        핵심역할 : 퍼블리싱 및 애니메이션 100% / DB연결 50%
+                                    </p>
+                                    <a href="http://ae-rim.com/index.html" id="btn-text" target="_blank">
+                                        <p class="f16 bold c2">Detail View</p>
+                                        <img src="assets/img/arrow.png" alt="">
+                                        <svg class="circle-img" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                                            <g fill="none" stroke="#222" stroke-width="1" stroke-linejoin="round" stroke-miterlimit="10">
+                                                <circle class="circle" cx="21" cy="21" r="20"></circle>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <h4>[펜션] 펜트하우스</h4>
-                        <p>23.11.15-23.11.22</p>
-                        <p class="text">펜션 홈페이지 퍼블리싱 및 DB 연결 작업 <br> wow, scrollmagic, GSAP를 이용한 애니메이션 효과 구현</p>
-                    </a>
-                    <a href="http://www.xn--9m1b62gfwkhoae75dzub.com/" target="_blank">
-                        <div class="img-wrap">
-                            <img src="work/11.27-12.1/img/sample01.jpg" alt="">
+                    </div>
+                    <div>
+                        <div class="wrap1520 flex-wrap">
+                            <div class="left">
+                                <div class="img-wrap">
+                                    <div class="img" style="background-image: url(pages/img/index/portfolio/dongkwang.png);"></div>
+                                </div>
+                                <div class="box"></div>
+                                <div class="box02"></div>
+                            </div>
+                            <div class="right">
+                                <div class="text-wrap">
+                                    <img src="pages/img/index/star.png" alt="초록별">
+                                    <p class="c2 f24 bold">PROJECT <span class="f26 color1">14</span></p>
+                                    <h3 class="c2 f34 mf24">동광풀빌라</h3>
+                                    <p class="f18">
+                                        펜션 홈페이지 퍼블리싱 작업<br>
+                                        작업기간 : 2023.05.26-2023.06.05 (약 5일 )<br>
+                                        핵심역할 : 퍼블리싱 및 애니메이션 100% / DB연결 50%
+                                    </p>
+                                    <a href="http://dkpoolvilla.com/index.html" id="btn-text" target="_blank">
+                                        <p class="f16 bold c2">Detail View</p>
+                                        <img src="assets/img/arrow.png" alt="">
+                                        <svg class="circle-img" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                                            <g fill="none" stroke="#222" stroke-width="1" stroke-linejoin="round" stroke-miterlimit="10">
+                                                <circle class="circle" cx="21" cy="21" r="20"></circle>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <h4>[펜션] 더 숨 포레스트</h4>
-                        <p>23.11.27-23.12.01</p>
-                        <p class="text">펜션 홈페이지 퍼블리싱 및 DB 연결 작업 <br> wow, scrollmagic, GSAP를 이용한 애니메이션 효과 구현</p>
-                    </a>
+                    </div>
+                    <div>
+                        <div class="wrap1520 flex-wrap">
+                            <div class="left">
+                                <div class="img-wrap">
+                                    <div class="img" style="background-image: url(pages/img/index/portfolio/wow.png);"></div>
+                                </div>
+                                <div class="box"></div>
+                                <div class="box02"></div>
+                            </div>
+                            <div class="right">
+                                <div class="text-wrap">
+                                    <img src="pages/img/index/star.png" alt="초록별">
+                                    <p class="c2 f24 bold">PROJECT <span class="f26 color1">15</span></p>
+                                    <h3 class="c2 f34 mf24">와우키즈풀빌라</h3>
+                                    <p class="f18">
+                                        펜션 홈페이지 퍼블리싱 작업<br>
+                                        작업기간 : 2023.05.15-2023.05.19 (약 5일 )<br>
+                                        핵심역할 : 퍼블리싱 및 애니메이션 100% / DB연결 50%
+                                    </p>
+                                    <a href="http://wowkidspoolvilla.com/index.html" id="btn-text" target="_blank">
+                                        <p class="f16 bold c2">Detail View</p>
+                                        <img src="assets/img/arrow.png" alt="">
+                                        <svg class="circle-img" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                                            <g fill="none" stroke="#222" stroke-width="1" stroke-linejoin="round" stroke-miterlimit="10">
+                                                <circle class="circle" cx="21" cy="21" r="20"></circle>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="wrap1520 flex-wrap">
+                            <div class="left">
+                                <div class="img-wrap">
+                                    <div class="img" style="background-image: url(pages/img/index/portfolio/milos.png);"></div>
+                                </div>
+                                <div class="box"></div>
+                                <div class="box02"></div>
+                            </div>
+                            <div class="right">
+                                <div class="text-wrap">
+                                    <img src="pages/img/index/star.png" alt="초록별">
+                                    <p class="c2 f24 bold">PROJECT <span class="f26 color1">16</span></p>
+                                    <h3 class="c2 f34 mf24">밀로스풀빌라</h3>
+                                    <p class="f18">
+                                        펜션 홈페이지 퍼블리싱 작업<br>
+                                        작업기간 : 2023.04.28-2023.05.08 (약 5일 )<br>
+                                        핵심역할 : 퍼블리싱 및 애니메이션 100% / DB연결 50%
+                                    </p>
+                                    <a href="http://milospoolvilla.com/index.html" id="btn-text" target="_blank">
+                                        <p class="f16 bold c2">Detail View</p>
+                                        <img src="assets/img/arrow.png" alt="">
+                                        <svg class="circle-img" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                                            <g fill="none" stroke="#222" stroke-width="1" stroke-linejoin="round" stroke-miterlimit="10">
+                                                <circle class="circle" cx="21" cy="21" r="20"></circle>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="wrap1520 flex-wrap">
+                            <div class="left">
+                                <div class="img-wrap">
+                                    <div class="img" style="background-image: url(pages/img/index/portfolio/stone.png);"></div>
+                                </div>
+                                <div class="box"></div>
+                                <div class="box02"></div>
+                            </div>
+                            <div class="right">
+                                <div class="text-wrap">
+                                    <img src="pages/img/index/star.png" alt="초록별">
+                                    <p class="c2 f24 bold">PROJECT <span class="f26 color1">17</span></p>
+                                    <h3 class="c2 f34 mf24">스톤아일랜드</h3>
+                                    <p class="f18">
+                                        펜션 홈페이지 퍼블리싱 작업 / 풀페이지 플러그인 사용<br>
+                                        작업기간 : 2023.04.20-2023.04.27 (약 5일 )<br>
+                                        핵심역할 : 퍼블리싱 및 애니메이션 100% / DB연결 50%
+                                    </p>
+                                    <a href="http://xn--hy1b45cb6o2scfvdxzv.com/index.html" id="btn-text" target="_blank">
+                                        <p class="f16 bold c2">Detail View</p>
+                                        <img src="assets/img/arrow.png" alt="">
+                                        <svg class="circle-img" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                                            <g fill="none" stroke="#222" stroke-width="1" stroke-linejoin="round" stroke-miterlimit="10">
+                                                <circle class="circle" cx="21" cy="21" r="20"></circle>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="wrap1520 flex-wrap">
+                            <div class="left">
+                                <div class="img-wrap">
+                                    <div class="img" style="background-image: url(pages/img/index/portfolio/oia.png);"></div>
+                                </div>
+                                <div class="box"></div>
+                                <div class="box02"></div>
+                            </div>
+                            <div class="right">
+                                <div class="text-wrap">
+                                    <img src="pages/img/index/star.png" alt="초록별">
+                                    <p class="c2 f24 bold">PROJECT <span class="f26 color1">18</span></p>
+                                    <h3 class="c2 f34 mf24">포항 오이아</h3>
+                                    <p class="f18">
+                                        펜션 홈페이지 퍼블리싱 작업<br>
+                                        작업기간 : 2023.02.09-2023.02.15 (약 5일 )<br>
+                                        핵심역할 : 퍼블리싱 및 애니메이션 100% / DB연결 50%
+                                    </p>
+                                    <a href="http://oiapoolvilla.com/index.html" id="btn-text" target="_blank">
+                                        <p class="f16 bold c2">Detail View</p>
+                                        <img src="assets/img/arrow.png" alt="">
+                                        <svg class="circle-img" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+                                            <g fill="none" stroke="#222" stroke-width="1" stroke-linejoin="round" stroke-miterlimit="10">
+                                                <circle class="circle" cx="21" cy="21" r="20"></circle>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="f60 mf30 how">
+                        <img src="pages/img/index/star.png" alt="초록별">
+                        HOW TO CONTACT?
+                    </div>
                 </div>
-            </div>
-            <div class="content" id="contact">
-                <h3>CONTACT</h3>
-                <div class="wrap">  
+        </section>
+
+        <div id="trigger01"></div>
+        <div id="trigger02"></div>
+        <!-- circle -->
+        <div id="section-top-circle-wrap">
+            <div class="section-top-circle"></div>
+        </div>
+        <!-- section03 -->
+        <section id="section03">
+            <div class="wrap1620">
+                <img src="pages/img/index/half_circle.png" alt="how to contact" class=" wow fadeInUp" data-wow-duration="1.5s"  data-wow-delay="300ms">
+                <h3 class="f120 mf50 cf reg wow fadeInUp" data-wow-duration="1.5s"  data-wow-delay="300ms">CONTACT</h3>
+                <h4 class="f18 cf lig wow fadeInUp" data-wow-duration="1.5s"  data-wow-delay="300ms">함께 일할 사람을 찾고 계신가요?<br>합류 및 협업 제안이 있으시다면 언제든지 연락주세요!</h4>
+                <div class="flex-wrap">  
                     <a href="mailto:winterelves@naver.com">
-                        <img src="images/email.png" alt="">
-                        <h4>e-mail</h4>
-                        <p>winterelves@naver.com</p>
+                        <img src="pages/img/index/star_w.png" alt="별모양_흰" class="star wow fadeInUp" data-wow-duration="1.5s"  data-wow-delay="300ms">
+                        <img src="pages/img/index/email.png" alt="이메일아이콘" class="icon wow fadeInUp" data-wow-duration="1.5s"  data-wow-delay="300ms">
+                        <h4 class="f24 cf bold wow fadeInUp" data-wow-duration="1.5s"  data-wow-delay="300ms">e-mail</h4>
+                        <p class="cf f18 mf16 wow fadeInUp" data-wow-duration="1.5s"  data-wow-delay="300ms">winterelves@naver.com</p>
                     </a>
                     <a href="https://github.com/khstar0801/portfolio" target="_blank">
-                        <img src="images/github.png" alt="">
-                        <h4>github</h4>
-                        <p>khstar0801</p>
+                        <img src="pages/img/index/star_w.png" alt="별모양_흰"  class="star wow fadeInUp" data-wow-duration="1.5s"  data-wow-delay="300ms">
+                        <img src="pages/img/index/github.png" alt="깃허브아이콘"  class="icon wow fadeInUp" data-wow-duration="1.5s"  data-wow-delay="300ms">
+                        <h4 class="f24 cf bold wow fadeInUp" data-wow-duration="1.5s"  data-wow-delay="300ms">github</h4>
+                        <p class="cf f18 mf16 wow fadeInUp" data-wow-duration="1.5s"  data-wow-delay="300ms">khstar0801</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- // delete -->
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="f-top">
+            <div class="flex-wrap">
+                <div class="f-nav">
+                    <a href="" title="about 바로가기">about</a>
+                    <a href="" title="portfolio 바로가기">portfolio</a>
+                    <a href="" title="contact 바로가기">contact</a>
+                </div>
+                <div class="btn-wrap">
+                    <a href="mailto:winterelves@naver.com" target="_blank" title="이메일보내기">
+                        <img src="pages/img/index/email.png" alt="이메일아이콘" class="icon">
+                        winterelves@naver.com
+                    </a>
+                    <a href="https://github.com/khstar0801/portfolio" target="_blank" title="깃허브">
+                        <img src="pages/img/index/github.png" alt="깃허브아이콘"  class="icon">
+                        khstar0801
                     </a>
                 </div>
             </div>
         </div>
-    </body>
+        <div class="f-btm">
+            <p class="">Copyright (C) 2024 HanbyeolKIM. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <!-- script -->
+    <script src="assets/js/function.js"></script>
+    <script src="assets/js/layout.js"></script>
+    <script src="pages/js/index.js"></script>
+
+
+</body>
 </html>
